@@ -154,7 +154,7 @@ export const Header = () => {
       if (latest > 0.01) {
         controls.start({
           width: isMobile ? "95%" : "85%",
-          transition: { duration: 0.4 },
+          // transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
           backgroundColor: theme.palette.common.black,
@@ -193,7 +193,6 @@ export const Header = () => {
         animate={controls}
         initial={{
           width: "90%",
-          backgroundColor: "#010101",
           boxShadow: "none",
           top: 0,
         }}

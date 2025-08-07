@@ -17,51 +17,57 @@ export default function TermsAndConditionsPolicy() {
     "That our services will be free from viruses or other harmful components.",
   ];
   return (
-    <Stack sx={{ color: "#03020C" }} alignItems="center" px={{ lg: 0, xs: 3 }}>
-      <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={4}>
+    <Stack
+      sx={{ color: "#03020C" }}
+      alignItems="center"
+      px={{ lg: 4, xs: 3 }}
+      py={{ lg: 4, xs: 3 }}
+    >
+      <Stack sx={{ width: { lg: "80%", xs: "100%" } }} spacing={4}>
         <Typography
-          color="#fff"
-          fontFamily="Red Hat Display"
+          color="#000"
+          fontFamily="Manrope"
           fontWeight={700}
-          fontSize={{ md: "4.25rem", xs: "2.5rem" }}
+          fontSize={{ md: "4.25rem", xs: "3rem" }}
           textAlign="center"
         >
           Terms & Conditions
         </Typography>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"2rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
-            Welcome to Real Money
+            Welcome to FA Global
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
+            align="justify"
           >
-            {` Welcome to Real Money. These Terms and Conditions ("Terms") govern your access to and use of our website, services, and digital platforms operated by Real Money ("we," "us," or "our"). By using our services, you agree to be bound by these Terms.`}
+            {` Welcome to FA Global. These Terms and Conditions ("Terms") govern your access to and use of our website, services, and digital platforms operated by Real Money ("we," "us," or "our"). By using our services, you agree to be bound by these Terms.`}
           </Typography>
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Acceptance of Terms
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             By accessing or using our website or services, you confirm that you
             have read, understood, and agree to these Terms. If you do not
@@ -70,19 +76,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Account Registration
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             To access certain features, you may be required to create an
             account. You are responsible for:{" "}
@@ -90,11 +96,10 @@ export default function TermsAndConditionsPolicy() {
           {accountRegistration?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -103,19 +108,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Use of Services{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             You agree to use our services only for lawful purposes and in
             compliance with all applicable laws. You must not:
@@ -123,11 +128,10 @@ export default function TermsAndConditionsPolicy() {
           {useOfServices?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -136,19 +140,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Intellectual Property{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             All content on our site and services—including text, graphics,
             logos, software, and trademarks—is the property of Real Money or its
@@ -158,19 +162,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Privacy
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             Your use of our services is also governed by our Privacy Policy,
             which explains how we collect and use your information.
@@ -179,19 +183,19 @@ export default function TermsAndConditionsPolicy() {
 
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Disclaimers{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             Our services are provided “as is” and “as available” without
             warranties of any kind. We do not guarantee:
@@ -199,11 +203,10 @@ export default function TermsAndConditionsPolicy() {
           {disclaimers?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -212,19 +215,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Limitation of Liability
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             To the maximum extent permitted by law, Real Money shall not be
             liable for any indirect, incidental, special, or consequential
@@ -233,19 +236,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Modifications
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We reserve the right to modify these Terms at any time. Changes will
             be posted on this page and become effective immediately. Continued
@@ -254,19 +257,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Governing Law
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             These Terms are governed by the laws of United Kingdom, without
             regard to its conflict of law principles. Any disputes will be
@@ -275,19 +278,19 @@ export default function TermsAndConditionsPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Contact Us{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             If you have any questions or concerns about these Terms of Service,
             please reach out to us at info@realmoney.co.uk

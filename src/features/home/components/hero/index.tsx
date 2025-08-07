@@ -1,78 +1,65 @@
-import { Button, Stack, Typography } from "@mui/material";
-import Image from "next/image";
-import { HomeHeroSectionImage } from "../../assets";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
+import { Button, Card, Stack, Typography } from "@mui/material";
+import { HeroSectionCover } from "../../assets";
 
 const Hero = () => {
   return (
     <SlideUpInView>
-      <Stack alignItems="center" spacing={2}>
-        <Typography
-          textAlign="center"
-          fontSize={{ md: "3.75rem", xs: "2rem" }}
-          fontWeight={"bold"}
-          fontFamily="Red Hat Display"
-          width={{ md: "50%", xs: "100%" }}
+      <Card
+        sx={{
+          backgroundImage: `url(${HeroSectionCover.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          borderRadius: 0,
+          height: "46.75rem",
+          px: { lg: 15, xs: 7 },
+          py:10
+        }}
+      >
+        <Stack
+          direction={{ lg: "row", xs: "column" }}
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={5}
+          height="100%"
           m="auto"
-          sx={{
-            background: "linear-gradient(to bottom, #FFFFFF 0%, #999999 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
         >
-          Smarter Finance Starts Here
-        </Typography>
-        <Typography
-          textAlign="center"
-          fontSize={{ md: "1.125rem", xs: "0.8rem" }}
-          fontFamily="Red Hat Display"
-          width={{ md: "50%", xs: "100%" }}
-          m="auto"
-          color="#C0C0C0"
-        >
-          Power your business with real-time bank data, secure payments, and
-          intelligent financial services. Our Open Banking solutions help you
-          move faster, stay compliant, and serve your customers better.
-        </Typography>
-        <Stack direction="row" spacing={2}>
-          <Button
-            variant="contained"
-            sx={{
-              color: "#010101",
-              background: "linear-gradient(to top, #009BCC 0%, #47D3FF 100%)",
-              stroke: "#00C2FF",
-              borderRadius: "2.5rem",
-              px: 3,
-              py: 1,
-              fontSize: "1rem",
-              fontFamily: "Red Hat Display",
-            }}
+          <Typography
+            color="#ffffff"
+            fontFamily="Manrope"
+            fontSize={{ lg: "4.75rem", xs: "2.5rem" }}
+            fontWeight={700}
+            textAlign={{ lg: "left", xs: "center" }}
           >
-            Explore Our Products
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              color: "#FFFFFF",
-              borderColor: "#464646",
-              borderRadius: "2.5rem",
-              px: 3,
-              py: 1,
-              fontSize: "1rem",
-              fontFamily: "Red Hat Display",
-            }}
-          >
-            Contact Us
-          </Button>
+            Powering Tomorrow’s Digital Finance Products
+          </Typography>
+          <Stack alignItems="flex-end" spacing={2}>
+            <Typography
+              color="#DBDBDB"
+              fontFamily="Manrope"
+              fontSize="1.25rem"
+              textAlign="right"
+            >
+              Launch, scale, and future-proof your fintech with Prime Money’s
+              full-stack open banking infrastructure.{" "}
+            </Typography>
+            <Button
+              sx={{
+                color: "#000",
+                backgroundColor: "#ffffff",
+                width: "fit-content",
+                px: 2,
+                py: 1,
+                fontFamily:"Manrope",
+                fontSize:"1.125rem"
+              }}
+            >
+              Explore our products
+            </Button>
+          </Stack>
         </Stack>
-        <Stack sx={{ width: { xs: "100%" } }}>
-          <Image
-            src={HomeHeroSectionImage}
-            alt="Home Hero Section Image"
-            style={{ width: "100%", height: "auto" }}
-          />
-        </Stack>
-      </Stack>
+      </Card>
     </SlideUpInView>
   );
 };

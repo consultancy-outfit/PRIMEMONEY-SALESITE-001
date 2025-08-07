@@ -26,64 +26,68 @@ export default function PrivacyPolicy() {
     "File a complaint with a data protection authority.",
   ];
   return (
-    <Stack sx={{ color: "#03020C" }} alignItems="center" px={{ lg: 0, xs: 3 }}>
-      <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={4}>
+    <Stack
+      sx={{ color: "#03020C" }}
+      alignItems="center"
+      px={{ lg: 4, xs: 3 }}
+      py={{ lg: 4, xs: 3 }}
+    >
+      <Stack sx={{ width: { lg: "80%", xs: "100%" } }} spacing={4}>
         <Typography
-          color="#fff"
-          fontFamily="Red Hat Display"
+          color="#000"
+          fontFamily="Manrope"
           fontWeight={700}
-          fontSize={{ md: "4.25rem", xs: "2.5rem" }}
+          fontSize={{ md: "4.25rem", xs: "3rem" }}
           textAlign="center"
         >
           Privacy Policy
         </Typography>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"2rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Introduction
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
-            At Real Money, your privacy is important to us. This Privacy Policy
+            At FA Global, your privacy is important to us. This Privacy Policy
             outlines how we collect, use, store, and protect your personal
             information when you visit our website or use our services.
           </Typography>
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Information We Collect
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We may collect the following types of information:
           </Typography>
           {infoWeCollect?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -92,30 +96,29 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             How We Use Your Information
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We use your information to:
           </Typography>
           {howWeUseYourInfo?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -124,19 +127,19 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Data Protection & Security{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We do not sell your personal data. However, we may share it
             with:{" "}
@@ -144,11 +147,10 @@ export default function PrivacyPolicy() {
           {dataProtection?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -157,30 +159,29 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Your Rights
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             Depending on your location, you may have the right to:
           </Typography>
           {yourRights?.map((items) => (
             // eslint-disable-next-line react/jsx-key
             <Typography
-              color="#fff"
-              fontFamily="Red Hat Display"
-              fontSize={"1rem"}
+              color="#646464"
+              fontFamily="Manrope"
+              fontSize={"1.25rem"}
               textAlign="left"
-              sx={{ opacity: "70%" }}
               component={"li"}
             >
               {items}
@@ -189,19 +190,19 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Third-Party Services{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             Our site may include links to third-party sites. We are not
             responsible for their privacy practices and encourage you to review
@@ -210,19 +211,19 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Data Retention{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We retain your data only as long as necessary to fulfil the purposes
             stated or as required by law.
@@ -230,19 +231,19 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Policy Updates{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             We may update this Privacy Policy periodically. You’ll be notified
             of significant changes via email or a prominent site notice.
@@ -250,19 +251,19 @@ export default function PrivacyPolicy() {
         </Stack>
         <Stack spacing={1}>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1.3rem"}
+            color="#000"
+            fontFamily="Manrope"
+            fontSize={"2.5rem"}
+            fontWeight={700}
             textAlign="left"
           >
             Contact Us{" "}
           </Typography>
           <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize={"1rem"}
+            color="#646464"
+            fontFamily="Manrope"
+            fontSize={"1.25rem"}
             textAlign="left"
-            sx={{ opacity: "70%" }}
           >
             If you have any questions or concerns regarding your privacy, please
             contact us at info@realmoney.co.uk
