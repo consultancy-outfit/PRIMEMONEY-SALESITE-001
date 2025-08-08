@@ -1,3 +1,4 @@
+"use client";
 import { AuthLayout } from "@/layouts/auth-layout";
 
 export const AuthSiteLayout = ({ children }: any) => {

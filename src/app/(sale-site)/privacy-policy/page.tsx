@@ -1,3 +1,4 @@
+"use client";
 import { Stack, Typography } from "@mui/material";
 
 export default function PrivacyPolicy() {
@@ -17,7 +18,7 @@ export default function PrivacyPolicy() {
   const dataProtection = [
     "Trusted third-party service providers (e.g., hosting, analytics, CRM).",
     "Regulators or legal authorities if required by law.",
-    "Affiliates or subsidiaries under Real Money for internal operations.",
+    "Affiliates or subsidiaries under  FA Global  for internal operations.",
   ];
   const yourRights = [
     "Access or correct your personal data.",
@@ -266,7 +267,7 @@ export default function PrivacyPolicy() {
             textAlign="left"
           >
             If you have any questions or concerns regarding your privacy, please
-            contact us at info@realmoney.co.uk
+            contact us at info@faglobalkfinance.com
           </Typography>
         </Stack>
       </Stack>

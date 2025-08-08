@@ -1,14 +1,8 @@
 "use client";
-
-import { FAGlobalLogoImage } from "@/assets/images/logo";
-// import { Icon5 } from "@/assets/icons/common";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import XIcon from "@mui/icons-material/X";
-import { Box, Grid, Link, Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { LogoAvatar } from "@/components/avatars/logo-avatar";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { about, products, resources } from "./footer.data";
+import { about, products } from "./footer.data";
 
 const Footer = () => {
   const router = useRouter();
@@ -17,177 +11,143 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        bgcolor: "#010101",
-        color: "white",
+        bgcolor: "#FFFFFF",
+
         px: { xs: 5, sm: 10 },
         py: { xs: 3, sm: 5 },
         m: 2,
         borderRadius: "12px",
       }}
     >
-      <Grid container spacing={4} mb={4}>
-        {/* Logo and Description */}
-        <Grid size={{ xs: 12 }}>
-          <Stack
-            spacing={2}
-            flexDirection={{ xs: "column", sm: "row" }}
-            justifyContent={"space-between"}
-            alignItems={"flex-start"}
+      <Stack direction={"row"} flexWrap={"wrap"} gap={2}>
+        <Stack alignItems={"flex-start"} maxWidth={450} gap={2}>
+          <LogoAvatar height="auto" isCenter={false} isLight />
+
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#646464",
+
+              fontSize: 32,
+              fontWeight: 800,
+            }}
           >
-            <Stack>
-              <Image src={FAGlobalLogoImage} alt="Logo" />
+            Stay Ahead with Prime Money
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#646464",
+
+              fontSize: 16,
+              fontWeight: 400,
+            }}
+          >
+            Build Launch Scale Your All-in-One Open Banking Ecosystem
+          </Typography>
+        </Stack>
+        <Box ml={"auto"}>
+          <Stack direction={"row"} gap={{ xs: 3, lg: 9 }} flexWrap={"wrap"}>
+            <Stack >
+              <Typography
+                variant="subtitle1"
+                color="#222222"
+                fontFamily="Manrope"
+                fontWeight={500}
+              >
+                Company
+              </Typography>
+              {about.map((item) => (
+                <Typography
+                  key={item?.id + item?.label}
+                  variant="body1"
+                  color="#646464"
+                  fontFamily="Manrope"
+                  sx={{ mt: 1.5, cursor: "pointer" }}
+                  onClick={() => {
+                    router.push(item?.link);
+                  }}
+                >
+                  {item?.label}
+                </Typography>
+              ))}
             </Stack>
-            <Typography
-              variant="body1"
-              sx={{
-                maxWidth: 550,
-                color: "#ADAEBA",
-                fontFamily: "Manrope",
-                fontSize: 16,
-              }}
-            >
-              A smarter, faster way to connect, manage, and move money across
-              accounts, currencies, and customers in real time.
-            </Typography>
-            {/* <Stack direction="row" spacing={2} mt={2}>
-              <IconButton
-                color="inherit"
-                sx={{ backgroundColor: "#2E2E3E", p: 1 }}
+            <Stack width={200}>
+              <Typography
+                variant="subtitle1"
+                color="#222222"
+                fontFamily="Manrope"
+                fontWeight={500}
               >
-                <InstagramIcon />
-              </IconButton>
-              <IconButton
-                color="inherit"
-                sx={{ backgroundColor: "#2E2E3E", p: 1 }}
+                Products
+              </Typography>
+              {products.map((item) => (
+                <Typography
+                  key={item?.id + item?.label}
+                  variant="body1"
+                  color="#646464"
+                  fontFamily="Manrope"
+                  sx={{ mt: 1.5, cursor: "pointer" }}
+                  onClick={() => {
+                    router.push(item?.link);
+                  }}
+                >
+                  {item?.label}
+                </Typography>
+              ))}
+            </Stack>
+            <Stack>
+              <Typography
+                variant="subtitle1"
+                color="#222222"
+                fontFamily="Manrope"
+                fontWeight={500}
               >
-                <LinkedInIcon />
-              </IconButton>
-              <IconButton
+                Legal
+              </Typography>
+              <Link
+                href="/privacy-policy"
                 color="inherit"
-                sx={{ backgroundColor: "#2E2E3E", p: 1 }}
+                sx={{
+                  color: "#646464",
+                  fontFamily: "Manrope",
+                  fontSize: 16,
+                  textDecoration: "none",
+                }}
               >
-                <XIcon />
-              </IconButton>
-              <IconButton
+                <Typography
+                  variant="body1"
+                  sx={{ mt: 1.5, cursor: "pointer" }}
+                  color="#646464"
+                  fontFamily="Manrope"
+                >
+                  Privacy Policy
+                </Typography>
+              </Link>
+              <Link
+                href="/terms-and-conditions"
                 color="inherit"
-                sx={{ backgroundColor: "#2E2E3E", p: 1 }}
+                sx={{
+                  color: "#646464",
+                  fontFamily: "Manrope",
+                  fontSize: 16,
+                  textDecoration: "none",
+                }}
               >
-                <Image src={Icon5} alt="icon5" />
-              </IconButton>
-            </Stack> */}
+                <Typography
+                  variant="body1"
+                  sx={{ mt: 1.5, cursor: "pointer" }}
+                  color="#646464"
+                  fontFamily="Manrope"
+                >
+                  Terms & Conditions
+                </Typography>
+              </Link>
+            </Stack>
           </Stack>
-        </Grid>
+        </Box>
+      </Stack>
 
-        <Grid size={{ md: 2 }} display={{ xs: "none", md: "block" }}></Grid>
-        {/* Products */}
-        <Grid size={{ md: 2, xs: 12 }}>
-          <Typography
-            variant="subtitle1"
-            color="#F6F7FF"
-            fontFamily="Manrope"
-            fontWeight={500}
-          >
-            Products
-          </Typography>
-          {products.map((item) => (
-            <Typography
-              key={item?.id}
-              variant="body1"
-              color="#D2D3DF"
-              fontFamily="Manrope"
-              sx={{ mt: 1.5, cursor: "pointer" }}
-              onClick={() => {
-                router.push(item?.link);
-              }}
-            >
-              {item?.label}
-            </Typography>
-          ))}
-        </Grid>
-
-        {/* Company */}
-        <Grid size={{ md: 2, xs: 6 }}>
-          <Typography
-            variant="subtitle1"
-            color="#F6F7FF"
-            fontFamily="Manrope"
-            fontWeight={500}
-          >
-            Company
-          </Typography>
-          {about.map((item) => (
-            <Typography
-              key={item?.id}
-              variant="body1"
-              color="#D2D3DF"
-              fontFamily="Manrope"
-              sx={{ mt: 1.5, cursor: "pointer" }}
-              onClick={() => {
-                router.push(item?.link);
-              }}
-            >
-              {item?.label}
-            </Typography>
-          ))}
-        </Grid>
-
-        {/* Resources */}
-        <Grid size={{ md: 2, xs: 6 }}>
-          <Typography
-            variant="subtitle1"
-            color="#F6F7FF"
-            fontFamily="Manrope"
-            fontWeight={500}
-          >
-            Resources
-          </Typography>
-          {resources.map((item) => (
-            <Typography
-              key={item?.id}
-              variant="body1"
-              color="#D2D3DF"
-              fontFamily="Manrope"
-              sx={{ mt: 1.5, cursor: "pointer" }}
-              onClick={() => {
-                router.push(item?.link);
-              }}
-            >
-              {item?.label}
-            </Typography>
-          ))}
-        </Grid>
-
-        {/* Support */}
-        <Grid size={{ md: 2, xs: 12 }}>
-          <Typography
-            variant="subtitle1"
-            color="#F6F7FF"
-            fontFamily="Manrope"
-            fontWeight={500}
-          >
-            Support
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{ mt: 1.5, cursor: "pointer" }}
-            color="#D2D3DF"
-            fontFamily="Manrope"
-          >
-            Email: info@realmoney.co.uk
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{ mt: 1.5, cursor: "pointer" }}
-            color="#D2D3DF"
-            fontFamily="Manrope"
-          >
-            Address: 30 Churchill Place, London, England, E14 5RE
-          </Typography>
-        </Grid>
-      </Grid>
-
-      {/* Bottom bar */}
-      <hr />
       <Box
         mt={3}
         display="flex"
@@ -198,37 +158,10 @@ const Footer = () => {
       >
         <Typography
           variant="body1"
-          sx={{ color: "#EEEFFB", fontFamily: "Manrope" }}
+          sx={{ color: "#646464", fontFamily: "Manrope" }}
         >
-          All Rights Reserved. Copyright © {currentYear} Real Money.
+          Copyright © {currentYear} Prime Money.
         </Typography>
-        <Stack direction="row" spacing={1}>
-          <Link
-            href="/privacy-policy"
-            color="inherit"
-            sx={{
-              color: "#EEEFFB",
-              fontFamily: "Manrope",
-              fontSize: 16,
-              textDecoration: "none",
-            }}
-          >
-            Privacy Policy
-          </Link>
-          <Typography>|</Typography>
-          <Link
-            href="/terms-and-conditions"
-            color="inherit"
-            sx={{
-              color: "#EEEFFB",
-              fontFamily: "Manrope",
-              fontSize: 16,
-              textDecoration: "none",
-            }}
-          >
-            Terms & Conditions
-          </Link>
-        </Stack>
       </Box>
     </Box>
   );

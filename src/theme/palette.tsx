@@ -11,8 +11,8 @@ const secondary = {
 };
 
 const text = {
-  primary: "#2F2F2F",
-  secondary: "#292929",
+  primary: "#222222",
+  secondary: "#646464",
 };
 
 const success = {
