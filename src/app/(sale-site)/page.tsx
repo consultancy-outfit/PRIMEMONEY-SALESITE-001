@@ -11,7 +11,7 @@ import { Stack } from "@mui/material";
 export default function Home() {
   return (
     <>
-      <Stack spacing={8} textAlign="center">
+      <Stack  textAlign="center">
         <Hero />
         <OurServicesHome />
         <HomeThirdSection />

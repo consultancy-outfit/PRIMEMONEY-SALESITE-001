@@ -1,109 +1,90 @@
 "use client";
 import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
-import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 import { Card, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import {
+  AccountConnectivityIcon,
   AccountHelpSquadIcon,
   CentsPayIcon,
-  IdentityAndComplianceIcon,
-  SmartBankIcon,
+  FinancialDataIcon,
 } from "../../assets";
 
 const OurServicesHome = () => {
   const data = [
     {
       id: 1,
-      icon: SmartBankIcon,
-      heading: "SmartBank Data Layer",
+      icon: FinancialDataIcon,
+      heading: "Financial Data Intelligence",
       description:
-        "Unified access to real-time financial data, enriched insights, and seamless payments.",
+        "Harness enriched financial data to drive precision, personalisation, and performance.",
     },
     {
       id: 2,
-      icon: IdentityAndComplianceIcon,
-      heading: "Identity & Compliance",
+      icon: AccountConnectivityIcon,
+      heading: "Account Connectivity",
       description:
-        "Bank-grade identity verification and data-sharing flows aligned with regulatory standards.",
+        "Embed seamless payments and connectivity to drive compliance, scale, and user experience.",
     },
     {
       id: 3,
       icon: AccountHelpSquadIcon,
       heading: "Account Help Squad",
       description:
-        "End-to-end automation for payables, receivables, cash flow, and customer support.",
+        "Power smart financial operations with automation tools that simplify invoicing, cash flow, etc.",
     },
     {
       id: 4,
       icon: CentsPayIcon,
       heading: "Centspay",
       description:
-        "A secure multi-currency wallet enabling micro-payments, savings, transfers, and real-time analytics.",
+        "Deliver smart, dynamic digital wallet experiences with real-time payments, savings, etc.",
     },
   ];
   return (
     <ScaleInView initialScale={0.5}>
-      <Stack spacing={8} alignItems="center" px={{ md: 0, xs: 3 }}>
-        <Stack sx={{ width: { lg: "50%", xs: "100%" } }} spacing={1}>
-          <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontSize="3rem"
-            fontWeight={"bold"}
-          >
-            Our services
-          </Typography>
-          <Typography
-            color="#fff"
-            fontFamily="Inter"
-            fontSize="1.25rem"
-            fontWeight={500}
-            sx={{ opacity: "70%" }}
-          >
-            Explore our suite of secure, compliant, and intelligent Open Banking
-            solutions tailored for modern businesses.
-          </Typography>
-        </Stack>
-        <Grid container spacing={3} sx={{ width: { xs: "100%", sm: "70%" } }}>
+      <Stack position="relative" bottom={150} sx={{ width: "80%", m: "auto" }}>
+        <Grid container spacing={5} sx={{ m: "auto" }}>
           {data?.map((items) => (
-            <Grid size={{ lg: 6, xs: 12 }} key={items?.id}>
-              <HoverScaleUpDown scale={1.05}>
-                <Card
-                  sx={{
-                    p: { lg: 2, xs: 2 },
-                    borderRadius: 8,
-                    backgroundImage:
-                      "linear-gradient(to bottom, #2d2d2d, #171717)",
-                    outline: "#FFFFFF",
-                  }}
-                >
-                  <Stack direction="row">
-                    <Stack>
-                      <Typography
-                        color="#fff"
-                        fontFamily={"Red Hat Display"}
-                        fontSize={"1.5rem"}
-                        fontWeight={"bold"}
-                        textAlign="left"
-                      >
-                        {items?.heading}
-                      </Typography>
-                      <Typography
-                        color="#FFFFFF"
-                        fontFamily={"Red Hat Display"}
-                        fontSize={"1.125rem"}
-                        textAlign="left"
-                        sx={{ opacity: "70%" }}
-                      >
-                        {items?.description}
-                      </Typography>
-                    </Stack>
-                    <Stack>
-                      <Image src={items?.icon} alt={items?.heading} />
-                    </Stack>
-                  </Stack>
-                </Card>
-              </HoverScaleUpDown>
+            <Grid size={{ lg: 3, md: 6, xs: 12 }} key={items?.id}>
+              <Card
+                sx={{
+                  height: "27.125rem",
+                  pt: 12,
+                  pb: 1,
+                  px: 3,
+                  //           boxShadow: `
+                  //   5px 8px 16px rgba(52, 137, 123, 100),
+                  //   -5px 4px 8px rgba(239, 75, 203, 100)
+                  // `,
+                  boxShadow: 10,
+                }}
+              >
+                <Stack alignItems="center" spacing={3}>
+                  <Image src={items?.icon} alt={items?.heading} />
+                  <Typography
+                    fontSize={"1.5rem"}
+                    fontFamily="Manrope"
+                    fontWeight={700}
+                    sx={{
+                      background:
+                        "radial-gradient(circle at top left, #EF4BCB 0%,  #34897B 100%)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                      color: "transparent",
+                    }}
+                  >
+                    {items?.heading}
+                  </Typography>
+                  <Typography
+                    color="#646464"
+                    fontSize={"1.2rem"}
+                    fontFamily="Manrope"
+                    textAlign="left"
+                  >
+                    {items?.description}
+                  </Typography>
+                </Stack>
+              </Card>
             </Grid>
           ))}
         </Grid>

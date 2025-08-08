@@ -31,6 +31,8 @@ export { default as PatternImage } from "./Pattern.png";
 export { default as PayInstantlyImage } from "./PayInstantly.svg";
 export { default as VerifiedDataImage } from "./VerifiedData.svg";
 export { default as CentsPayIcon } from "./CentsPayIcon.svg";
+export { default as FinancialDataIcon } from "./FinancialDataIcon.svg";
+export { default as AccountConnectivityIcon } from "./AccountConnectivityIcon.svg";
 export { default as BuiltInSecurityImage } from "./BuiltInSecurityImage.svg";
 export { default as DeveloperReadyImage } from "./DeveloperReadyImage.svg";
 export { default as FullyScalableImage } from "./FullyScalableImage.svg";
@@ -64,3 +66,9 @@ export { default as RightArrowIcon } from "./RightArrowIcon.svg";
 export { default as CEOImage } from "./CEOImage.svg";
 export { default as VectorIcon } from "./VectorIcon.svg";
 export { default as LastSectionBackgroundImage } from "./LastSectionBackgroundImage.svg";
+export { default as HeroSectionCover } from "./HeroSectionCover.svg";
+export { default as ServicesCard } from "./ServicesCard.svg";
+export { default as WhoWeAreImage } from "./WhoWeAreImage.svg";
+
+
+

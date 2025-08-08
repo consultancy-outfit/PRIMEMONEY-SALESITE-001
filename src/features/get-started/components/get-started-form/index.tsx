@@ -14,63 +14,69 @@ const GetStartedForm = () => {
   const { methods, handleSubmit, submitContactUs, isLoading } = useGetStarted();
 
   return (
-    <Container>
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <HeadingText
         variant="h4"
         fontWeight="fontWeightMedium"
-        color="common.white"
+        color="common.dark"
+        customStyles={{ textAlign: "center" }}
       >
-        Create Your Account
+        Begin Your Journey with Prime Money
       </HeadingText>
       <SubHeadingText
         variant="subtitle2"
-        color="grey.600"
+        color="grey.500"
         fontWeight="fontWeightThin"
-        customStyles={{ py: 2 }}
+        customStyles={{ py: 2, textAlign: "center" }}
       >
-        Join us and unlock full access to our platform.
+        Join thousands using secure, real-time financial access. Whether you're
+        a developer, fintech business, or individual — our platform helps you
+        connect, innovate, and thrive.
       </SubHeadingText>
-      <Box>
-        <SubHeadingText variant="subtitle2" color="grey.600">
-          Fast & Secure
-        </SubHeadingText>
-        <SubHeadingText
-          variant="subtitle2"
-          color="grey.600"
-          fontWeight="fontWeightThin"
-        >
-          Register now to explore powerful features, manage your profile, and
-          get started in just a few clicks.
-        </SubHeadingText>
-      </Box>
       <br />
-      <CustomFormProvider
-        methods={methods}
-        onSubmit={handleSubmit(submitContactUs)}
+      <Box
+        sx={{
+          mt: 2,
+          width: "100%",
+          background: "#F7F5F9",
+          borderRadius: 2,
+          p: 2,
+          mb: 2,
+        }}
       >
-        <FormGrid formFieldsList={contactUsFormFields} size="large" />
-        <br />
-        <CommonLoadingButton
-          variant="contained"
-          color="primary"
-          type="submit"
-          size="large"
-          loading={isLoading}
-          disabled={isLoading}
-          customStyles={{ p: "1rem 1.5rem", fontSize: 20, borderRadius: 12 }}
+        <CustomFormProvider
+          methods={methods}
+          onSubmit={handleSubmit(submitContactUs)}
         >
-          {isLoading ? <CommonCircularProgress /> : "Submit"}
-        </CommonLoadingButton>
-        <CustomText
-          variant="body1"
-          color="grey.600"
-          fontWeight="fontWeightThin"
-          customStyles={{ textAlign: "center", marginTop: 2 }}
-        >
-          By submitting this form, Your journey with Real Money begins now.
-          We’ll reach out soon to support your success
-        </CustomText>
-      </CustomFormProvider>
+          <FormGrid formFieldsList={contactUsFormFields} size="large" />
+          <br />
+          <CommonLoadingButton
+            variant="contained"
+            color="primary"
+            type="submit"
+            size="large"
+            loading={isLoading}
+            disabled={isLoading}
+            customStyles={{
+              backgroundColor: "common.dark",
+              borderColor: "common.dark",
+              fontSize: "18px",
+              color: "common.white",
+              mt: 1,
+            }}
+            fullWidth
+          >
+            {isLoading ? <CommonCircularProgress /> : "Submit"}
+          </CommonLoadingButton>
+        </CustomFormProvider>
+      </Box>
     </Container>
   );
 };
