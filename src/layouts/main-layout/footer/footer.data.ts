@@ -1,8 +1,9 @@
 export const products = [
-  { id: 1, link: "#", label: "Smart Bank Data Layer" },
-  { id: 2, link: "#", label: "Identity & Compliance" },
-  { id: 3, link: "#", label: "Accountant Help Squad" },
-  { id: 4, link: "#", label: "Centspay" },
+  { id: 1, link: "/products/financial-data-intelligence", label: "Financial Data Intelligence" },
+  { id: 2, link: "/products/embedded-payments-and-account-connectivity", label: "Embedded Payments & Account Connectivity" },
+  { id: 3, link: "/products/identity-access-and-compliance", label: "Identity, Access & Compliance" },
+  { id: 4, link: "/products/accountant-help-squad", label: "Accountant Help Squad" },
+  { id: 5, link: "/products/centspay", label: "Centspay" },
 ];
 
 export const about = [
