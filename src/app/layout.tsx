@@ -52,10 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${outfitFontFamily.className} subpixel-antialiased`}
-        style={{ backgroundColor: "#010101" }}
-      >
+      <body className={`${outfitFontFamily.className} subpixel-antialiased`}>
         <RootProvidersLayout>{children}</RootProvidersLayout>
       </body>
     </html>
