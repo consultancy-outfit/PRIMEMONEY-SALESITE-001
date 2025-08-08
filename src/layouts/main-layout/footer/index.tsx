@@ -20,7 +20,7 @@ const Footer = () => {
       }}
     >
       <Stack direction={"row"} flexWrap={"wrap"} gap={2}>
-        <Stack alignItems={"flex-start"} maxWidth={300} gap={2}>
+        <Stack alignItems={"flex-start"} maxWidth={450} gap={2}>
           <LogoAvatar height="auto" isCenter={false} isLight />
 
           <Typography
