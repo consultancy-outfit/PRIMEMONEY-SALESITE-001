@@ -5,47 +5,57 @@ import {
   Card3Image,
   Card4Image,
   Card5Image,
+  Card6Image,
 } from "../../assets";
 
 export const cardData = [
   {
     id: 1,
-    heading: "Smarter Lending with Real-Time Bank Insights",
+    heading: "Transform Bank Transactions into Predictive Insights",
     description:
-      "A digital lending platform wants to enhance its underwriting model to serve customers with limited credit histories.",
+      "Prime Moneys Data Intelligence suite turns raw financial transactions into enriched, structured, and highly actionable insights. Its ideal for credit scoring, budgeting apps, expense trackers, and embedded finance products where decision-making is key.",
     image: Card1Image.src,
-    readMoreUrl: USE_CASE_DETAIL_ROUTES?.REAL_TIME_BANK_INSIGHTS,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.PREDICTIVE_INSIGHTS,
   },
   {
     id: 2,
-    heading: "Frictionless Onboarding for Fintech Apps",
+    heading: "Build Seamless Payment Journeys with Direct Bank Integration",
     description:
-      "A growing fintech app seeks to streamline its onboarding and KYC process while meeting UK regulatory standards.",
+      "Todays users expect instant, intuitive, and secure payments — without detours through third-party apps or outdated interfaces. Thats where embedded finance makes the difference. With Prime Moneys Embedded Payments & Account Connectivity,",
     image: Card2Image.src,
-    readMoreUrl: USE_CASE_DETAIL_ROUTES?.FINTECH_APPS,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.DIRECT_BANK_INTEGRATION,
   },
   {
     id: 3,
-    heading: "Streamlining Business Payments with AHS",
+    heading: "Bank-Verified Identity and Compliance in One API",
     description:
-      "A medium-sized enterprise needs to modernize its financial operations, replacing spreadsheets and manual tools with automated, accurate, and scalable systems.",
+      "Simplify and accelerate user onboarding by using bank-level identity data. Prime Money helps you ensure only legitimate users access your services—cutting fraud and ensuring compliance without costly KYC teams.",
     image: Card3Image.src,
-    readMoreUrl: USE_CASE_DETAIL_ROUTES?.PAYMENTS_WITH_AHS,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.ONE_API,
   },
   {
     id: 4,
-    heading: "Cross-Border P2P Transfers for Remote Teams",
+    heading: "Scalable Finance Automation for Startups & SMEs",
     description:
-      "A globally distributed startup requires a flexible, instant, and affordable way to pay freelancers and contractors across multiple countries and currencies.",
+      "Accountant HelpSquad provides intelligent financial management tools tailored for modern businesses. With plug-and-play modules for payable/receivable automation, cash flow predictions, and expense control, it replaces manual spreadsheets with AI-driven finance infrastructure.",
     image: Card4Image.src,
-    readMoreUrl: USE_CASE_DETAIL_ROUTES?.REMOTE_TEAMS,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.STARTUPS_AND_SMES,
   },
   {
     id: 5,
-    heading: "Regulated Payments with Consent Control",
+    heading: "Powering Next-Gen Wallets for the Everyday User",
     description:
-      "A corporate payment platform needs to enable its users to make direct bank payments while managing compliance, permissions, and audit trails.",
+      "Centspay enables you to build smart, flexible, and secure wallets with native multi-currency, micro-transactions, P2P features, and savings tools. Its modular APIs help you launch standalone wallets or embed wallet tech inside your fintech product.",
     image: Card5Image.src,
-    readMoreUrl: USE_CASE_DETAIL_ROUTES?.PRECISION_CONSENT,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.EVERYDAY_USER,
+  },
+  {
+    id: 6,
+    heading:
+      "Redefining Digital Trust: Seamless Identity Verification & Consent Control",
+    description:
+      "In todays digital financial ecosystem, trust is currency. Customers demand secure, seamless, and compliant onboarding experiences — and regulators  move fast, without breaking trust.",
+    image: Card6Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.CONSENT_CONTROL,
   },
 ];
