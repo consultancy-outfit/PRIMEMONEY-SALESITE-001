@@ -1,10 +1,6 @@
-import { AboutUsFeature } from "@/features/about-us";
-import { Stack } from "@mui/material";
+"use client";
+import AboutUsNewFeature from "@/features/about-us/components/about-us-new-feature";
 
 export default function AboutUs() {
-  return (
-    <Stack alignItems="center">
-      <AboutUsFeature />
-    </Stack>
-  );
+  return <AboutUsNewFeature />;
 }

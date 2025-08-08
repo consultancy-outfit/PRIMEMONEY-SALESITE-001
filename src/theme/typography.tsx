@@ -13,7 +13,7 @@ export const typography = {
   fontWeightExtraBold: 800,
   fontWeightBlack: 900,
   h1: {
-    fontSize: pxToRem(84),
+    fontSize: pxToRem(76),
   },
   h2: {
     fontSize: pxToRem(60),
