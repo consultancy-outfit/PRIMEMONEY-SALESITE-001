@@ -11,12 +11,12 @@ export const HeroSection = () => {
         alignItems={"center"}
         justifyContent={"center"}
         gap={2}
-        px={2}
-        m={2}
+        p={2}
       >
         <Typography
           variant="h2"
-          fontWeight={600}
+          fontWeight={800}
+          fontSize={"60px"}
           width={"70%"}
           textAlign={"center"}
         >

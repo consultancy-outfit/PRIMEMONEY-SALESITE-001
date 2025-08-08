@@ -6,7 +6,7 @@ export const CommonDetail = (props: any) => {
   const { detailsKeyPoints, detailsNumberPoints, detailsCheckPoints } = props;
 
   return (
-    <Box display={'flex'} flexDirection={'column'} gap={5} mt={8}>
+    <Box display={'flex'} flexDirection={'column'} gap={6} mt={8}>
       <Box  px={6}>
         <Typography fontWeight={700} fontSize={"32px"}>
           {detailsCheckPoints.heading}

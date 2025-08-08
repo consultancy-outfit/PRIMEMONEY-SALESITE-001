@@ -6,7 +6,6 @@ import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import { cardData } from "./UseCaseCards.data";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { LinkButton } from "@/components/buttons/link-button";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
@@ -20,7 +19,6 @@ export const UseCaseCards = () => {
       flexWrap={"wrap"}
       gap={8}
       p={2}
-      my={5}
     >
       {cardData.map((item: any) => (
         <Card sx={{ maxWidth: 420,borderRadius:'16px' }} key={item.id}>
