@@ -4,11 +4,8 @@ import RootProvidersLayout from "@/layouts/root-providers-layout";
 import { outfitFontFamily } from "@/assets/fonts/outfit";
 
 export const metadata: Metadata = {
-  title:
-    "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
-  description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-    Save smarter, spend globally, and send money in real-time with full security and control.
-    From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+  title: "Prime Money | Smart Financial Solutions for the Modern Economy",
+  description: `Prime Money offers innovative tools for smarter money management. From digital payments and savings to real-time insights and secure financial services, we help individuals and businesses take control of their finances.`,
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -33,11 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
-    description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-      Save smarter, spend globally, and send money in real-time with full security and control.
-      From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+    title: "Prime Money | Smart Financial Solutions for the Modern Economy",
+    description: `Prime Money offers innovative tools for smarter money management. From digital payments and savings to real-time insights and secure financial services, we help individuals and businesses take control of their finances.`,
     type: "website",
     images: [
       {
@@ -45,9 +39,7 @@ export const metadata: Metadata = {
         type: "image/png",
         width: 1200,
         height: 630,
-        alt: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-          Save smarter, spend globally, and send money in real-time with full security and control.
-          From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+        alt: `Prime Money offers innovative tools for smarter money management. From digital payments and savings to real-time insights and secure financial services, we help individuals and businesses take control of their finances.`,
       },
     ],
   },
