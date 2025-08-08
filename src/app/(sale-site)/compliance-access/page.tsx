@@ -1,5 +1,5 @@
-import { ComplianceAccessFeature } from "@/features/products/components";
+"use client";
 
 export default function PartnerWithUs() {
-  return <ComplianceAccessFeature />;
+  return <></>;
 }

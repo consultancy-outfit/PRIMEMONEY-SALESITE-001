@@ -1,9 +1,8 @@
 "use client";
 import { Button } from "@mui/material";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { LinkButtonPropsI } from "../buttons.interface";
-import { motion } from "framer-motion";
-import { pxToRem } from "@/utils/styles";
 
 const MotionButton = motion.create(Button);
 
@@ -28,9 +27,6 @@ export const LinkButton = (props: LinkButtonPropsI) => {
         disableElevation
         className="small"
         sx={{
-          padding: "0.75rem 1.5rem",
-          borderRadius: pxToRem(40),
-          perspective: "1000px",
           ...customStyles,
         }}
         color={color}
@@ -41,6 +37,9 @@ export const LinkButton = (props: LinkButtonPropsI) => {
         fullWidth={fullWidth}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300 }}
+        disableRipple
+        disableFocusRipple
+        disableTouchRipple
       >
         {children}
       </MotionButton>

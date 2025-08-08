@@ -1,4 +1,4 @@
-import { IdentityKycFeature } from "@/features/products/components";
+"use client";
 export default function PartnerWithUs() {
-  return <IdentityKycFeature />;
+  return <></>;
 }

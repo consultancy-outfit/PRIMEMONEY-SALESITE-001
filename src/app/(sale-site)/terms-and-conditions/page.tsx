@@ -1,3 +1,4 @@
+"use client";
 import { Stack, Typography } from "@mui/material";
 
 export default function TermsAndConditionsPolicy() {
@@ -50,7 +51,7 @@ export default function TermsAndConditionsPolicy() {
             textAlign="left"
             align="justify"
           >
-            {` Welcome to FA Global. These Terms and Conditions ("Terms") govern your access to and use of our website, services, and digital platforms operated by Real Money ("we," "us," or "our"). By using our services, you agree to be bound by these Terms.`}
+            {` Welcome to FA Global. These Terms and Conditions ("Terms") govern your access to and use of our website, services, and digital platforms operated by FA Global ("we," "us," or "our"). By using our services, you agree to be bound by these Terms.`}
           </Typography>
         </Stack>
         <Stack spacing={1}>
@@ -101,6 +102,7 @@ export default function TermsAndConditionsPolicy() {
               fontSize={"1.25rem"}
               textAlign="left"
               component={"li"}
+              key={items}
             >
               {items}
             </Typography>
@@ -133,6 +135,7 @@ export default function TermsAndConditionsPolicy() {
               fontSize={"1.25rem"}
               textAlign="left"
               component={"li"}
+              key={items}
             >
               {items}
             </Typography>
@@ -155,7 +158,7 @@ export default function TermsAndConditionsPolicy() {
             textAlign="left"
           >
             All content on our site and services—including text, graphics,
-            logos, software, and trademarks—is the property of Real Money or its
+            logos, software, and trademarks—is the property of  FA Global  or its
             licensors and is protected by intellectual property laws. You may
             not copy, distribute, or use it without prior written permission.
           </Typography>
@@ -208,6 +211,7 @@ export default function TermsAndConditionsPolicy() {
               fontSize={"1.25rem"}
               textAlign="left"
               component={"li"}
+              key={items}
             >
               {items}
             </Typography>
@@ -229,7 +233,7 @@ export default function TermsAndConditionsPolicy() {
             fontSize={"1.25rem"}
             textAlign="left"
           >
-            To the maximum extent permitted by law, Real Money shall not be
+            To the maximum extent permitted by law,  FA Global  shall not be
             liable for any indirect, incidental, special, or consequential
             damages, or loss of data, arising from your use of our services.
           </Typography>
@@ -293,7 +297,7 @@ export default function TermsAndConditionsPolicy() {
             textAlign="left"
           >
             If you have any questions or concerns about these Terms of Service,
-            please reach out to us at info@realmoney.co.uk
+            please reach out to us at info@faglobalkfinance.com
           </Typography>
         </Stack>
       </Stack>

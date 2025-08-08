@@ -40,7 +40,7 @@ function AboutUsNewFeature() {
             remove friction from traditional systems and make finance faster,
             safer, and more transparent.{" "}
           </Typography>
-          <Grid container spacing={4}>
+          <Grid container spacing={4} mt={5}>
             <Grid size={{ xs: 12, md: 6 }}>
               <Paper
                 variant="elevation"

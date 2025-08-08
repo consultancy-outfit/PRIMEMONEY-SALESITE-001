@@ -1,5 +1,6 @@
-import { AccountHelpSquadFeature } from "@/features/products/components";
 
+
+"use client";
 export default function PartnerWithUs() {
-  return <AccountHelpSquadFeature />;
+  return <></>;
 }
