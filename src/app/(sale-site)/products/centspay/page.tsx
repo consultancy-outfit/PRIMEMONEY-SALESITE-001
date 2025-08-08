@@ -1,7 +1,7 @@
 "use client";
 
-import { FinancialDataIntelligenceFeature } from "@/features/products/components";
+import { CentsPayFeature } from "@/features/products/components";
 
 export default function CentsPayProducts() {
-  return <FinancialDataIntelligenceFeature />;
+  return <CentsPayFeature />;
 }
