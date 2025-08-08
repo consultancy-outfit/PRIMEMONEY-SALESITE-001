@@ -7,6 +7,8 @@ import { HeadingText } from "@/components/text/heading-text";
 import { CustomText } from "@/components/text/custom-text";
 import { CommonCard } from "@/components/cards/common-card";
 import { shadowImage1, shadowImage2 } from "@/assets/images/common/ui-states";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
+import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
 
 export const ContactUsFeature = () => {
   return (
@@ -16,7 +18,7 @@ export const ContactUsFeature = () => {
           position: "relative",
           background: "#010101",
           overflow: "hidden",
-          minHeight: { md: "90dvh", xs: "70dvh" },
+          minHeight: { xxl: "80dvh", lg: "110dvh", xs: "80dvh" },
           borderBottomLeftRadius: 8,
           borderBottomRightRadius: 8,
         }}
@@ -49,35 +51,49 @@ export const ContactUsFeature = () => {
         </Box>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            position: "relative",
+            position: "absolute",
+            bottom: { lg: 180, xs: "unset" },
+            top: { lg: "unset", xs: 10 },
+            left: 0,
             zIndex: 2,
-            p: { lg: 15, md: 6, xs: 2 },
-            flexWrap: "wrap",
+            p: { lg: 15, md: 10, xs: 2 },
           }}
         >
-          <HeadingText
-            variant="h1"
-            color={"common.white"}
-            customStyles={{
-              width: { xl: "45%", lg: "60%", xs: "100%" },
-            }}
-          >
-            Let’s Build the Future of Finance—Together
-          </HeadingText>
-          <CustomText
-            variant="subtitle1"
-            color={"grey.400"}
-            customStyles={{
-              width: { xl: "25%", lg: "35%", xs: "100%" },
-              textAlign: "right",
-              mt: { lg: 20, xs: 2 },
-            }}
-          >
-            Have questions? We’re here to help. Reach out and let’s connect.
-          </CustomText>
+          <ScaleInView>
+            <HeadingText
+              variant="h1"
+              color={"common.white"}
+              customStyles={{
+                width: { lg: "45%", xs: "100%" },
+                textAlign: "start",
+              }}
+            >
+              Let’s Build the Future of Finance—Together
+            </HeadingText>
+          </ScaleInView>
+        </Box>
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: { lg: 290, md: 300, xs: 240 },
+            right: 0,
+            zIndex: 2,
+            py: { lg: 5, xs: 2 },
+            px: 4,
+          }}
+        >
+          <ScaleInView>
+            <CustomText
+              variant="subtitle1"
+              color={"grey.400"}
+              customStyles={{
+                width: { lg: "75%", xs: "100%" },
+                textAlign: "right",
+              }}
+            >
+              Have questions? We’re here to help. Reach out and let’s connect.
+            </CustomText>
+          </ScaleInView>
         </Box>
       </Box>
       <CommonCard
@@ -85,7 +101,7 @@ export const ContactUsFeature = () => {
         customStyles={{
           position: "relative",
           zIndex: 2,
-          mt: { lg: -20, md: -30, sm: -30, xs: -20 },
+          mt: { md: -30, xs: -25 },
           px: { xs: 2, md: 6 },
           width: "90%",
           mx: "auto",
@@ -93,7 +109,9 @@ export const ContactUsFeature = () => {
           mb: 10,
         }}
       >
-        <ContactForm />
+        <SlideUpInView>
+          <ContactForm />
+        </SlideUpInView>
       </CommonCard>
     </>
   );

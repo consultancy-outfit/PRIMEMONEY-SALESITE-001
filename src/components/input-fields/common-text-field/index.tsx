@@ -26,6 +26,7 @@ export const CommonTextField = (props: any) => {
     id = name,
     required = false,
     labelColor = "grey.600",
+    sx = {},
     ...other
   } = props;
 
