@@ -23,7 +23,7 @@ export const UseCaseCards = () => {
       my={5}
     >
       {cardData.map((item: any) => (
-        <Card sx={{ maxWidth: 420, bgcolor:'black' }} key={item.id}>
+        <Card sx={{ maxWidth: 420,borderRadius:'16px' }} key={item.id}>
           <SlideUpInView>
             <CardActionArea>
               <CardMedia
@@ -33,10 +33,10 @@ export const UseCaseCards = () => {
                 alt="green iguana"
               />
               <CardContent>
-                <Typography fontSize={"22px"} fontWeight={600} color="white">
+                <Typography fontSize={"22px"} fontWeight={600}>
                   {item.heading}
                 </Typography>
-                <Typography fontSize={"16px"} fontWeight={400} color="white">
+                <Typography fontSize={"16px"} fontWeight={400}>
                   {item.description}
                 </Typography>
               </CardContent>
@@ -48,8 +48,8 @@ export const UseCaseCards = () => {
                 link={item.readMoreUrl}
                 customStyles={{
                   borderRadius: "5px",
-                  border: `1.5px solid ${'rgba(108, 1, 255, 1)'}`,
-                  color:'rgba(108, 1, 255, 1)',
+                  backgroundColor: "rgba(34, 34, 34, 1)",
+                  color: "white",
                   px: "24px",
                   py: "8px",
                   height: "50px",
@@ -58,8 +58,7 @@ export const UseCaseCards = () => {
                   justifyContent: "center",
                   width: "fit-content",
                 }}
-                endIcon={<ArrowForwardIcon />}
-                variant="outlined"
+                variant="contained"
               >
                 Read more
               </LinkButton>
