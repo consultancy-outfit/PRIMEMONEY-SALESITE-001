@@ -1,3 +1,4 @@
+"use client";
 import Footer from "./footer";
 import { Header } from "./header";
 
@@ -7,7 +8,7 @@ export const MainLayout = (props: any) => {
   return (
     <>
       <Header />
-      <main >{children}</main>
+      <main style={{ backgroundColor: "#ffffff" }}>{children}</main>
       <Footer />
     </>
   );

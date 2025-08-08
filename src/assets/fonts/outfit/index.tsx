@@ -1,6 +1,6 @@
-import { Red_Hat_Display } from "next/font/google";
+import { Manrope } from "next/font/google";
 
-export const outfitFontFamily = Red_Hat_Display({
+export const outfitFontFamily = Manrope({
   variable: "--font-outfit",
   display: "swap",
   subsets: ["latin"],

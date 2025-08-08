@@ -1,5 +1,5 @@
 const primary = {
-  main: "#FFFFFF",
+  main: "#222222",
   light: `#6E7191`,
   dark: "#FFFFFF",
   lighter: "#6E7191",
@@ -11,8 +11,8 @@ const secondary = {
 };
 
 const text = {
-  primary: "#2F2F2F",
-  secondary: "#292929",
+  primary: "#222222",
+  secondary: "#646464",
 };
 
 const success = {

@@ -157,18 +157,20 @@ export const Header = () => {
           // transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
-          backgroundColor: theme.palette.common.black,
+          backgroundColor: theme.palette.common.white,
           top: 20,
           padding: "1.5rem 1rem",
+          borderRadius: 16,
         });
       } else {
         controls.start({
-          width: "90%",
+          width: "100%",
           transition: { duration: 0.4 },
           boxShadow: "none",
-          backgroundColor: theme.palette.common.black,
+          backgroundColor: theme.palette.common.white,
           top: 0,
           padding: "2.5rem 1rem",
+          borderRadius: 0,
         });
       }
     });
@@ -192,7 +194,7 @@ export const Header = () => {
       <motion.div
         animate={controls}
         initial={{
-          width: "90%",
+          width: "100%",
           boxShadow: "none",
           top: 0,
         }}
@@ -206,8 +208,9 @@ export const Header = () => {
           justifyContent: "space-between",
           padding: "2.5rem 1rem",
           margin: "0 auto",
-          borderRadius: 16,
+          borderRadius: 0,
           height: 80,
+          backgroundColor: theme.palette.common.white,
         }}
       >
         <Box>
@@ -230,8 +233,8 @@ export const Header = () => {
 
             const textColor = theme
               ? isActiveParent
-                ? theme.palette.primary.main
-                : theme.palette.common.white
+                ? theme.palette.common.black
+                : theme.palette.common.black
               : "inherit";
 
             if (item.title === "Products") {
@@ -245,6 +248,10 @@ export const Header = () => {
                     aria-haspopup="true"
                     aria-expanded={openProductsMenu ? "true" : undefined}
                     onClick={handleProductsClick}
+                    disableFocusRipple
+                    disableRipple
+                    disableElevation
+                    disableTouchRipple
                     sx={{
                       textTransform: "none",
                       color: textColor,
@@ -602,11 +609,9 @@ export const Header = () => {
           >
             <LinkButton
               link={APP_ROUTES?.PARTNER_WITH_US}
-              variant="outlined"
+              variant="text"
               color="secondary"
               customStyles={{
-                borderRadius: "999px",
-                border: "2px solid #464646",
                 px: "24px",
                 py: "8px",
                 height: "50px",
@@ -614,8 +619,8 @@ export const Header = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
-                bgcolor: theme?.palette?.common?.black,
-                color: theme?.palette?.common?.white,
+
+                color: theme?.palette?.common?.black,
               }}
             >
               Login
@@ -623,17 +628,16 @@ export const Header = () => {
             <LinkButton
               link={APP_ROUTES?.Get_STARTED}
               customStyles={{
-                borderRadius: "999px",
-                border: `1.5px solid linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)`,
-                px: "24px",
-                py: "8px",
-                background: "linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)",
+                px: 2,
+                py: 1,
+                background: "#222222",
                 color: theme?.palette?.common?.white,
                 height: "50px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
+                borderRadius: 2,
               }}
             >
               Register
