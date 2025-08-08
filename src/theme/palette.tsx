@@ -39,6 +39,7 @@ const info = {
 
 const grey = {
   0: "#adafca",
+  400: "#DBDBDB",
   500: "#667085",
   600: "#ADAEBA",
 };
@@ -78,6 +79,7 @@ const common = {
   link: "#6B21F3",
   bg_dark: "#272835",
   bg_dull: "#2E2E3E",
+  dark: "#222222",
 };
 
 export const palette = {

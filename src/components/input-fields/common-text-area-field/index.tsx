@@ -5,7 +5,7 @@ import FieldLabel from "../field-label";
 const CommonTextAreaField = (props: any) => {
   const {
     label = "",
-    variant = "outlined",
+    variant = "standard",
     size = "small",
     error = false,
     helperText = "",
