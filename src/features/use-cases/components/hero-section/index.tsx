@@ -19,6 +19,7 @@ export const HeroSection = () => {
           fontSize={"60px"}
           width={"70%"}
           textAlign={"center"}
+          color="rgba(34, 34, 34, 1)"
         >
           Powering Real-World Finance with Flexible Scalable Infrastructure
         </Typography>
@@ -27,6 +28,7 @@ export const HeroSection = () => {
           fontSize={"15px"}
           width={"70%"}
           textAlign={"center"}
+          color="rgba(100, 100, 100, 1)"
         >
           From frictionless onboarding to real-time payments and intelligent
           data enrichment — Prime Money enables innovative financial experiences

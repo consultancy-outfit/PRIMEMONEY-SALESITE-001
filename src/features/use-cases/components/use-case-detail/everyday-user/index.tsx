@@ -15,10 +15,10 @@ export const EverydayUser = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
-          <Typography variant="h2" fontWeight={600}>
+          <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
             Powering Next-Gen Wallets for the Everyday User
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
             In a world where digital interactions define convenience, modern
             users demand more than just a place to store money — they expect
             intelligent, personalised, and frictionless wallet experiences. The
@@ -26,7 +26,7 @@ export const EverydayUser = () => {
             means your digital wallet must go beyond balance checks and basic
             transfers.
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
             Prime Money helps wallet providers power next-generation digital
             wallet solutions tailored for todays mobile-first users. Our suite
             of APIs and data intelligence tools supports everything from KYC
@@ -34,7 +34,7 @@ export const EverydayUser = () => {
             budgeting, and multi-account management — all within one simple
             platform.
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
             Whether you are building a personal wallet, a loyalty-driven spend
             app, or a multifunctional finance hub, Prime Money provides the
             building blocks to create a truly engaging and secure user
