@@ -1,78 +1,250 @@
 "use client";
-import { Box } from "@mui/material";
 import {
-  coreservicesimg1,
-  coreservicesimg2,
-  coreservicesimg3,
-} from "./assets/images";
-import { HeroCustomSection, SectionPanel } from "./components";
+  AccountHelpSquadProductImage,
+  CentsPayProductImage,
+  EmbeddedPaymentsAccountConnectivityProductImage,
+  FinancialDataIntelligenceProductImage,
+  IdentityAccessComplianceProductImage,
+} from "@/assets/images/features/products";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export const ServicesFeature = () => {
-  const sections = [
+  const gridContent = [
     {
-      id: "account-information",
-      title: "Account Information",
-      description: `Empower decisions with real-time banking data.Account Information services (AIS) provide seamless, real-time connectivity to a customer's financial tapestry, including current balances, transaction records, and account identity. This data can be retrieved across multiple banks and accounts, ensuring a 360-degree view of personal or business finances. AIS empowers customers and businesses to make informed decisions by providing real-time data for financial insights. By leveraging robust analytics and AI, we transform raw data into actionable intelligence for budgeting, spending patterns, wealth management tools, and fraud detection engines. With powerful categorization and enrichment layers, the raw data becomes actionable insights in seconds. Our AIS infrastructure supports all types of financial data, including transaction details, account balances, and personal information, allowing for comprehensive financial analysis. Businesses can benefit from enhanced credit assessments, personalized product offerings, and automated reconciliation, leading to improved cash flow forecasting and optimizing working capital. Consumers enjoy a holistic view of their finances, simplified budgeting, and personalized financial advice. AIS enables smarter financial experiences from the ground up.`,
-      features: [
-        "Up to the minute Account Balances",
-        "Full Transaction History Retrieval",
-        "Multi-Bank Data Aggregation",
-        "Verified Account Ownership",
-        "Smart Spending & Budget Analysis",
-        "Recognition of Recurring Payments",
-        "Dynamic Expense Management",
-        "Full PSD2 Regulatory Alignment",
-        "Broadcast & Full Banking Network",
-      ],
-      imageUrl: coreservicesimg1.src,
+      id: 1,
+      sectionImage: FinancialDataIntelligenceProductImage,
+      title: "Smarter Data. Sharper Insights.",
+      subtitle: "Financial Data Intelligence",
+      hrefLink: "/products/financial-data-intelligence",
+      description: (
+        <>
+          Unlock the power of enriched financial data to fuel precision,
+          personalisation, and performance. With Prime Money’s Financial Data
+          Intelligence suite, raw bank feeds are transformed into meaningful,
+          categorised, and contextualised insights—enabling you to build more
+          responsive, relevant, and responsible financial products. Whether
+          you’re building a PFM app, credit engine, or financial planning tool,
+          our APIs give you the clarity and context needed to act decisively. Go
+          beyond balances. Detect trends, behaviors, and opportunities in real
+          time. Our tools help you assess risk faster, personalise customer
+          journeys, and unlock deeper customer understanding with every
+          transaction. Built for speed, accuracy, and insight at scale.
+        </>
+      ),
     },
     {
-      id: "secure-payment-initiation",
-      title: "Secure Payment Initiation",
-      description: `Initiate payments instantly. No cards. No delays.
-        Empower users and businesses to initiate secure, real-time payments directly from their bank accounts. Payment Initiation Services (PIS) eliminate the friction of traditional card processing, offering a faster and more cost-effective alternative. Our secure payment gateway ensures every transaction is protected, reducing the risk of fraud and chargebacks. Instant payment confirmations enhance cash flow and provide immediate proof of payment. PIS is ideal for a wide range of uses, from e-commerce checkouts and utility bill payments to peer-to-peer transfers and financial vehicle disbursements. Refunds are streamlined, and payment disputes are minimized. By directly linking to bank accounts, PIS services offer a seamless and integrated payment experience, minimizing reconciliation efforts and improving overall financial efficiency. Experience simpler, safer, and smarter payments with PIS.`,
-      features: [
-        "Instant Bank Transfers",
-        "One-Off & Recurring Payments",
-        "Strong Customer Authentication (SCA)",
-        "Payment Status Tracking",
-        "Refund Handling",
-        "Customizable Consent Flows",
-        "Compliance with PSD2 Regulations",
-        "Integrated Payment UX/UI",
-        "Developer-Friendly APIs",
-      ],
-      imageUrl: coreservicesimg2.src,
+      id: 2,
+      sectionImage: EmbeddedPaymentsAccountConnectivityProductImage,
+      title: "Simplify payments. Boost conversion. Delight users.",
+      subtitle: "Embedded Payments & Account Connectivity",
+      hrefLink: "/products/embedded-payments-account-connectivity",
+      description: (
+        <>
+          Prime Money’s Embedded Payments & Account Connectivity tools allow you
+          to embed frictionless, compliant, and secure payment infrastructure
+          directly into your digital experience. Instead of routing through
+          cards or third-party processors, you gain the power to connect to user
+          bank accounts, initiate bank-to-bank payments, and manage
+          subscriptions through one unified platform. With built-in regulatory
+          compliance (PSD2, FCA, SCA), low latency APIs, and smart fallback
+          mechanisms, you can build with confidence while focusing on user
+          experience and scale. Ideal for platforms with high transaction
+          volumes, recurring revenue models, or custom payment workflows.
+        </>
+      ),
     },
     {
-      id: "bank-connectivity-data-aggregation",
-      title: "Bank Connectivity & Data Aggregation",
-      description: `Connect Once. Scale everywhere. Built to open finance.
-        Experience seamless connectivity to an extensive network of banks through our robust and high-speed API integrations. Our platform ensures seamless connectivity with both traditional and challenger banks across multiple regions, simplifying data retrieval and aggregation. Leverage our unified API to integrate with diverse financial institutions, enabling real-time access to critical financial data. The platform unifies fragmented data into a consistent format, optimizing monitoring and smart routing to ensure reliability and performance, even during high-demand periods. With advanced security and encryption protocols, we ensure the integrity and confidentiality of all data, providing a secure and reliable foundation for financial services. Designed for developers and businesses alike, our hassle-free connectivity minimizes technical efforts so you can innovate with confidence. Scale globally as we handle the infrastructure behind the scenes.`,
-      features: [
-        "Access to Major UK & EU Banks",
-        "Uptime Monitoring & Connection Health",
-        "Multi-Bank Data Aggregation Capabilities",
-        "Unified Data Normalization Layer",
-        "Developer-Friendly SDKs & Sandbox",
-        "Smart Routing & Failover Support",
-        "Instant Onboarding & Connectivity",
-      ],
-      imageUrl: coreservicesimg3.src,
+      id: 3,
+      sectionImage: IdentityAccessComplianceProductImage,
+      title: "Verify trust. Prove control. Stay compliant.",
+      subtitle: "Identity, Access & Compliance",
+      hrefLink: "/products/identity-access-and-compliance",
+      description: (
+        <>
+          In a regulated financial environment, identity verification and
+          compliance aren&apos;t just requirements—they’re the foundation of
+          trust. Prime Money empowers your platform with secure, bank-level
+          identity verification, real-time account ownership checks, seamless
+          consent flows, and ongoing compliance with PSD2, FCA, and global KYC
+          regulations. Whether you&apos;re onboarding new users, enabling
+          payments, or monitoring account access, our APIs reduce friction while
+          keeping you audit-ready. Say goodbye to manual document uploads, slow
+          verifications, and fragmented compliance workflows—this suite gives
+          you control without compromising user experience.
+        </>
+      ),
+    },
+    {
+      id: 4,
+      sectionImage: AccountHelpSquadProductImage,
+      title: "The back-office backbone for smarter business operations.",
+      subtitle: "Account HelpSquad",
+      hrefLink: "/products/account-help-squad",
+      description: (
+        <>
+          Prime Money’s Account HelpSquad provides the essential tools and
+          automation layers your platform needs to deliver smart, modern
+          financial operations. Whether you&apos;re serving SMEs, freelancers,
+          or embedded finance ecosystems, this stack simplifies the messy middle
+          of money movement—from invoicing to expense tracking to forecasting.
+          Automate the most time-consuming processes in accounts payable and
+          receivable, generate real-time cash flow insights, and offer your
+          users intuitive tools to manage spend, predict funding needs, and stay
+          in control of their business finances. With plug-and-play APIs, this
+          suite powers finance functions within accounting platforms, business
+          banking apps, and SaaS ecosystems—so your users can work smarter, not
+          harder.
+        </>
+      ),
+    },
+    {
+      id: 5,
+      sectionImage: CentsPayProductImage,
+      title:
+        "Build the wallet of the future with micro, multi, and real-time features.",
+      subtitle: "Centspay",
+      hrefLink: "/products/centspay",
+      description: (
+        <>
+          Centspay gives your platform the tools to deliver next-gen digital
+          wallet experiences—designed to be fast, flexible, and financially
+          smart. Whether you’re launching a consumer-facing app or enhancing
+          existing financial capabilities, Centspay covers everything from
+          real-time micro-payments and round-up savings to seamless
+          multi-currency transactions and peer-to-peer transfers. Empower users
+          to control spending, track behavior, convert currencies instantly, and
+          grow their money with every tap. All services are deeply integrated,
+          mobile-friendly, and built for compliance. With Centspay, your wallet
+          isn’t just digital—it’s dynamic, intelligent, and future-ready.
+        </>
+      ),
     },
   ];
-
   return (
     <>
       <Box sx={{ bgcolor: "#ffffff" }}>
-        <HeroCustomSection
-          subtitle="Centpay"
-          title="Smarter Spending. Instant Transfers. Global Access."
-          description="Centpay is a next-generation digital wallet designed to simplify money management for individuals, students, and businesses. It enables fast, secure transactions with real-time notifications and smart tracking. Users can manage multiple wallets, send and receive funds, and control virtual or physical cards easily from one platform. With built-in budget tools and spend categorisation, users gain deeper insights into their financial habits. Businesses can streamline payouts, assign team cards, and reconcile expenses effortlessly. Students benefit from financial literacy tools, saving goals, and discounts. Centpay also supports multi-currency use, low-cost international transfers, and automated bill splitting. It’s a powerful, flexible, and intelligent wallet built for the modern financial lifestyle."
-          textColor="#FFFFFF"
-        />
-        <SectionPanel sections={sections} />
+        <Stack alignItems="center">
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            pt={15}
+            pb={5}
+            px={15}
+            m={2}
+          >
+            <Typography
+              variant="h2"
+              color="black"
+              fontWeight={800}
+              textAlign={"center"}
+              my={3}
+            >
+              Unlock the Power <br /> of Financial Precision
+            </Typography>
+            <Typography
+              variant="body1"
+              color="grey"
+              sx={{ mb: 3, textAlign: "center" }}
+            >
+              At Prime Money, we don’t just offer financial services we deliver
+              purpose built tools that accelerate growth, automate finance, and
+              empower both businesses and individuals. Whether you&apos;re
+              navigating compliance, optimising payments, or enriching financial
+              data, our services are designed to work seamlessly together or
+              stand strong on their own.
+            </Typography>
+          </Box>
+        </Stack>
       </Box>
+
+      <Grid
+        container
+        spacing={5}
+        sx={{ backgroundColor: "#F2F5F7", px: 15, py: 5 }}
+      >
+        {gridContent.map((item: any, idx: number) => (
+          <React.Fragment key={item?.id}>
+            {idx % 2 === 0 ? (
+              <>
+                {/* Text first, then image */}
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                  <Box sx={{ mb: 3 }}>
+                    <Typography
+                      variant="body1"
+                      fontWeight={600}
+                      sx={{ textTransform: "uppercase" }}
+                    >
+                      {item.title}
+                    </Typography>
+                  </Box>
+                  <Typography variant="h3" fontWeight={600} mb={3}>
+                    {item.subtitle}
+                  </Typography>
+                  <Typography mb={3}>{item.description}</Typography>
+                  <Link href={item.hrefLink}>
+                    <Button
+                      variant="contained"
+                      sx={{ backgroundColor: "black", color: "white", py: 1 }}
+                    >
+                      Explore
+                    </Button>
+                  </Link>
+                </Grid>
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                  <Image
+                    src={item.sectionImage}
+                    alt="HeroSection"
+                    style={{
+                      width: "100%",
+                    }}
+                  />
+                </Grid>
+              </>
+            ) : (
+              <>
+                {/* Image first, then text */}
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                  <Image
+                    src={item.sectionImage}
+                    alt="HeroSection"
+                    style={{
+                      width: "100%",
+                    }}
+                  />
+                </Grid>
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                  <Box sx={{ mb: 3 }}>
+                    <Typography
+                      variant="body1"
+                      fontWeight={600}
+                      sx={{ textTransform: "uppercase" }}
+                    >
+                      {item.title}
+                    </Typography>
+                  </Box>
+                  <Typography variant="h3" fontWeight={600} mb={3}>
+                    {item.subtitle}
+                  </Typography>
+                  <Typography mb={3}>{item.description}</Typography>
+                  <Link href={item.hrefLink}>
+                    <Button
+                      variant="contained"
+                      sx={{ backgroundColor: "black", color: "white", py: 1 }}
+                    >
+                      Explore
+                    </Button>
+                  </Link>
+                </Grid>
+              </>
+            )}
+          </React.Fragment>
+        ))}
+      </Grid>
     </>
   );
 };
