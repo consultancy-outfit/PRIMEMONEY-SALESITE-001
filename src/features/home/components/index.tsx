@@ -7,3 +7,5 @@ export { default as ExpertsTeam } from "./experts-team";
 export { default as Pricing } from "./pricing";
 export { default as RequestDemo } from "./request-demo";
 export { default as RealTimeAccess } from "./2nd-section";
+export { default as GetStartedHome } from "./get-started-home";
+export { default as CoreAdvantagesHome } from "./core-advantages";
