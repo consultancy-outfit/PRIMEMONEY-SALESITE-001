@@ -47,9 +47,10 @@ export const PROJECT_WEB_APP_ROUTES = {
 };
 
 export const USE_CASE_DETAIL_ROUTES = {
-  REAL_TIME_BANK_INSIGHTS: "/use-cases/use-case-detail/real-time-bank-insights",
-  FINTECH_APPS: "/use-cases/use-case-detail/fintech-apps",
-  PAYMENTS_WITH_AHS: "/use-cases/use-case-detail/payments-with-ahs",
-  REMOTE_TEAMS: "/use-cases/use-case-detail/remote-teams",
-  PRECISION_CONSENT: "/use-cases/use-case-detail/precision-consent",
+  ONE_API: "/use-cases/use-case-detail/one-api",
+  CONSENT_CONTROL: "/use-cases/use-case-detail/consent-control",
+  DIRECT_BANK_INTEGRATION: "/use-cases/use-case-detail/direct-bank-integration",
+  EVERYDAY_USER: "/use-cases/use-case-detail/everyday-user",
+  PREDICTIVE_INSIGHTS: "/use-cases/use-case-detail/predictive-insights",
+  STARTUPS_AND_SMES: "/use-cases/use-case-detail/startups-and-smes",
 };
