@@ -1,8 +1,8 @@
 export const products = [
   { id: 1, link: "/products/financial-data-intelligence", label: "Financial Data Intelligence" },
-  { id: 2, link: "/products/embedded-payments-and-account-connectivity", label: "Embedded Payments & Account Connectivity" },
+  { id: 2, link: "/products/embedded-payments-account-connectivity", label: "Embedded Payments & Account Connectivity" },
   { id: 3, link: "/products/identity-access-and-compliance", label: "Identity, Access & Compliance" },
-  { id: 4, link: "/products/accountant-help-squad", label: "Accountant Help Squad" },
+  { id: 4, link: "/products/account-help-squad", label: "Account Help Squad" },
   { id: 5, link: "/products/centspay", label: "Centspay" },
 ];
 
