@@ -1,6 +1,6 @@
 "use client";
 import { banner1, hb1, hb2, hb3 } from "@/assets/images/about-us";
-import IconLeft from "@/assets/images/about-us/icon-left";
+// import IconLeft from "@/assets/images/about-us/icon-left";
 import IconRight from "@/assets/images/about-us/icon-right";
 import {
   CoreAdvantagesHome,
@@ -39,7 +39,13 @@ export default function Home() {
           <Grid container spacing={0}>
             <Grid size={{ xs: 12, md: 5 }}>
               <Stack gap={1}>
-                <Typography fontSize={40} fontWeight={800} color="#222222">
+                <Typography
+                  fontWeight={800}
+                  color="#222222"
+                  sx={{
+                    fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" },
+                  }}
+                >
                   What Our Partners <br /> Say About Us
                 </Typography>
                 <Typography fontSize={20} fontWeight={400} color="#646464">

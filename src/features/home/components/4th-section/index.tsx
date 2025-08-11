@@ -40,7 +40,7 @@ const UseCasesHome = () => {
     },
   ];
   return (
-    <Box sx={{ px: 15, pt: 8, pb: 5 }}>
+    <Box sx={{ px: { xs: 2, md: 10, lg: 15 }, pt: 8, pb: 5 }}>
       <Typography
         color="#222222"
         fontSize="2.8rem"
@@ -48,12 +48,13 @@ const UseCasesHome = () => {
         textAlign="center"
         fontWeight={700}
         py={4}
+        sx={{fontSize: { xs: "1.6rem",sm:"2.2rem", md: "2.8rem" }}}
       >
         Built for Visionaries. Backed by Innovation
       </Typography>
       <Grid container spacing={5}>
         {useCases.map((item, idx) => (
-          <Grid size={{ xs: 12, sm: 4 }} key={item.id}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }} key={item.id}>
             <Stack flexDirection={"row"} gap={3}>
               <Box>
                 <Image

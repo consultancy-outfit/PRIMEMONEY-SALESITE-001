@@ -13,13 +13,13 @@ const Hero = () => {
           backgroundPosition: "center",
           borderRadius: 0,
           height: "46.75rem",
-          px: { lg: 15, xs: 7 },
-          py:10
+          px: { lg: 15, xs: 2 },
+          py: 10,
         }}
       >
         <Stack
           direction={{ lg: "row", xs: "column" }}
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems="center"
           spacing={5}
           height="100%"
@@ -28,7 +28,7 @@ const Hero = () => {
           <Typography
             color="#ffffff"
             fontFamily="Manrope"
-            fontSize={{ lg: "4.75rem", xs: "2.5rem" }}
+            fontSize={{ xl:"4.75rem", lg: "3.75rem", xs: "1.8rem" }}
             fontWeight={700}
             textAlign={{ lg: "left", xs: "center" }}
           >
@@ -51,8 +51,8 @@ const Hero = () => {
                 width: "fit-content",
                 px: 2,
                 py: 1,
-                fontFamily:"Manrope",
-                fontSize:"1.125rem"
+                fontFamily: "Manrope",
+                fontSize: "1.125rem",
               }}
             >
               Explore our products

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const GetStartedHome = () => {
   return (
-    <Box sx={{ px: 15, pt: 8, pb: 5 }}>
+    <Box sx={{ px: { xs: 2, sm: 4, md: 10, lg: 15 }, pt: 8, pb: 5 }}>
       <Grid container spacing={3}>
         <Grid size={{ xs: 12, sm: 6 }}>
           <Box sx={{ textAlign: "left" }}>
@@ -14,19 +14,21 @@ const GetStartedHome = () => {
             </Typography>
             <Typography
               color="#222222"
-              fontSize="2.8rem"
               fontFamily="Manrope"
               textAlign="left"
               fontWeight={700}
-              lineHeight={1}
-              pb={4}
               mt={2}
+              sx={{
+                fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" },
+                lineHeight: { xs: 1, sm: 1.3, md: 1.2 },
+                pb: { xs: 2, sm: 3, md: 4 },
+              }}
             >
               Register with <br /> Prime Money Today
             </Typography>
             <Typography sx={{ color: "#646464" }}>
               Join our platform to access powerful APIs and launch next-gen
-              financial <br /> products.
+              financial products.
             </Typography>
             <Link href="/get-started">
               <Button

@@ -84,22 +84,24 @@ const CoreAdvantagesHome = () => {
   ];
 
   return (
-    <Box sx={{ px: 15, pt: 8, pb: 5 }}>
+    <Box
+      sx={{ px: { xs: 2, sm: 3, md: 5, lg: 15 }, pt: { xs: 2, md: 8 }, pb: 5 }}
+    >
       <Grid container spacing={3}>
-        <Grid size={{ xs: 12, sm: 5 }}>
+        <Grid size={{ xs: 12, sm: 12, md: 4 }}>
           <Box sx={{ textAlign: "left" }}>
             <Typography sx={{ textTransform: "uppercase", color: "#646464" }}>
               Core Advantages
             </Typography>
             <Typography
               color="#222222"
-              fontSize="2.8rem"
               fontFamily="Manrope"
               textAlign="left"
               fontWeight={700}
               lineHeight={1}
               pb={4}
               pt={2}
+              sx={{ fontSize: { xs: "2rem", sm: "2.2rem", md: "2.8rem" } }}
             >
               Powering Smarter, <br /> Safer Financial <br /> Solutions
             </Typography>
@@ -108,7 +110,7 @@ const CoreAdvantagesHome = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, sm: 7 }}>
+        <Grid size={{ xs: 12, sm: 12, md: 7 }}>
           <Grid container spacing={3}>
             {advantages.map((adv) => (
               <Grid size={{ xs: 12, sm: 6 }} key={adv.id}>

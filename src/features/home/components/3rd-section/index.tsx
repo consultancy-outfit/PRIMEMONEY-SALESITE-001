@@ -9,7 +9,7 @@ const HomeThirdSection = () => {
       <Stack
         direction={{ lg: "row", xs: "column" }}
         spacing={{ lg: 8, xs: 5 }}
-        sx={{ width: { lg: "70%", xs: "80%" }, m: "auto" }}
+        sx={{ width: { xl: "70%", lg: "85%", xs: "80%" }, m: "auto" }}
       >
         <Image
           src={WhoWeAreImage}
@@ -29,10 +29,11 @@ const HomeThirdSection = () => {
           <Stack spacing={2}>
             <Typography
               color="#222222"
-              fontSize="2.8rem"
+              // fontSize="2.8rem"
               fontFamily="Manrope"
               textAlign="left"
               fontWeight={700}
+              sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" } }}
             >
               Empowering Innovation In Financial Services
             </Typography>
@@ -41,6 +42,7 @@ const HomeThirdSection = () => {
               fontSize="1.5rem"
               fontFamily="Manrope"
               textAlign="left"
+              sx={{ fontSize: { xs: "1.2rem", sm: "1.4rem", md: "1.5rem" } }}
             >
               From smart data to secure payments, we help fintechs, neobanks,
               and digital wallets build faster.
