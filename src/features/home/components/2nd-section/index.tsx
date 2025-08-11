@@ -1,6 +1,6 @@
 "use client";
 import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
-import { Card, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import {
   AccountConnectivityIcon,
@@ -42,25 +42,24 @@ const OurServicesHome = () => {
   ];
   return (
     <ScaleInView initialScale={0.5}>
-      <Stack position="relative" bottom={150} sx={{ width: "80%", m: "auto" }}>
-        <Grid container spacing={5} sx={{ m: "auto" }}>
+      <Stack position="relative" bottom={150} sx={{ width: "90%", m: "auto" }}>
+        <Grid container spacing={2} sx={{ m: "auto" }}>
           {data?.map((items) => (
-            <Grid size={{ lg: 3, md: 6, xs: 12 }} key={items?.id}>
+            <Grid size={{ xl: 3, lg: 6, xs: 12 }} key={items?.id}>
               <Card
                 sx={{
-                  height: "27.125rem",
-                  pt: 12,
-                  pb: 1,
-                  px: 3,
-                  //           boxShadow: `
-                  //   5px 8px 16px rgba(52, 137, 123, 100),
-                  //   -5px 4px 8px rgba(239, 75, 203, 100)
-                  // `,
-                  boxShadow: 10,
+                  pt: 8,
+                  px: 2,
+                  boxShadow: "0px 4px 20px rgba(239, 75, 203, 0.8), 0px 4px 20px rgba(52, 137, 123, 0.8)",
+                  background: "linear-gradient(180deg, #FDF9F4 0%, #FAF8FF 100%)",
+                  minHeight: "28rem",
+                  borderRadius: "1.5rem",
                 }}
               >
-                <Stack alignItems="center" spacing={3}>
-                  <Image src={items?.icon} alt={items?.heading} />
+                <Stack spacing={3}>
+                  <Box sx={{ alignItems: "center" }}>
+                    <Image src={items?.icon} alt={items?.heading} />
+                  </Box>
                   <Typography
                     fontSize={"1.5rem"}
                     fontFamily="Manrope"
@@ -71,6 +70,7 @@ const OurServicesHome = () => {
                       WebkitBackgroundClip: "text",
                       backgroundClip: "text",
                       color: "transparent",
+                      textAlign: "left",
                     }}
                   >
                     {items?.heading}
@@ -87,6 +87,7 @@ const OurServicesHome = () => {
               </Card>
             </Grid>
           ))}
+          
         </Grid>
       </Stack>
     </ScaleInView>
