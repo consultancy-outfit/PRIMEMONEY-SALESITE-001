@@ -1,14 +1,13 @@
 "use client";
-import { contactUsFormFields } from "./get-started-form.data";
-import { useGetStarted } from "./use-get-started-form";
-import { CustomFormProvider } from "@/providers/custom-form-provider";
-import { FormGrid } from "@/components/grids/form-grid";
 import { CommonLoadingButton } from "@/components/buttons/common-loading-button";
+import { FormGrid } from "@/components/grids/form-grid";
 import { CommonCircularProgress } from "@/components/progress-bars/common-circular-progress";
 import { HeadingText } from "@/components/text/heading-text";
 import { SubHeadingText } from "@/components/text/sub-heading-text";
+import { CustomFormProvider } from "@/providers/custom-form-provider";
 import { Box, Container } from "@mui/material";
-import { CustomText } from "@/components/text/custom-text";
+import { contactUsFormFields } from "./get-started-form.data";
+import { useGetStarted } from "./use-get-started-form";
 
 const GetStartedForm = () => {
   const { methods, handleSubmit, submitContactUs, isLoading } = useGetStarted();
@@ -26,7 +25,7 @@ const GetStartedForm = () => {
         variant="h4"
         fontWeight="fontWeightMedium"
         color="common.dark"
-        customStyles={{ textAlign: "center" }}
+        customStyles={{ textAlign: "center", fontWeight: "700" }}
       >
         Begin Your Journey with Prime Money
       </HeadingText>
@@ -36,7 +35,7 @@ const GetStartedForm = () => {
         fontWeight="fontWeightThin"
         customStyles={{ py: 2, textAlign: "center" }}
       >
-        Join thousands using secure, real-time financial access. Whether you're
+        Join thousands using secure, real-time financial access. Whether you&#39;re
         a developer, fintech business, or individual — our platform helps you
         connect, innovate, and thrive.
       </SubHeadingText>
