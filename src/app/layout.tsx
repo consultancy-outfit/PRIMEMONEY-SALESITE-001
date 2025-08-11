@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://realmon.netlify.app/og-logo.png",
+        url: "https://primemoney.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
