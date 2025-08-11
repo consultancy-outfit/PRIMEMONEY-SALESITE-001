@@ -11,20 +11,20 @@ export const metadata: Metadata = {
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
       {
         rel: "icon",
-        url: "/favicon.png",
+        url: "/og-logo.png",
         type: "image/png",
         sizes: "16x16",
       },
       {
         rel: "icon",
-        url: "/favicon.png",
+        url: "/og-logo.png",
         type: "image/png",
         sizes: "32x32",
       },
     ],
     apple: {
       rel: "favicon.png",
-      url: "/apple-touch-icon.png",
+      url: "/og-logo.png",
       type: "image/png",
       sizes: "180x180",
     },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://realmon.netlify.app/og-logo.png",
+        url: "https://primemoney.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
