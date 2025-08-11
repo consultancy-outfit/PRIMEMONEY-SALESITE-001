@@ -1,5 +1,7 @@
 "use client";
 import { banner1, hb1, hb2, hb3 } from "@/assets/images/about-us";
+import IconLeft from "@/assets/images/about-us/icon-left";
+import IconRight from "@/assets/images/about-us/icon-right";
 import {
   CoreAdvantagesHome,
   GetStartedHome,
@@ -8,7 +10,15 @@ import {
 import OurServicesHome from "@/features/home/components/2nd-section";
 import HomeThirdSection from "@/features/home/components/3rd-section";
 import UseCasesHome from "@/features/home/components/4th-section";
-import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  IconButton,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 // or only core styles
@@ -30,7 +40,7 @@ export default function Home() {
             <Grid size={{ xs: 12, md: 5 }}>
               <Stack gap={1}>
                 <Typography fontSize={40} fontWeight={800} color="#222222">
-                  What Our Partners Say About Us
+                  What Our Partners <br /> Say About Us
                 </Typography>
                 <Typography fontSize={20} fontWeight={400} color="#646464">
                   Hear from our trusted partners on how our solutions have
@@ -42,19 +52,15 @@ export default function Home() {
             <Grid size={{ xs: 12, md: 7 }}>
               <Box px={3}>
                 <Splide
+                  options={{ rewind: true, arrows: false }}
                   aria-label="My Favorite Images"
-                  options={{
-                    type: "loop",
-                    arrows: false,
-                    pagination: false,
-                  }}
                 >
                   <SplideSlide>
                     <Box
                       sx={{
                         width: "100%",
                         minWidth: 200,
-                        height: "auto",
+                        height: 200,
                         backgroundImage: `url(${banner1.src})`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
@@ -85,13 +91,28 @@ export default function Home() {
                           >
                             James Wallace
                           </Typography>
-                          <Typography
-                            fontSize={14}
-                            fontWeight={400}
-                            color="#646464"
-                          >
-                            CTO
-                          </Typography>
+                          <Stack direction={"row"} alignItems={"center"}>
+                            <Typography
+                              fontSize={14}
+                              fontWeight={400}
+                              color="#646464"
+                            >
+                              CTO
+                            </Typography>
+                            <Stack
+                              direction={"row"}
+                              gap={4}
+                              className="splide__arrows"
+                              ml={"auto"}
+                            >
+                              <IconButton className="splide__arrow splide__arrow--prev">
+                                <IconRight />
+                              </IconButton>
+                              <IconButton className="splide__arrow splide__arrow--next">
+                                <IconRight />
+                              </IconButton>
+                            </Stack>
+                          </Stack>
                         </Stack>
                       </Stack>
                     </Box>
@@ -100,7 +121,8 @@ export default function Home() {
                     <Box
                       sx={{
                         width: "100%",
-                        height: "auto",
+                        minWidth: 200,
+                        height: 200,
                         backgroundImage: `url(${banner1.src})`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
@@ -131,13 +153,114 @@ export default function Home() {
                           >
                             Bessie Cooper
                           </Typography>
+                          <Stack direction={"row"} alignItems={"center"}>
+                            <Typography
+                              fontSize={14}
+                              fontWeight={400}
+                              color="#646464"
+                            >
+                              Product Manager
+                            </Typography>
+                          </Stack>
+                        </Stack>
+                      </Stack>
+                    </Box>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        minWidth: 200,
+                        height: 200,
+                        backgroundImage: `url(${banner1.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        borderRadius: 5,
+                        boxShadow: 8,
+                        display: "block",
+                        py: 2,
+                        mt: 4,
+                        px: 2,
+                      }}
+                    >
+                      <Stack gap={2}>
+                        <Typography
+                          fontSize={20}
+                          fontWeight={700}
+                          color="#ffff"
+                        >
+                          Their categorisation and enrichment tools gave our app
+                          a significant advantage, allowing us to deliver more
+                          personalised, insightful experiences that really
+                          resonated with our users.
+                        </Typography>
+                        <Stack>
                           <Typography
-                            fontSize={14}
-                            fontWeight={400}
-                            color="#646464"
+                            fontSize={20}
+                            fontWeight={700}
+                            color="#ffff"
                           >
-                            Product Manager
+                            Bessie Cooper
                           </Typography>
+                          <Stack direction={"row"} alignItems={"center"}>
+                            <Typography
+                              fontSize={14}
+                              fontWeight={400}
+                              color="#646464"
+                            >
+                              Product Manager
+                            </Typography>
+                          </Stack>
+                        </Stack>
+                      </Stack>
+                    </Box>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        minWidth: 200,
+                        height: 200,
+                        backgroundImage: `url(${banner1.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        borderRadius: 5,
+                        boxShadow: 8,
+                        display: "block",
+                        py: 2,
+                        mt: 4,
+                        px: 2,
+                      }}
+                    >
+                      <Stack gap={2}>
+                        <Typography
+                          fontSize={20}
+                          fontWeight={700}
+                          color="#ffff"
+                        >
+                          Bank identity verification streamlined our KYC
+                          process, reducing manual effort and accelerating user
+                          onboarding without compromising security.
+                        </Typography>
+                        <Stack>
+                          <Typography
+                            fontSize={20}
+                            fontWeight={700}
+                            color="#ffff"
+                          >
+                            Bessie Cooper
+                          </Typography>
+                          <Stack direction={"row"} alignItems={"center"}>
+                            <Typography
+                              fontSize={14}
+                              fontWeight={400}
+                              color="#646464"
+                            >
+                              Product Manager
+                            </Typography>
+                          </Stack>
                         </Stack>
                       </Stack>
                     </Box>

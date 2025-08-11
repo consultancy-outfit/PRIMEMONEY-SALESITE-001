@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
   const dataProtection = [
     "Trusted third-party service providers (e.g., hosting, analytics, CRM).",
     "Regulators or legal authorities if required by law.",
-    "Affiliates or subsidiaries under  FA Global  for internal operations.",
+    "Affiliates or subsidiaries under  prime Money  for internal operations.",
   ];
   const yourRights = [
     "Access or correct your personal data.",
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
             fontSize={"1.25rem"}
             textAlign="left"
           >
-            At FA Global, your privacy is important to us. This Privacy Policy
+            At prime Money, your privacy is important to us. This Privacy Policy
             outlines how we collect, use, store, and protect your personal
             information when you visit our website or use our services.
           </Typography>
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
             textAlign="left"
           >
             If you have any questions or concerns regarding your privacy, please
-            contact us at info@faglobalkfinance.com
+            contact us at info@primemoney.com
           </Typography>
         </Stack>
       </Stack>
