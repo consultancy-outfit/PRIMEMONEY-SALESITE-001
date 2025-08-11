@@ -30,7 +30,7 @@ import {
 function AboutUsNewFeature() {
   return (
     <>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{mt:10}}>
         <Stack gap={2} textAlign={"center"}>
           <Typography fontSize={76} fontWeight={800} color="#222222">
             We are building the next generation of payment connectivity

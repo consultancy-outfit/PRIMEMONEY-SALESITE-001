@@ -14,7 +14,7 @@ export const DirectBankIntegration = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
           <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
             Build Seamless Payment Journeys with Direct Bank Integration
           </Typography>
