@@ -2,6 +2,7 @@ import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-
 import { Button, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { WhoWeAreImage } from "../../assets";
+import Link from "next/link";
 
 const HomeThirdSection = () => {
   return (
@@ -48,20 +49,23 @@ const HomeThirdSection = () => {
               and digital wallets build faster.
             </Typography>
           </Stack>
-
-          <Button
-            variant="contained"
-            sx={{
-              color: "#fff",
-              background: "#000",
-              width: "fit-content",
-              px: 3,
-              py: 1.5,
-              borderRadius: 2,
-            }}
-          >
-            About us
-          </Button>
+          <Link href="/about-us" passHref >
+            <Button
+              variant="contained"
+              component="a" 
+              sx={{
+                color: "#fff",
+                background: "#000",
+                width: "fit-content",
+                px: 3,
+                py: 1.5,
+                borderRadius: 2,
+                textDecoration: "none",
+              }}
+            >
+              About us
+            </Button>
+          </Link>
         </Stack>
       </Stack>
     </SlideUpInView>

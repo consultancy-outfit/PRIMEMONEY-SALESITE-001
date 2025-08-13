@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
 import { Header } from "../main-layout/header";
+import Footer from "../main-layout/footer";
 
 export const AuthLayout = (props: any) => {
   const { children } = props;
@@ -8,6 +8,7 @@ export const AuthLayout = (props: any) => {
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

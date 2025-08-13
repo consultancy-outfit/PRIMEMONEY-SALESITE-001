@@ -16,18 +16,29 @@ export default function Careers() {
           px={2}
           m={2}
         >
-          <Typography variant="h2" color="white" fontWeight={600}>
-            Join Our Team
+          <Typography
+            fontWeight={700}
+            sx={{
+              fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4.5rem" },
+              textAlign: "center",
+            }}
+          >
+            Join the Team. Build the Future.
           </Typography>
           <Typography
-            variant="body1"
             color="grey"
-            sx={{ mb: 3, textAlign: "center" }}
+            sx={{
+              mb: 3,
+              textAlign: "center",
+              fontSize: { xs: "1.1rem", sm: "1.4rem", md: "1.5rem" },
+              width: { xs: "100%", sm: "90%", md: "80%" },
+            }}
           >
-            We’re on a mission to redefine how fintech companies find the
-            perfect domain name to launch and scale. At the intersection of
-            innovation, finance, and <br /> branding — your work will make a
-            real impact.
+            We’re on a mission to redefine finance through smarter connectivity,
+            intelligent data, and seamless digital experiences. Our platform
+            powers everything from real-time payments to advanced credit
+            scoring, and we need bright minds like yours to keep pushing
+            boundaries.
           </Typography>
           <Image
             src={CareersImage}

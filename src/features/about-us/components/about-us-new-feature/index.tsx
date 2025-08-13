@@ -30,12 +30,31 @@ import {
 function AboutUsNewFeature() {
   return (
     <>
-      <Container maxWidth="xl" sx={{mt:10}}>
+      <Container maxWidth="xl" sx={{ mt: 10 }}>
         <Stack gap={2} textAlign={"center"}>
-          <Typography fontSize={76} fontWeight={800} color="#222222">
+          <Typography
+            fontWeight={800}
+            color="#222222"
+            sx={{
+              fontSize: { xs: 32, sm: 50, md: 72 },
+              lineHeight: 1.2,
+              maxWidth: { xs: "100%", sm: "95%", md: "90%" },
+              margin: "0 auto",
+            }}
+          >
             We are building the next generation of payment connectivity
           </Typography>
-          <Typography fontSize={20} fontWeight={400} color="#646464">
+          <Typography
+            fontSize={20}
+            fontWeight={400}
+            color="#646464"
+            sx={{
+              maxWidth: { xs: "100%", sm: "95%", md: "85%" },
+              fontSize: { xs: 16, sm: 18, md: 22 },
+              lineHeight: 1.5,
+              margin: "0 auto",
+            }}
+          >
             By connecting directly to banks and financial institutions, we
             remove friction from traditional systems and make finance faster,
             safer, and more transparent.{" "}
@@ -130,7 +149,7 @@ function AboutUsNewFeature() {
             </Grid>
           </Grid>
           <Grid container spacing={4} textAlign={"left"}>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
               <Paper
                 variant="elevation"
                 elevation={2}
@@ -152,7 +171,7 @@ function AboutUsNewFeature() {
                 </Stack>
               </Paper>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
               <Paper
                 variant="elevation"
                 elevation={2}
@@ -174,7 +193,7 @@ function AboutUsNewFeature() {
                 </Stack>
               </Paper>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
               <Paper
                 variant="elevation"
                 elevation={2}
@@ -196,7 +215,7 @@ function AboutUsNewFeature() {
                 </Stack>
               </Paper>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
               <Paper
                 variant="elevation"
                 elevation={2}
@@ -221,11 +240,32 @@ function AboutUsNewFeature() {
             </Grid>
           </Grid>
           <Box mt={5}>
-            <Typography fontSize={40} fontWeight={800} color="#222222">
+            {/* <Typography fontSize={40} fontWeight={800} color="#222222">
+             */}
+            <Typography
+              fontWeight={800}
+              color="#222222"
+              sx={{
+                fontSize: { xs: 28, sm: 32, md: 36, lg: 48 },
+                lineHeight: 1.2,
+                maxWidth: { xs: "100%", sm: "95%", md: "90%" },
+                margin: "0 auto",
+              }}
+            >
               The principles that guide how we build, innovate, and deliver
               trusted financial solutions.
             </Typography>
-            <Typography fontSize={20} fontWeight={400} color="#646464">
+            <Typography
+              fontSize={20}
+              fontWeight={400}
+              color="#646464"
+              sx={{
+                fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
+                lineHeight: 1.2,
+                maxWidth: { xs: "100%", sm: "95%", md: "90%" },
+                margin: "20px auto",
+              }}
+            >
               {` Whether you're building a neobank or lending app, our services adapt to your business needs.`}
             </Typography>
             <Grid container spacing={4} mt={5}>
@@ -339,13 +379,49 @@ function AboutUsNewFeature() {
               </Grid>
             </Grid>
           </Box>
+
+          <Grid container spacing={2} mt={5}>
+            <Grid size={{ xs: 12, md: 6, lg: 7 }}>
+              <Typography
+                fontSize={40}
+                fontWeight={800}
+                color="#222222"
+                sx={{
+                  // alignItems: "left",
+                  textAlign: { xs: "center", md: "left" },
+                  fontSize: { xs: 30, sm: 34, md: 40 },
+                  lineHeight: 1.2,
+                  maxWidth: { xs: "100%", sm: "95%", md: "90%", lg: "40%" },
+                }}
+              >
+                Meet the Minds Behind Viora
+              </Typography>
+            </Grid>
+            <Grid size={{ xs: 12, md: 6, lg: 5 }}>
+              <Typography
+                fontSize={20}
+                fontWeight={400}
+                color="#646464"
+                sx={{
+                  textAlign: { xs: "center", md: "left" },
+                  fontSize: { xs: 18, sm: 18, md: 22 },
+                  lineHeight: 1.2,
+                  maxWidth: { xs: "100%", sm: "95%" },
+                }}
+              >
+                From research to real-world impact—meet the talent powering
+                Viora’s evolution.
+              </Typography>
+            </Grid>
+          </Grid>
+
           <Stack
             direction={{ xs: "column", xl: "row" }}
             width={"100%"}
             alignItems={"center"}
             mt={4}
           >
-            <Box pr={{ xs: 0, xl: 35 }}>
+            {/* <Box pr={{ xs: 0, xl: 35 }}>
               <Typography fontSize={40} fontWeight={800} color="#222222">
                 Meet the Minds Behind Viora
               </Typography>
@@ -360,10 +436,10 @@ function AboutUsNewFeature() {
                 From research to real-world impact—meet the talent powering
                 Viora’s evolution.
               </Typography>
-            </Box>
+            </Box> */}
           </Stack>
           <Grid container spacing={2}>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
               <Stack gap={1}>
                 <Box
                   sx={{
@@ -389,7 +465,7 @@ function AboutUsNewFeature() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
               <Stack gap={1}>
                 <Box
                   sx={{
@@ -415,7 +491,7 @@ function AboutUsNewFeature() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
               <Stack gap={1}>
                 <Box
                   sx={{
@@ -441,7 +517,7 @@ function AboutUsNewFeature() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, md: 3 }}>
+            <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
               <Stack gap={1}>
                 <Box
                   sx={{
@@ -486,7 +562,13 @@ function AboutUsNewFeature() {
         }}
       >
         <Stack textAlign={"center"} gap={2} mt={4} mb={4} p={4}>
-          <Typography fontSize={62} fontWeight={800} color="#FFFFFF">
+          <Typography
+            fontWeight={800}
+            color="#FFFFFF"
+            sx={{
+              fontSize: { xs: "2.2rem", sm: "3.5rem", md: "4.5rem" },
+            }}
+          >
             Let’s Build Something Better Together
           </Typography>
           <Typography fontSize={20} fontWeight={400} color="#A7A7A7">

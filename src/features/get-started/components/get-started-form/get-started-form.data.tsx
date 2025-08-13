@@ -25,7 +25,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "firstName",
       label: "First Name",
-      placeholder: "Enter your first name",
+      // placeholder: "Enter your first name",
       required: true,
     },
     component: TextFormFields,
@@ -36,7 +36,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "lastName",
       label: "Last Name",
-      placeholder: "Enter your last name",
+      // placeholder: "Enter your last name",
       required: true,
     },
     component: TextFormFields,
@@ -47,7 +47,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "email",
       label: "Email",
-      placeholder: "Enter your email",
+      // placeholder: "Enter your email",
       required: true,
     },
     component: TextFormFields,
@@ -58,7 +58,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "phoneNumber",
       label: "Phone Number",
-      placeholder: "Enter phone number",
+      // placeholder: "Enter phone number",
       required: true,
     },
     component: TextFormFields,
