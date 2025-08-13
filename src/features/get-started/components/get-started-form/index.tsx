@@ -35,9 +35,9 @@ const GetStartedForm = () => {
         fontWeight="fontWeightThin"
         customStyles={{ py: 2, textAlign: "center" }}
       >
-        Join thousands using secure, real-time financial access. Whether you&#39;re
-        a developer, fintech business, or individual — our platform helps you
-        connect, innovate, and thrive.
+        Join thousands using secure, real-time financial access. Whether
+        you&#39;re a developer, fintech business, or individual — our platform
+        helps you connect, innovate, and thrive.
       </SubHeadingText>
       <br />
       <Box

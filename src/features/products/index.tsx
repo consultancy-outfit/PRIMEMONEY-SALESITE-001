@@ -214,7 +214,7 @@ export const ServicesFeature = () => {
                     </Button>
                   </Link>
                 </Grid>
-                <Grid size={{xs: 12, sm: 12, md: 6}} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                   <Image
                     src={item.sectionImage}
                     alt="HeroSection"
@@ -227,7 +227,7 @@ export const ServicesFeature = () => {
             ) : (
               <>
                 {/* Image first, then text */}
-                <Grid size={{ xs: 12, sm: 12, md: 6}} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                   <Image
                     src={item.sectionImage}
                     alt="HeroSection"
