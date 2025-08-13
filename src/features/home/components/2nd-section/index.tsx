@@ -40,9 +40,10 @@ const OurServicesHome = () => {
         container
         spacing={2}
         sx={{
-          py: 5,
+          pt: 5,
+          pb: 15,
           px: { xs: 4, sm: 8, md: 5, lg: 10, xl: 30 },
-          background: "#f8f8f873",
+          background: {xs: "#f8f8f873", md: "#fff"},
         }}
       >
         {services.map((service) => (
