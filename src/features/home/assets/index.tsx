@@ -70,5 +70,8 @@ export { default as HeroSectionCover } from "./HeroSectionCover.svg";
 export { default as ServicesCard } from "./ServicesCard.svg";
 export { default as WhoWeAreImage } from "./WhoWeAreImage.svg";
 
-
-
+export { default as CardServices1 } from "./CardServices1.svg";
+export { default as CardServices2 } from "./CardServices2.svg";
+export { default as CardServices3 } from "./CardServices3.svg";
+export { default as CardServices4 } from "./CardServices4.svg";
+export { default as emptyCardImage } from "./emptyCardImage.svg";

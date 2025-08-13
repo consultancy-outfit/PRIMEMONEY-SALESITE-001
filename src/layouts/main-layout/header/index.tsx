@@ -202,7 +202,7 @@ export const Header = () => {
           position: "fixed",
           left: 0,
           right: 0,
-          zIndex: 1100,
+          zIndex: 99999,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
