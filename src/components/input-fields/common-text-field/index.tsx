@@ -18,15 +18,15 @@ export const CommonTextField = (props: any) => {
     placeholder,
     backgroundColor = "transparent",
     borderRadius = 8,
-    border = "1px solid",
-    color = "common.white",
+    border = "1px solid #0000",
+    color = "common.black",
     borderColor = "grey.600",
     name,
     ref,
     id = name,
     required = false,
     labelColor = "grey.600",
-    sx = {},
+    // sx = {},
     ...other
   } = props;
 

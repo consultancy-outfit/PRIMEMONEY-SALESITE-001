@@ -73,13 +73,13 @@ const LoginForm = () => {
             name="email"
             label="Email"
             required
-            placeholder="Username or email"
+            // placeholder="Username or email"
             fullWidth
           />
           <TextFormFields
             name="password"
             label="Password"
-            placeholder="Password"
+            // placeholder="Password"
             required
             fullWidth
           />

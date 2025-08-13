@@ -10,25 +10,38 @@ export const HeroSection = () => {
         flexDirection={"column"}
         alignItems={"center"}
         justifyContent={"center"}
-        gap={2}
-        p={2}
+        pt={15}
+        pb={5}
+        m={2}
+        sx={{ px: { xs: 0, sm: 3, md: 5, lg: 8, xl: 15 } }}
       >
         <Typography
-          variant="h2"
-          fontWeight={800}
-          fontSize={"60px"}
-          width={"70%"}
+          color="black"
+          fontWeight={900}
           textAlign={"center"}
-          color="rgba(34, 34, 34, 1)"
+          my={3}
+          sx={{
+            fontSize: { xs: 34, sm: 38, md: 48, lg: 72 },
+            lineHeight: { xs: "38px", sm: "40px", md: "48px", lg: "72px" },
+            maxWidth: {
+              xs: "100%",
+              sm: "95%",
+              md: "90%",
+              lg: "80%",
+            },
+            margin: "0 auto",
+          }}
         >
           Powering Real-World Finance with Flexible Scalable Infrastructure
         </Typography>
         <Typography
-          fontWeight={300}
-          fontSize={"15px"}
-          width={"70%"}
-          textAlign={"center"}
-          color="rgba(100, 100, 100, 1)"
+          color="grey"
+          sx={{
+            my: 3,
+            textAlign: "center",
+            fontSize: { xs: 16, sm: 18, md: 20, lg: 24 },
+            mt: 3,
+          }}
         >
           From frictionless onboarding to real-time payments and intelligent
           data enrichment — Prime Money enables innovative financial experiences

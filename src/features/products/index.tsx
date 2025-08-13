@@ -134,22 +134,37 @@ export const ServicesFeature = () => {
             justifyContent={"center"}
             pt={15}
             pb={5}
-            px={15}
             m={2}
+            sx={{ px: { xs: 0, sm: 3, md: 10, lg: 15 } }}
           >
             <Typography
-              variant="h2"
               color="black"
-              fontWeight={800}
+              fontWeight={900}
               textAlign={"center"}
               my={3}
+              sx={{
+                fontSize: { xs: 34, sm: 38, md: 48, lg: 72 },
+                lineHeight: { xs: "38px", sm: "40px", md: "48px", lg: "72px" },
+                maxWidth: {
+                  xs: "100%",
+                  sm: "95%",
+                  md: "90%",
+                  lg: "80%",
+                  xl: "60%",
+                },
+                margin: "0 auto",
+              }}
             >
-              Unlock the Power <br /> of Financial Precision
+              Unlock the Power of Financial Precision
             </Typography>
             <Typography
-              variant="body1"
               color="grey"
-              sx={{ mb: 3, textAlign: "center" }}
+              sx={{
+                my: 3,
+                textAlign: "center",
+                fontSize: { xs: 16, sm: 18, md: 20, lg: 24 },
+                mt: 3,
+              }}
             >
               At Prime Money, we don’t just offer financial services we deliver
               purpose built tools that accelerate growth, automate finance, and
@@ -165,14 +180,18 @@ export const ServicesFeature = () => {
       <Grid
         container
         spacing={5}
-        sx={{ backgroundColor: "#F2F5F7", px: 15, py: 5 }}
+        sx={{
+          backgroundColor: "#F2F5F7",
+          px: { xs: 2, sm: 3, md: 4, lg: 15 },
+          py: 5,
+        }}
       >
         {gridContent.map((item: any, idx: number) => (
           <React.Fragment key={item?.id}>
             {idx % 2 === 0 ? (
               <>
                 {/* Text first, then image */}
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                   <Box sx={{ mb: 3 }}>
                     <Typography
                       variant="body1"
@@ -195,7 +214,7 @@ export const ServicesFeature = () => {
                     </Button>
                   </Link>
                 </Grid>
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{xs: 12, sm: 12, md: 6}} sx={{ mb: 8 }}>
                   <Image
                     src={item.sectionImage}
                     alt="HeroSection"
@@ -208,7 +227,7 @@ export const ServicesFeature = () => {
             ) : (
               <>
                 {/* Image first, then text */}
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 6}} sx={{ mb: 8 }}>
                   <Image
                     src={item.sectionImage}
                     alt="HeroSection"
@@ -217,7 +236,7 @@ export const ServicesFeature = () => {
                     }}
                   />
                 </Grid>
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                   <Box sx={{ mb: 3 }}>
                     <Typography
                       variant="body1"

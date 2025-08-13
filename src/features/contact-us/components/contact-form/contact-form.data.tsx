@@ -26,7 +26,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "fullName",
       label: "Your Name",
-      placeholder: "Enter your full name",
+      // placeholder: "Enter your full name",
       required: true,
     },
     component: TextFormFields,
@@ -37,7 +37,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "email",
       label: "Email address",
-      placeholder: "Enter your email",
+      // placeholder: "Enter your email",
       required: true,
     },
     component: TextFormFields,
@@ -48,7 +48,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "phoneNumber",
       label: "Phone Number",
-      placeholder: "Enter phone number",
+      // placeholder: "Enter phone number",
       required: true,
     },
     component: TextFormFields,
@@ -59,7 +59,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "query",
       label: "Message",
-      placeholder: "Enter your message",
+      // placeholder: "Enter your message",
     },
     component: TextAreaFormFields,
     md: 12,
