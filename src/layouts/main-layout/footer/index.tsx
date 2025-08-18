@@ -1,8 +1,9 @@
 "use client";
 import { LogoAvatar } from "@/components/avatars/logo-avatar";
-import { Box, Grid, Link, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { about, products } from "./footer.data";
+import Link from "next/link";
 
 const Footer = () => {
   const router = useRouter();
@@ -116,12 +117,6 @@ const Footer = () => {
             <Link
               href="/privacy-policy"
               color="inherit"
-              sx={{
-                color: "#646464",
-                fontFamily: "Manrope",
-                fontSize: 16,
-                textDecoration: "none",
-              }}
             >
               <Typography
                 variant="body1"
@@ -135,12 +130,6 @@ const Footer = () => {
             <Link
               href="/terms-and-conditions"
               color="inherit"
-              sx={{
-                color: "#646464",
-                fontFamily: "Manrope",
-                fontSize: 16,
-                textDecoration: "none",
-              }}
             >
               <Typography
                 variant="body1"
