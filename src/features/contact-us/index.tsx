@@ -53,19 +53,21 @@ export const ContactUsFeature = () => {
           sx={{
             position: "absolute",
             bottom: { lg: 180, xs: "unset" },
-            top: { lg: "unset", xs: 10 },
+            // top: { lg: "unset", xs: 10 },
+            top: { lg: "unset", md: 50, xs: 100 },
             left: 0,
             zIndex: 2,
-            p: { lg: 15, md: 10, xs: 2 },
+            p: { lg: 15, md: 10, xs: 1 },
           }}
         >
           <ScaleInView>
             <HeadingText
-              variant="h1"
               color={"common.white"}
               customStyles={{
                 width: { lg: "45%", xs: "100%" },
                 textAlign: "start",
+                fontSize: {xl: "4.5rem", lg: "4rem", md: "3rem", xs: "2.2rem" },
+                lineHeight: { lg: 1.2, xs: 1.3 },
               }}
             >
               Let’s Build the Future of Finance—Together
