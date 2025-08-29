@@ -66,7 +66,7 @@ export default function Home() {
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
           <Grid container spacing={0}>
             <Grid size={{ xs: 12, md: 5 }}>
-              <Stack gap={1}>
+{/*               <Stack gap={1}>
                 <Typography
                   fontWeight={800}
                   color="#222222"
@@ -81,11 +81,11 @@ export default function Home() {
                   helped them innovate, grow, and deliver exceptional financial
                   experiences.
                 </Typography>
-              </Stack>
+              </Stack> */}
             </Grid>
 
             <Grid size={{ xs: 12, md: 7 }}>
-              <Box sx={{ px: { xs: 0, sm: 2, md: 3 } }}>
+{/*               <Box sx={{ px: { xs: 0, sm: 2, md: 3 } }}>
                 <Splide
                   options={{ rewind: true, arrows: false }}
                   aria-label="My Favorite Images"
@@ -179,7 +179,7 @@ export default function Home() {
                     </SplideSlide>
                   ))}
                 </Splide>
-              </Box>
+              </Box> */}
             </Grid>
           </Grid>
         </Container>
