@@ -380,7 +380,7 @@ function AboutUsNewFeature() {
             </Grid>
           </Box>
 
-          <Grid container spacing={2} mt={5}>
+          {/* <Grid container spacing={2} mt={5}>
             <Grid size={{ xs: 12, md: 6, lg: 7 }}>
               <Typography
                 fontSize={40}
@@ -413,7 +413,7 @@ function AboutUsNewFeature() {
                 Viora’s evolution.
               </Typography>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           <Stack
             direction={{ xs: "column", xl: "row" }}
@@ -438,7 +438,7 @@ function AboutUsNewFeature() {
               </Typography>
             </Box> */}
           </Stack>
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
               <Stack gap={1}>
                 <Box
@@ -543,7 +543,7 @@ function AboutUsNewFeature() {
                 </Typography>
               </Stack>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Stack>
       </Container>
       <Box
