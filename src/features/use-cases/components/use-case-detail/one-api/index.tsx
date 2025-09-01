@@ -11,10 +11,10 @@ export const OneAPI = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
-          <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
+          <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
             Bank-Verified Identity and Compliance in One API
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Regulatory compliance and user verification are no longer just
             checkboxes — they are critical to trust, operational integrity, and
             market expansion. With increasing pressure from regulators and
@@ -23,7 +23,7 @@ export const OneAPI = () => {
             accounts, and meet compliance standards — all without disrupting the
             user experience.
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Prime Moneys Bank-Verified Identity & Compliance API offers a
             seamless way to connect, verify, and screen users in real time using
             their bank-verified information. It simplifies Know Your Customer

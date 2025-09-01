@@ -380,7 +380,7 @@ function AboutUsNewFeature() {
             </Grid>
           </Box>
 
-          <Grid container spacing={2} mt={5}>
+          <Grid container spacing={2} mt={{ xs: 6, md: 10 }}>
             <Grid size={{ xs: 12, md: 6, lg: 7 }}>
               <Typography
                 fontSize={40}

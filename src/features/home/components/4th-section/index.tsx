@@ -25,7 +25,7 @@ const UseCasesHome = () => {
         </>
       ),
       description:
-        "From smart data to secure payments, we help fintechs, neobanks, and digital wallets build faster.",
+        "Our credit scoring models improved by 40% with Prime Money's enriched bank data.",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const UseCasesHome = () => {
         </>
       ),
       description:
-        "From smart data to secure payments, we help fintechs, neobanks, and digital wallets build faster.",
+        "We moved from legacy systems to Prime Money’s API-first stack — seamless and reliable",
     },
   ];
   return (
@@ -48,7 +48,7 @@ const UseCasesHome = () => {
         textAlign="center"
         fontWeight={700}
         py={4}
-        sx={{fontSize: { xs: "1.6rem",sm:"2.2rem", md: "2.8rem" }}}
+        sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" } }}
       >
         Built for Visionaries. Backed by Innovation
       </Typography>
@@ -69,7 +69,18 @@ const UseCasesHome = () => {
                 <Typography variant="h6" fontWeight={600}>
                   {item.title}
                 </Typography>
-                <Typography color="#646464">{item.description}</Typography>
+                <Typography
+                  color="#646464"
+                  sx={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {item.description}
+                </Typography>
               </Box>
             </Stack>
           </Grid>

@@ -28,8 +28,7 @@ const Footer = () => {
             <Typography
               variant="body1"
               sx={{
-                color: "#646464",
-
+                color: "rgba(34, 34, 34, 1)",
                 fontSize: 32,
                 fontWeight: 800,
               }}

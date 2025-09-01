@@ -2,6 +2,7 @@ import {
   advantageFiveImage,
   advantageFourImage,
   advantageOneImage,
+  advantageSevenImage,
   advantageSixImage,
   advantageTwoImage,
 } from "@/assets/images/features/home";
@@ -35,7 +36,7 @@ const CoreAdvantagesHome = () => {
     },
     {
       id: 3,
-      image: advantageTwoImage,
+      image: advantageSevenImage,
       alt: "Identity & Compliance",
       title: "Identity & Compliance",
       description: (

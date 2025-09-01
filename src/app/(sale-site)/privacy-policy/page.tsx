@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
         <Typography
           color="#000"
           fontFamily="Manrope"
-          fontWeight={700}
+          fontWeight={800}
           textAlign="center"
           sx={{
             fontSize: { xs: "2.5rem", sm: "3rem", md: "4rem" },
@@ -50,9 +50,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Introduction
           </Typography>
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             At prime Money, your privacy is important to us. This Privacy Policy
             outlines how we collect, use, store, and protect your personal
@@ -71,9 +71,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Information We Collect
           </Typography>
@@ -81,7 +81,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             We may collect the following types of information:
           </Typography>
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
               fontFamily="Manrope"
               textAlign="left"
               component={"li"}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
             >
               {items}
             </Typography>
@@ -102,9 +102,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             How We Use Your Information
           </Typography>
@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             We use your information to:
           </Typography>
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
               fontFamily="Manrope"
               textAlign="left"
               component={"li"}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
             >
               {items}
             </Typography>
@@ -133,9 +133,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Data Protection & Security{" "}
           </Typography>
@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             We do not sell your personal data. However, we may share it
             with:{" "}
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
               fontFamily="Manrope"
               textAlign="left"
               component={"li"}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
             >
               {items}
             </Typography>
@@ -165,9 +165,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Your Rights
           </Typography>
@@ -175,7 +175,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             Depending on your location, you may have the right to:
           </Typography>
@@ -186,7 +186,7 @@ export default function PrivacyPolicy() {
               fontFamily="Manrope"
               textAlign="left"
               component={"li"}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
             >
               {items}
             </Typography>
@@ -196,9 +196,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Third-Party Services{" "}
           </Typography>
@@ -206,7 +206,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             Our site may include links to third-party sites. We are not
             responsible for their privacy practices and encourage you to review
@@ -217,9 +217,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Data Retention{" "}
           </Typography>
@@ -227,7 +227,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             We retain your data only as long as necessary to fulfil the purposes
             stated or as required by law.
@@ -237,9 +237,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Policy Updates{" "}
           </Typography>
@@ -247,7 +247,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             We may update this Privacy Policy periodically. You’ll be notified
             of significant changes via email or a prominent site notice.
@@ -257,9 +257,9 @@ export default function PrivacyPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5rem" } }}
           >
             Contact Us{" "}
           </Typography>
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             If you have any questions or concerns regarding your privacy, please
             contact us at info@primemoney.com

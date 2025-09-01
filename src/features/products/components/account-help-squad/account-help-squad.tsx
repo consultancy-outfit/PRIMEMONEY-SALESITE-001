@@ -149,7 +149,7 @@ export const AccountHelpSquadFeature = () => {
           liTitle: "Features:",
           liList: [
             "AI-powered financial support chatbot.",
-            "AI-powered financial support chatbot.",
+            "Escalation to human agents where needed.",
             "Integration with user transaction history.",
             "Real-time status of payments and balances.",
             "Pre-built resolution workflows (e.g., failed payment, dispute).",

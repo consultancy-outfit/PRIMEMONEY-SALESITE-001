@@ -64,7 +64,7 @@ export default function Home() {
         <GetStartedHome />
         <CoreAdvantagesHome />
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
-          <Grid container spacing={0}>
+          <Grid container spacing={0} alignItems="center">
             <Grid size={{ xs: 12, md: 5 }}>
               <Stack gap={1}>
                 <Typography
@@ -335,13 +335,7 @@ export default function Home() {
             mt: 4,
           }}
         >
-          <Stack
-            textAlign={"center"}
-            gap={2}
-            mt={4}
-            mb={4}
-            p={4}
-          >
+          <Stack textAlign={"center"} gap={2} mt={4} mb={4} p={4}>
             <Typography
               fontWeight={800}
               color="#FFFFFF"
@@ -349,7 +343,8 @@ export default function Home() {
                 fontSize: { xs: "2.2rem", sm: "3.5rem", md: "4.5rem" },
               }}
             >
-              Let’s Build Something Better Together
+              Let’s Build Something
+              <br /> Better Together
             </Typography>
             <Typography fontSize={20} fontWeight={400} color="#A7A7A7">
               Talk to our team and explore how Prime Money can fuel your next

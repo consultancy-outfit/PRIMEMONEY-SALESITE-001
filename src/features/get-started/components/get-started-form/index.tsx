@@ -72,7 +72,7 @@ const GetStartedForm = () => {
             }}
             fullWidth
           >
-            {isLoading ? <CommonCircularProgress /> : "Submit"}
+            {isLoading ? <CommonCircularProgress /> : "Get Started"}
           </CommonLoadingButton>
         </CustomFormProvider>
       </Box>

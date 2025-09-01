@@ -52,9 +52,9 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 180, xs: "unset" },
+            bottom: { lg: 210, sm: "30",xs:"unset" },
             // top: { lg: "unset", xs: 10 },
-            top: { lg: "unset", md: 50, xs: 100 },
+            top: { lg: "unset", xs: 50 },
             left: 0,
             zIndex: 2,
             p: { lg: 15, md: 10, xs: 1 },
@@ -66,7 +66,12 @@ export const ContactUsFeature = () => {
               customStyles={{
                 width: { lg: "45%", xs: "100%" },
                 textAlign: "start",
-                fontSize: {xl: "4.5rem", lg: "4rem", md: "3rem", xs: "2.2rem" },
+                fontSize: {
+                  xl: "4.5rem",
+                  lg: "4rem",
+                  md: "3rem",
+                  xs: "2.2rem",
+                },
                 lineHeight: { lg: 1.2, xs: 1.3 },
               }}
             >
@@ -77,7 +82,7 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 290, md: 300, xs: 240 },
+            top: { lg: 380, md:350, xs: 140 },
             right: 0,
             zIndex: 2,
             py: { lg: 5, xs: 2 },
@@ -103,7 +108,7 @@ export const ContactUsFeature = () => {
         customStyles={{
           position: "relative",
           zIndex: 2,
-          mt: { md: -30, xs: -25 },
+          mt: { lg:30, md:-20, xs: 10 },
           px: { xs: 2, md: 6 },
           width: "90%",
           mx: "auto",

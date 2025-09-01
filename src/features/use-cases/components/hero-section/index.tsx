@@ -39,7 +39,7 @@ export const HeroSection = () => {
           sx={{
             my: 3,
             textAlign: "center",
-            fontSize: { xs: 16, sm: 18, md: 20, lg: 24 },
+            fontSize: { xs: 16, sm: 18, md: 20, lg: 22 },
             mt: 3,
           }}
         >
