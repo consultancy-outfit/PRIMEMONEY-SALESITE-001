@@ -52,7 +52,7 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 210, sm: "30",xs:"unset" },
+            bottom: { lg: 210, sm: "50",xs:"unset",md:50 },
             // top: { lg: "unset", xs: 10 },
             top: { lg: "unset", xs: 50 },
             left: 0,
@@ -82,7 +82,7 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            top: { lg: 380, md:350, xs: 140 },
+            top: { lg: 380, md:260, xs: 220,sm:250 },
             right: 0,
             zIndex: 2,
             py: { lg: 5, xs: 2 },
@@ -108,7 +108,7 @@ export const ContactUsFeature = () => {
         customStyles={{
           position: "relative",
           zIndex: 2,
-          mt: { lg:30, md:-20, xs: 10 },
+          mt: { xs:-20,md:-25,lg:-20 },
           px: { xs: 2, md: 6 },
           width: "90%",
           mx: "auto",

@@ -233,7 +233,7 @@ export const Header = () => {
 
             const textColor = theme
               ? isActiveParent
-                ? theme.palette.common.black
+                ? theme.palette.common.link
                 : theme.palette.common.black
               : "inherit";
 

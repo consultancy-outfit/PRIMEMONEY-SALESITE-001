@@ -88,7 +88,7 @@ function AboutUsNewFeature() {
                   <Box
                     sx={{
                       width: "100%",
-                      height: { xs: 288 },
+                      minHeight: { xs: 200, sm: 250, md: 288, lg: 288 },
                       backgroundImage: `url(${abs1.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -132,7 +132,7 @@ function AboutUsNewFeature() {
                   <Box
                     sx={{
                       width: "100%",
-                      height: { xs: 288 },
+                      minHeight: { xs: 200, sm: 250, md: 288, lg: 288 },
                       backgroundImage: `url(${abs2.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
