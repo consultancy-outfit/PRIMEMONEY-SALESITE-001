@@ -20,3 +20,5 @@ export { default as advantageThreeImage } from "./advantage-3.svg";
 export { default as advantageFourImage } from "./advantage-4.svg";
 export { default as advantageFiveImage } from "./advantage-5.svg";
 export { default as advantageSixImage } from "./advantage-6.svg";
+export { default as advantageSevenImage } from "./advantage-7.svg";
+

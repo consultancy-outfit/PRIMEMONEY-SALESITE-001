@@ -199,7 +199,7 @@ export const Header = () => {
           top: 0,
         }}
         style={{
-          position: "fixed",
+          position: "sticky",
           left: 0,
           right: 0,
           zIndex: 99999,
@@ -233,7 +233,7 @@ export const Header = () => {
 
             const textColor = theme
               ? isActiveParent
-                ? theme.palette.common.black
+                ? theme.palette.common.link
                 : theme.palette.common.black
               : "inherit";
 
@@ -640,7 +640,7 @@ export const Header = () => {
                 borderRadius: 2,
               }}
             >
-              Register
+              Get Started
             </LinkButton>
           </Stack>
           <Box

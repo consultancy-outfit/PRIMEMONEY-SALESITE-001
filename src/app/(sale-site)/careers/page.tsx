@@ -30,7 +30,7 @@ export default function Careers() {
             sx={{
               mb: 3,
               textAlign: "center",
-              fontSize: { xs: "1.1rem", sm: "1.4rem", md: "1.5rem" },
+              fontSize: { xs: "1.1rem", sm: "1.4rem", md: "1.375rem" },
               width: { xs: "100%", sm: "90%", md: "80%" },
             }}
           >

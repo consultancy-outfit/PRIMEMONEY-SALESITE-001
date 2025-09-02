@@ -20,20 +20,20 @@ export const ProductDetailPagesCommon = (props: any) => {
           sx={{ px: { xs: 0, sm: 2, md: 10, lg: 15 } }}
         >
           <Typography
-            color="black"
-            fontWeight={900}
+            color="#222222"
+            fontWeight={800}
             textAlign={"center"}
             my={2}
-            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 60 } }}
+            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 76 } }}
           >
             {PageTitle}
           </Typography>
           <Typography
-            color="grey"
+            color="#646464"
             sx={{
               mb: 2,
               textAlign: "center",
-              fontSize: { xs: 16, sm: 18, md: 20, lg: 24 },
+              fontSize: { xs: 16, sm: 18, md: 20, lg: 20 },
             }}
           >
             {PageDescription}
@@ -47,18 +47,21 @@ export const ProductDetailPagesCommon = (props: any) => {
             {/* Text first, then image */}
             <Grid size={{ xs: 12 }}>
               <Box sx={{ mb: 3 }}>
-                <Typography variant="h6" fontWeight={600}>
-                  {item.title}
-                </Typography>
+                <Typography variant="h6">{item.title}</Typography>
               </Box>
               <Typography
-                fontWeight={800}
+                fontWeight={700}
                 mb={3}
-                sx={{ fontSize: { xs: 30, sm: 34, md: 42 } }}
+                sx={{ fontSize: { xs: 30, sm: 34, md: 42, lg: 32 } }}
+                color="#222222"
               >
                 {item.subtitle}
               </Typography>
-              <Typography mb={3} sx={{ fontSize: { xs: 16, sm: 18, md: 20 } }}>
+              <Typography
+                mb={3}
+                sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
+                color="#646464"
+              >
                 {item.description}
               </Typography>
               <Image
@@ -86,7 +89,7 @@ export const ProductDetailPagesCommon = (props: any) => {
                   item.innerValues.map((val: any, idx: number) => (
                     <Grid size={{ xs: 12, md: 6 }} key={idx}>
                       <Box sx={{ mb: 3 }}>
-                        <Typography variant="h6" fontWeight={600}>
+                        <Typography  fontWeight={700} color="#222222" fontSize={"32px"}>
                           {val.liTitle}
                         </Typography>
                         <Box component="ul" sx={{ pl: 3, mt: 2 }}>
@@ -100,6 +103,9 @@ export const ProductDetailPagesCommon = (props: any) => {
                                 gap: 1,
                               }}
                               key={i}
+                              fontWeight={400}
+                              color="#646464"
+                              fontSize={"20px"}
                             >
                               <CheckedIcon style={{ fontSize: 20 }} />
                               {value}

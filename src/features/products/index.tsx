@@ -162,7 +162,7 @@ export const ServicesFeature = () => {
               sx={{
                 my: 3,
                 textAlign: "center",
-                fontSize: { xs: 16, sm: 18, md: 20, lg: 24 },
+                fontSize: { xs: 16, sm: 18, md: 20, lg: 22 },
                 mt: 3,
               }}
             >
@@ -204,7 +204,7 @@ export const ServicesFeature = () => {
                   <Typography variant="h3" fontWeight={600} mb={3}>
                     {item.subtitle}
                   </Typography>
-                  <Typography mb={3}>{item.description}</Typography>
+                  <Typography mb={3} fontSize={"20px"} color="#646464">{item.description}</Typography>
                   <Link href={item.hrefLink}>
                     <Button
                       variant="contained"
@@ -249,7 +249,7 @@ export const ServicesFeature = () => {
                   <Typography variant="h3" fontWeight={600} mb={3}>
                     {item.subtitle}
                   </Typography>
-                  <Typography mb={3}>{item.description}</Typography>
+                  <Typography mb={3} fontSize={'20px'} color="#646464">{item.description}</Typography>
                   <Link href={item.hrefLink}>
                     <Button
                       variant="contained"

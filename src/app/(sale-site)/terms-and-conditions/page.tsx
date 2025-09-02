@@ -43,7 +43,14 @@ export default function TermsAndConditionsPolicy() {
             fontFamily="Manrope"
             fontWeight={700}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Welcome to Prime Money
           </Typography>
@@ -52,7 +59,9 @@ export default function TermsAndConditionsPolicy() {
             fontFamily="Manrope"
             textAlign="left"
             align="justify"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             {` Welcome to Prime Money. These Terms and Conditions ("Terms") govern your access to and use of our website, services, and digital platforms operated by Prime Money ("we," "us," or "our"). By using our services, you agree to be bound by these Terms.`}
           </Typography>
@@ -61,9 +70,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Acceptance of Terms
           </Typography>
@@ -71,7 +87,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             By accessing or using our website or services, you confirm that you
             have read, understood, and agree to these Terms. If you do not
@@ -82,9 +100,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Account Registration
           </Typography>
@@ -92,7 +117,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             To access certain features, you may be required to create an
             account. You are responsible for:{" "}
@@ -105,7 +132,9 @@ export default function TermsAndConditionsPolicy() {
               textAlign="left"
               component={"li"}
               key={items}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{
+                fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+              }}
             >
               {items}
             </Typography>
@@ -115,9 +144,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Use of Services{" "}
           </Typography>
@@ -125,7 +161,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             You agree to use our services only for lawful purposes and in
             compliance with all applicable laws. You must not:
@@ -138,7 +176,9 @@ export default function TermsAndConditionsPolicy() {
               textAlign="left"
               component={"li"}
               key={items}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{
+                fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+              }}
             >
               {items}
             </Typography>
@@ -148,9 +188,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Intellectual Property{" "}
           </Typography>
@@ -158,7 +205,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             All content on our site and services—including text, graphics,
             logos, software, and trademarks—is the property of Prime Money or
@@ -171,9 +220,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Privacy
           </Typography>
@@ -181,7 +237,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             Your use of our services is also governed by our Privacy Policy,
             which explains how we collect and use your information.
@@ -192,9 +250,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Disclaimers{" "}
           </Typography>
@@ -202,7 +267,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             Our services are provided “as is” and “as available” without
             warranties of any kind. We do not guarantee:
@@ -215,7 +282,9 @@ export default function TermsAndConditionsPolicy() {
               textAlign="left"
               component={"li"}
               key={items}
-              sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+              sx={{
+                fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+              }}
             >
               {items}
             </Typography>
@@ -225,9 +294,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Limitation of Liability
           </Typography>
@@ -235,7 +311,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             To the maximum extent permitted by law, Prime Money shall not be
             liable for any indirect, incidental, special, or consequential
@@ -246,9 +324,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Modifications
           </Typography>
@@ -256,7 +341,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             We reserve the right to modify these Terms at any time. Changes will
             be posted on this page and become effective immediately. Continued
@@ -267,9 +354,16 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{
+              fontSize: {
+                xs: "1.5rem",
+                sm: "1.8rem",
+                md: "2.3rem",
+                lg: "2.5rem",
+              },
+            }}
           >
             Governing Law
           </Typography>
@@ -277,6 +371,9 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
+            sx={{
+              fontSize: { xs: "14px", sm: "16px", md: "20px", lg: "20px" },
+            }}
           >
             These Terms are governed by the laws of United Kingdom, without
             regard to its conflict of law principles. Any disputes will be
@@ -287,9 +384,9 @@ export default function TermsAndConditionsPolicy() {
           <Typography
             color="#000"
             fontFamily="Manrope"
-            fontWeight={700}
+            fontWeight={800}
             textAlign="left"
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem" } }}
+            sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2.3rem",lg:"2.5em" } }}
           >
             Contact Us{" "}
           </Typography>
@@ -297,7 +394,7 @@ export default function TermsAndConditionsPolicy() {
             color="#646464"
             fontFamily="Manrope"
             textAlign="left"
-            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", sm: "16px", md: "20px",lg:"20px" } }}
           >
             If you have any questions or concerns about these Terms of Service,
             please reach out to us at info@primemoney.com
