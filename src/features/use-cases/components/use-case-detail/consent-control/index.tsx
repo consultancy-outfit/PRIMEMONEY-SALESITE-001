@@ -14,7 +14,7 @@ export const ConsentControl = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
           <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
             Redefining Digital Trust: Seamless Identity Verification & Consent
             Control
@@ -50,11 +50,13 @@ export const ConsentControl = () => {
           />
         </Box>
       </SlideUpInView>
+      <Box px={7}>
       <CommonDetail
         detailsCheckPoints={detailsCheckPoints}
         detailsNumberPoints={detailsNumberPoints}
         detailsKeyPoints={detailsKeyPoints}
       />
+      </Box>
     </>
   );
 };

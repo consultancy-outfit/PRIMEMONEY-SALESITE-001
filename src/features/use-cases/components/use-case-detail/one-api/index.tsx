@@ -10,7 +10,7 @@ export const OneAPI = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
           <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
             Bank-Verified Identity and Compliance in One API
           </Typography>
@@ -41,10 +41,12 @@ export const OneAPI = () => {
           />
         </Box>
       </SlideUpInView>
+      <Box px={7}>
       <CommonDetail
         detailsCheckPoints={detailsCheckPoints}
         detailsNumberPoints={detailsNumberPoints}
       />
+      </Box>
     </>
   );
 };

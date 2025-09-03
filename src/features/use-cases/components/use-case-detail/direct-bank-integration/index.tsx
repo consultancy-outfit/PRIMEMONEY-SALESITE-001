@@ -14,7 +14,7 @@ export const DirectBankIntegration = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
           <Typography variant="h3" fontWeight={500} color="#3D3D3D">
             Build Seamless Payment Journeys with Direct Bank Integration
           </Typography>
@@ -44,11 +44,13 @@ export const DirectBankIntegration = () => {
           />
         </Box>
       </SlideUpInView>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+      <Box px={7}>
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
+      </Box>
     </>
   );
 };
