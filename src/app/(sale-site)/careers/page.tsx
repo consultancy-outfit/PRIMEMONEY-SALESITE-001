@@ -52,7 +52,7 @@ export default function Careers() {
       </Stack>
       <div style={{ height: "80vh", background: "#fff" }}>
         <iframe
-          src="https://recruiting.peoplescreed.ai/job-boards?boardName=realmoney-1754286862577&companyId=6890478395179f36a7527d25"
+          src="https://recruiting.peoplescreed.ai//job-boards?boardName=primemoney-1754288324447&companyId=68904c4d95179f36a752820a%22"
           width="100%"
           height="100%"
           no-border

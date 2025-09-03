@@ -14,7 +14,7 @@ export const StartupsAndSMEs = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
           <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
             Scalable Finance Automation for Startups & SMEs
           </Typography>
@@ -45,11 +45,13 @@ export const StartupsAndSMEs = () => {
           />
         </Box>
       </SlideUpInView>
+      <Box px={7}>
       <CommonDetail
         detailsCheckPoints={detailsCheckPoints}
         detailsNumberPoints={detailsNumberPoints}
         detailsKeyPoints={detailsKeyPoints}
       />
+      </Box>
     </>
   );
 };

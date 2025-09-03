@@ -14,7 +14,7 @@ export const PredictiveInsights = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
           <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Transform Bank Transactions into Predictive Insights
           </Typography>
@@ -44,11 +44,13 @@ export const PredictiveInsights = () => {
           />
         </Box>
       </SlideUpInView>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+      <Box px={7}>
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
+      </Box>
     </>
   );
 };
