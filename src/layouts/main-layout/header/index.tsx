@@ -611,9 +611,15 @@ export const Header = () => {
                   component={Link}
                   href={item?.path}
                   sx={{
-                    textDecoration: "none",
                     color: textColor,
                     fontWeight: theme?.typography?.fontWeightMedium,
+                    borderBottom: isActiveParent
+                      ? `2px solid ${
+                          isWhiteBg && !isScrolled
+                            ? theme.palette.common.white 
+                            : "rgba(34, 34, 34, 1)"
+                        }`
+                      : "none",
                   }}
                 >
                   {item?.title}
@@ -640,9 +646,10 @@ export const Header = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
-                color: isWhiteBg && !isScrolled
-                  ? theme?.palette?.common?.white
-                  : theme?.palette?.common?.black,
+                color:
+                  isWhiteBg && !isScrolled
+                    ? theme?.palette?.common?.white
+                    : theme?.palette?.common?.black,
               }}
             >
               Login
@@ -652,12 +659,14 @@ export const Header = () => {
               customStyles={{
                 px: 2,
                 py: 1,
-                background: isWhiteBg && !isScrolled
-                  ? "rgba(255, 255, 255, 1)"
-                  : "rgba(34, 34, 34, 1)",
-                color: isWhiteBg && !isScrolled
-                  ? theme?.palette?.common?.black
-                  : theme?.palette?.common?.white,
+                background:
+                  isWhiteBg && !isScrolled
+                    ? "rgba(255, 255, 255, 1)"
+                    : "rgba(34, 34, 34, 1)",
+                color:
+                  isWhiteBg && !isScrolled
+                    ? theme?.palette?.common?.black
+                    : theme?.palette?.common?.white,
                 height: "50px",
                 display: "flex",
                 alignItems: "center",
