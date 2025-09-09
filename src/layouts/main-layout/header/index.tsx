@@ -641,7 +641,7 @@ export const Header = () => {
                 justifyContent: "center",
                 width: "fit-content",
                 color: isWhiteBg && !isScrolled
-                  ? theme?.palette?.common?.black
+                  ? theme?.palette?.common?.white
                   : theme?.palette?.common?.black,
               }}
             >
