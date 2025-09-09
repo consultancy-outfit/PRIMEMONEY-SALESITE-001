@@ -9,7 +9,13 @@ export const contactUsFormValidationSchema = Yup?.object()?.shape({
     ?.email("Invalid email")
     ?.typeError("Invalid email")
     ?.required("Email is required"),
-  phoneNumber: Yup?.string()?.trim()?.required("Phone number is required"),
+  phoneNumber: Yup.string()
+    .trim()
+    .required("Phone number is required")
+    .matches(
+      /^\+[1-9][0-9]{9,14}$/,
+      "Enter a valid  phone number",
+    ),
 });
 
 export const contactUsFormDefaultValues = {

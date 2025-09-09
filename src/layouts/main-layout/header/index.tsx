@@ -75,6 +75,7 @@ export const Header = () => {
   const { scrollYProgress } = useScroll();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const [productsAnchorEl, setProductsAnchorEl] = useState<null | HTMLElement>(
     null,
@@ -148,29 +149,27 @@ export const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (!theme) return;
-
     const unsubscribe = scrollYProgress.on("change", (latest) => {
       if (latest > 0.01) {
+        setIsScrolled(true);
         controls.start({
-          width: isMobile ? "95%" : "85%",
-          // transition: { duration: 0.4 },
+          width: "85%",
+          transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
-          backgroundColor: theme.palette.common.white,
+          backgroundColor: "rgba(255, 255, 255, 1)",
           top: 20,
-          padding: "1.5rem 1rem",
-          borderRadius: 16,
+          padding: "2.8rem 1rem",
         });
       } else {
+        setIsScrolled(false);
         controls.start({
-          width: "100%",
+          width: "90%",
           transition: { duration: 0.4 },
           boxShadow: "none",
-          backgroundColor: theme.palette.common.white,
+          backgroundColor: "transparent",
           top: 0,
           padding: "2.5rem 1rem",
-          borderRadius: 0,
         });
       }
     });
@@ -188,6 +187,11 @@ export const Header = () => {
   const productsForDirectLinks = productsNavLink?.children?.filter(
     (item) => !item.children,
   );
+  const isWhiteBg =
+    pathname === APP_ROUTES.HOME ||
+    pathname === APP_ROUTES.CONTACT_US ||
+    pathname === APP_ROUTES.PARTNER_WITH_US ||
+    pathname === APP_ROUTES.Get_STARTED;
 
   return (
     <>
@@ -197,25 +201,34 @@ export const Header = () => {
           width: "100%",
           boxShadow: "none",
           top: 0,
+          // backgroundColor: "transparent",
         }}
         style={{
-          position: "sticky",
+          position: "fixed",
           left: 0,
           right: 0,
           zIndex: 99999,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "2.5rem 1rem",
+          padding: "3.5rem 3.5rem",
           margin: "0 auto",
           borderRadius: 0,
           height: 80,
-          backgroundColor: theme.palette.common.white,
+          // backgroundColor: theme.palette.common.white,
         }}
       >
         <Box>
           <Link href={APP_ROUTES.HOME}>
-            <LogoAvatar height="auto" isCenter isLight={false} />
+            {(pathname === APP_ROUTES.HOME ||
+              pathname === APP_ROUTES.CONTACT_US ||
+              pathname === APP_ROUTES.PARTNER_WITH_US ||
+              pathname === APP_ROUTES.Get_STARTED) &&
+            !isScrolled ? (
+              <LogoAvatar height="auto" isCenter isLight={true} />
+            ) : (
+              <LogoAvatar height="auto" isCenter isLight={false} />
+            )}
           </Link>
         </Box>
         <Stack
@@ -231,11 +244,19 @@ export const Header = () => {
                 ? true
                 : pathname === "/" && item.path === "/";
 
-            const textColor = theme
-              ? isActiveParent
-                ? theme.palette.common.link
-                : theme.palette.common.black
-              : "inherit";
+            // const textColor = theme
+            //   ? isActiveParent
+            //     ? theme.palette.common.link
+            //     : theme.palette.common.black
+            //   : "inherit";
+            const textColor =
+              isWhiteBg && !isScrolled
+                ? "rgba(255, 255, 255, 1)"
+                : theme
+                  ? isActiveParent
+                    ? theme.palette.common.link
+                    : theme.palette.common.black
+                  : "inherit";
 
             if (item.title === "Productsss") {
               return (
@@ -619,8 +640,9 @@ export const Header = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
-
-                color: theme?.palette?.common?.black,
+                color: isWhiteBg && !isScrolled
+                  ? theme?.palette?.common?.black
+                  : theme?.palette?.common?.black,
               }}
             >
               Login
@@ -630,8 +652,12 @@ export const Header = () => {
               customStyles={{
                 px: 2,
                 py: 1,
-                background: "#222222",
-                color: theme?.palette?.common?.white,
+                background: isWhiteBg && !isScrolled
+                  ? "rgba(255, 255, 255, 1)"
+                  : "rgba(34, 34, 34, 1)",
+                color: isWhiteBg && !isScrolled
+                  ? theme?.palette?.common?.black
+                  : theme?.palette?.common?.white,
                 height: "50px",
                 display: "flex",
                 alignItems: "center",
