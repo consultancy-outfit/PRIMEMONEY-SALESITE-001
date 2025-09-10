@@ -27,7 +27,7 @@ const HomeThirdSection = () => {
           >
             WHO WE ARE
           </Typography>
-          <Stack spacing={2}>
+          <Stack spacing={2} textAlign="left">
             <Typography
               color="#222222"
               // fontSize="2.8rem"
@@ -40,32 +40,31 @@ const HomeThirdSection = () => {
             </Typography>
             <Typography
               color="#646464"
-              fontSize="1.5rem"
               fontFamily="Manrope"
               textAlign="left"
-              sx={{ fontSize: { xs: "1.2rem", sm: "1.4rem", md: "1.5rem" } }}
+              sx={{ fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" } }}
             >
               From smart data to secure payments, we help fintechs, neobanks,
               and digital wallets build faster.
             </Typography>
+            <Link href="/about-us" passHref>
+              <Button
+                variant="contained"
+                component="a"
+                sx={{
+                  color: "#fff",
+                  background: "#000",
+                  width: "fit-content",
+                  px: 3,
+                  py: 1.5,
+                  borderRadius: 2,
+                  textDecoration: "none",
+                }}
+              >
+                About us
+              </Button>
+            </Link>
           </Stack>
-          <Link href="/about-us" passHref >
-            <Button
-              variant="contained"
-              component="a" 
-              sx={{
-                color: "#fff",
-                background: "#000",
-                width: "fit-content",
-                px: 3,
-                py: 1.5,
-                borderRadius: 2,
-                textDecoration: "none",
-              }}
-            >
-              About us
-            </Button>
-          </Link>
         </Stack>
       </Stack>
     </SlideUpInView>

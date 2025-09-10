@@ -4,6 +4,8 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { about, products } from "./footer.data";
 import Link from "next/link";
+import Image from "next/image";
+import { CommonColoredLogoImage } from "@/assets/images/logo";
 
 const Footer = () => {
   const router = useRouter();
@@ -23,8 +25,13 @@ const Footer = () => {
       <Grid container spacing={5}>
         <Grid size={{ xs: 12, lg: 5 }}>
           <Stack alignItems={"flex-start"} maxWidth={450} gap={2}>
-            <LogoAvatar height="auto" isCenter={false} isLight />
-
+            {/* <LogoAvatar height="auto" isCenter={false} isLight />
+            <LogoAvatar height="auto" isCenter isLight={false} /> */}
+            <Image
+              src={CommonColoredLogoImage}
+              alt="Prime Money"
+              style={{ width: 150, height: "auto" }}
+            />
             <Typography
               variant="body1"
               sx={{

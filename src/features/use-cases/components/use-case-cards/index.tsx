@@ -21,7 +21,16 @@ export const UseCaseCards = () => {
       p={2}
     >
       {cardData.map((item: any) => (
-        <Card sx={{ maxWidth: 420, borderRadius: "16px" }} key={item.id}>
+        <Card
+          key={item.id}
+          sx={{
+            maxWidth: 420,
+            minHeight: 600,
+            borderRadius: "16px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           <SlideUpInView>
             <CardActionArea>
               <CardMedia
@@ -32,14 +41,15 @@ export const UseCaseCards = () => {
               />
               <CardContent>
                 <Typography
-                  fontSize={"22px"}
+                  fontSize="22px"
                   fontWeight={600}
                   color="rgba(34, 34, 34, 1)"
+                  gutterBottom
                 >
                   {item.heading}
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  fontSize="16px"
                   fontWeight={400}
                   color="rgba(100, 100, 100, 1)"
                 >
@@ -48,7 +58,7 @@ export const UseCaseCards = () => {
               </CardContent>
             </CardActionArea>
           </SlideUpInView>
-          <CardActions>
+          <CardActions sx={{ mt: "auto", pb: 2, px: 2 }}>
             <ScaleInView>
               <LinkButton
                 link={item.readMoreUrl}

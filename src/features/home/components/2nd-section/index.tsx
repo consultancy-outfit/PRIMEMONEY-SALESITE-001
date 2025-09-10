@@ -56,30 +56,31 @@ const StyledCard = ({ title, description, imageIcon, linkHref }: any) => {
             <Box sx={{ alignItems: "center" }}>
               <Image src={imageIcon} alt={"Icon"} />
             </Box>
-            <Typography
-              fontSize={"1.5rem"}
-              fontFamily="Manrope"
-              fontWeight={700}
-              sx={{
-                background:
-                  "radial-gradient(circle at top left, #EF4BCB 0%,  #34897B 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                textAlign: "left",
-              }}
-            >
-              {title}
-            </Typography>
-            <Typography
-              color="#646464"
-              // fontSize={"1.2rem"}
-              fontFamily="Manrope"
-              textAlign="left"
-              sx={{ fontSize: { xs: "14px", sm: "14px", md: "16px" } }}
-            >
-              {description}
-            </Typography>
+            <Stack spacing={2} alignItems="flex-start">
+              <Typography
+                fontSize={"1.2rem"}
+                fontFamily="Manrope"
+                fontWeight={700}
+                sx={{
+                  background:
+                    "radial-gradient(circle at top left, #EF4BCB 0%,  #34897B 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  textAlign: "left",
+                }}
+              >
+                {title}
+              </Typography>
+              <Typography
+                color="#646464"
+                fontFamily="Manrope"
+                textAlign="left"
+                sx={{ fontSize: { xs: "14px", sm: "14px", md: "16px" } }}
+              >
+                {description}
+              </Typography>
+            </Stack>
           </Stack>
         </Box>
       </Box>
@@ -123,7 +124,7 @@ const OurServicesHome = () => {
               <StyledCard
                 linkHref="/products/embedded-payments-account-connectivity"
                 imageIcon={AccountConnectivityIcon}
-                title="Account Connectivity"
+                title={`Account Connectivity`}
                 description="Embed seamless payments and connectivity to drive compliance, scale, and user experience."
               />
             </Box>
