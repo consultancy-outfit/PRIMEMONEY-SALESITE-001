@@ -1,12 +1,4 @@
-import {
-  abs1,
-  abs2,
-  absSub1,
-  absSub2,
-  absSub3,
-  absSub4,
-  banner1,
-} from "@/assets/images/about-us";
+import { abs1, abs2, banner1 } from "@/assets/images/about-us";
 import IconAB1 from "@/assets/images/about-us/icon-ab1";
 import IconAb10 from "@/assets/images/about-us/icon-ab10";
 import IconAb11 from "@/assets/images/about-us/icon-ab11";
@@ -87,8 +79,9 @@ function AboutUsNewFeature() {
 
                   <Box
                     sx={{
-                      width: "100%",
-                      minHeight: { xs: 200, sm: 250, md: 288, lg: 288 },
+                      // width: "100%",
+                      minHeight: { xs: 200, sm: 250, md: 420, lg: 288 },
+                      minWidth: { xs: 120, sm: 200, md: 224, lg: 224 },
                       backgroundImage: `url(${abs1.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -131,8 +124,9 @@ function AboutUsNewFeature() {
 
                   <Box
                     sx={{
-                      width: "100%",
-                      minHeight: { xs: 200, sm: 250, md: 288, lg: 288 },
+                      // width: "100%",
+                      minHeight: { xs: 200, sm: 250, md: 420, lg: 288 },
+                      minWidth: { xs: 120, sm: 200, md: 224, lg: 224 },
                       backgroundImage: `url(${abs2.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -260,7 +254,7 @@ function AboutUsNewFeature() {
               fontWeight={400}
               color="#646464"
               sx={{
-                fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
+                fontSize: { xs: 16, sm: 18, md: 20, lg: 20 },
                 lineHeight: 1.2,
                 maxWidth: { xs: "100%", sm: "95%", md: "90%" },
                 margin: "20px auto",
@@ -562,12 +556,13 @@ function AboutUsNewFeature() {
           mt: 4,
         }}
       >
+        <Container maxWidth="md">
         <Stack textAlign={"center"} gap={2} mt={4} mb={4} p={4}>
           <Typography
             fontWeight={800}
             color="#FFFFFF"
             sx={{
-              fontSize: { xs: "2.2rem", sm: "3.5rem", md: "4.5rem" },
+              fontSize: { xs: "2rem", sm: "3rem", md: "3.5rem",  },
             }}
           >
             Let’s Build Something Better Together
@@ -581,7 +576,8 @@ function AboutUsNewFeature() {
               Contact Us
             </Button>
           </a>
-        </Stack>
+          </Stack>
+          </Container>
       </Box>
     </>
   );

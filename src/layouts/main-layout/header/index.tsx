@@ -608,7 +608,7 @@ export const Header = () => {
               return (
                 <Typography
                   key={item?.title}
-                  variant="body2"
+                  variant="body1"
                   component={Link}
                   href={item?.path}
                   sx={{

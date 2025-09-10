@@ -19,7 +19,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 // or only core styles
 import "@splidejs/react-splide/css";
@@ -66,7 +65,7 @@ export default function Home() {
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
           <Grid container spacing={0} alignItems="center">
             <Grid size={{ xs: 12, md: 5 }}>
-{/*               <Stack gap={1}>
+              {/*               <Stack gap={1}>
                 <Typography
                   fontWeight={800}
                   color="#222222"
@@ -85,7 +84,7 @@ export default function Home() {
             </Grid>
 
             <Grid size={{ xs: 12, md: 7 }}>
-{/*               <Box sx={{ px: { xs: 0, sm: 2, md: 3 } }}>
+              {/*               <Box sx={{ px: { xs: 0, sm: 2, md: 3 } }}>
                 <Splide
                   options={{ rewind: true, arrows: false }}
                   aria-label="My Favorite Images"
@@ -184,7 +183,8 @@ export default function Home() {
           </Grid>
         </Container>
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
-          <Grid container spacing={0}>
+          <Grid container spacing={0} alignItems="stretch">
+            {/* Left Content */}
             <Grid size={{ xs: 12, sm: 8, lg: 10 }}>
               <Stack gap={1}>
                 <Typography
@@ -205,31 +205,37 @@ export default function Home() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, sm: 4, lg: 2 }}>
-              <Stack gap={1} alignItems={"flex-end"}>
-                <a href="/use-cases">
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    disableFocusRipple
-                    disableRipple
-                    disableTouchRipple
-                    sx={{
-                      bgcolor: "#222222",
-                      color: "#FFFFFF",
-                      fontSize: 16,
-                      fontWeight: 600,
-                      borderRadius: 2,
-                      mt: 9,
-                      p: 1.8,
-                    }}
-                  >
-                    Browse All Use Cases
-                  </Button>
-                </a>
-              </Stack>
+
+            {/* Right Button */}
+            <Grid
+              size={{ xs: 12, sm: 4, lg: 2 }}
+              display="flex"
+              flexDirection="column"
+              justifyContent="flex-end"
+              alignItems="flex-end"
+            >
+              <a href="/use-cases">
+                <Button
+                  variant="contained"
+                  disableElevation
+                  disableFocusRipple
+                  disableRipple
+                  disableTouchRipple
+                  sx={{
+                    bgcolor: "#222222",
+                    color: "#FFFFFF",
+                    fontSize: 16,
+                    fontWeight: 600,
+                    borderRadius: 2,
+                    p: 1.8,
+                  }}
+                >
+                  Browse All Use Cases
+                </Button>
+              </a>
             </Grid>
           </Grid>
+
           <Grid container spacing={3} sx={{ mt: 4 }}>
             <Grid size={{ xs: 12, md: 4 }}>
               <Stack gap={1}>

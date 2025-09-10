@@ -52,19 +52,22 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 210, sm: "50",xs:"unset",md:50 },
-            // top: { lg: "unset", xs: 10 },
+            bottom: { lg: 210, md: 50, xs: "unset" },
             top: { lg: "unset", xs: 50 },
             left: 0,
+            right: 0,
             zIndex: 2,
             p: { lg: 15, md: 10, xs: 1 },
+            display: "flex",
+            alignItems: "flex-end", // 👈 align both at bottom
+            justifyContent: "space-between", // 👈 push left & right
           }}
         >
           <ScaleInView>
             <HeadingText
               color={"common.white"}
               customStyles={{
-                width: { lg: "45%", xs: "100%" },
+                width: { lg: "60%", xs: "100%" },
                 textAlign: "start",
                 fontSize: {
                   xl: "4.5rem",
@@ -78,23 +81,13 @@ export const ContactUsFeature = () => {
               Let’s Build the Future of Finance—Together
             </HeadingText>
           </ScaleInView>
-        </Box>
-        <Box
-          sx={{
-            position: "absolute",
-            top: { lg: 380, md:260, xs: 220,sm:250 },
-            right: 0,
-            zIndex: 2,
-            py: { lg: 5, xs: 2 },
-            px: 4,
-          }}
-        >
+
           <ScaleInView>
             <CustomText
               variant="subtitle1"
               color={"grey.400"}
               customStyles={{
-                width: { lg: "75%", xs: "100%" },
+                width: { lg: "80%", xs: "100%" },
                 textAlign: "right",
               }}
             >
@@ -108,7 +101,7 @@ export const ContactUsFeature = () => {
         customStyles={{
           position: "relative",
           zIndex: 2,
-          mt: { xs:-20,md:-25,lg:-20 },
+          mt: { xs: -20, md: -25, lg: -20 },
           px: { xs: 2, md: 6 },
           width: "90%",
           mx: "auto",

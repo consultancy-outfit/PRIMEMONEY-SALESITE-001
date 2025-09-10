@@ -26,7 +26,7 @@ const GetStartedHome = () => {
             >
               Register with <br /> Prime Money Today
             </Typography>
-            <Typography sx={{ color: "#646464" }}>
+            <Typography fontSize="18px" sx={{ color: "#646464" }}>
               Join our platform to access powerful APIs and launch next-gen
               financial products.
             </Typography>

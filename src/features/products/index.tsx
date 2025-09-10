@@ -177,9 +177,7 @@ export const ServicesFeature = () => {
         </Stack>
       </Box>
 
-      <Grid
-        container
-        spacing={5}
+      <Box
         sx={{
           backgroundColor: "#F2F5F7",
           px: { xs: 2, sm: 3, md: 4, lg: 15 },
@@ -189,7 +187,7 @@ export const ServicesFeature = () => {
         {gridContent.map((item: any, idx: number) => (
           <React.Fragment key={item?.id}>
             {idx % 2 === 0 ? (
-              <>
+              <Grid container spacing={5} key={item.id} height="100%">
                 {/* Text first, then image */}
                 <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                   <Box sx={{ mb: 3 }}>
@@ -204,7 +202,9 @@ export const ServicesFeature = () => {
                   <Typography variant="h3" fontWeight={600} mb={3}>
                     {item.subtitle}
                   </Typography>
-                  <Typography mb={3} fontSize={"20px"} color="#646464">{item.description}</Typography>
+                  <Typography mb={3} fontSize={"20px"} color="#646464">
+                    {item.description}
+                  </Typography>
                   <Link href={item.hrefLink}>
                     <Button
                       variant="contained"
@@ -214,56 +214,58 @@ export const ServicesFeature = () => {
                     </Button>
                   </Link>
                 </Grid>
-                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
-                  <Image
-                    src={item.sectionImage}
-                    alt="HeroSection"
-                    style={{
-                      width: "100%",
-                    }}
-                  />
+                <Grid
+                  size={{ xs: 12, sm: 12, md: 6 }}
+                  sx={{ mb: 8, display: "flex", justifyContent: "flex-end" }}
+                >
+                  <Image src={item.sectionImage} alt="HeroSection" />
                 </Grid>
-              </>
+              </Grid>
             ) : (
               <>
                 {/* Image first, then text */}
-                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
-                  <Image
-                    src={item.sectionImage}
-                    alt="HeroSection"
-                    style={{
-                      width: "100%",
+                <Grid container spacing={5} key={item.id} height="100%">
+                  <Grid
+                    size={{ xs: 12, sm: 12, md: 6 }}
+                    sx={{
+                      mb: 8,
+                      display: "flex",
+                      justifyContent: "flex-start",
                     }}
-                  />
-                </Grid>
-                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
-                  <Box sx={{ mb: 3 }}>
-                    <Typography
-                      variant="body1"
-                      fontWeight={600}
-                      sx={{ textTransform: "uppercase" }}
-                    >
-                      {item.title}
+                  >
+                    <Image src={item.sectionImage} alt="HeroSection" />
+                  </Grid>
+                  <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
+                    <Box sx={{ mb: 3 }}>
+                      <Typography
+                        variant="body1"
+                        fontWeight={600}
+                        sx={{ textTransform: "uppercase" }}
+                      >
+                        {item.title}
+                      </Typography>
+                    </Box>
+                    <Typography variant="h3" fontWeight={600} mb={3}>
+                      {item.subtitle}
                     </Typography>
-                  </Box>
-                  <Typography variant="h3" fontWeight={600} mb={3}>
-                    {item.subtitle}
-                  </Typography>
-                  <Typography mb={3} fontSize={'20px'} color="#646464">{item.description}</Typography>
-                  <Link href={item.hrefLink}>
-                    <Button
-                      variant="contained"
-                      sx={{ backgroundColor: "black", color: "white", py: 1 }}
-                    >
-                      Explore
-                    </Button>
-                  </Link>
+                    <Typography mb={3} fontSize={"20px"} color="#646464">
+                      {item.description}
+                    </Typography>
+                    <Link href={item.hrefLink}>
+                      <Button
+                        variant="contained"
+                        sx={{ backgroundColor: "black", color: "white", py: 1 }}
+                      >
+                        Explore
+                      </Button>
+                    </Link>
+                  </Grid>
                 </Grid>
               </>
             )}
           </React.Fragment>
         ))}
-      </Grid>
+      </Box>
     </>
   );
 };
