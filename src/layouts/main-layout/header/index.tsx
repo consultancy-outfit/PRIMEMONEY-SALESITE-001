@@ -153,7 +153,7 @@ export const Header = () => {
       if (latest > 0.01) {
         setIsScrolled(true);
         controls.start({
-          width: "85%",
+          width: "90%",
           transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
@@ -169,7 +169,7 @@ export const Header = () => {
           boxShadow: "none",
           backgroundColor: "transparent",
           top: 0,
-          padding: "2.5rem 1rem",
+          padding: "2.8rem 1rem",
         });
       }
     });
@@ -198,7 +198,7 @@ export const Header = () => {
       <motion.div
         animate={controls}
         initial={{
-          width: "100%",
+          width: "90%",
           boxShadow: "none",
           top: 0,
           // backgroundColor: "transparent",
@@ -211,11 +211,12 @@ export const Header = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "3.5rem 3.5rem",
+          padding: "1rem 2.5rem",
           margin: "0 auto",
           borderRadius: 0,
           height: 80,
           // backgroundColor: theme.palette.common.white,
+          top:0
         }}
       >
         <Box>
