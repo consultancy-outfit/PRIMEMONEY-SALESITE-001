@@ -13,7 +13,6 @@ import {
 export const DirectBankIntegration = () => {
   return (
     <>
-      <SlideUpInView>
         <Container maxWidth="xl"
           sx={{
             display: "flex",
@@ -50,7 +49,6 @@ export const DirectBankIntegration = () => {
             }}
           />
         </Container>
-      </SlideUpInView>
       <Box px={7}>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
