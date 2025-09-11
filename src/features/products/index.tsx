@@ -132,7 +132,7 @@ export const ServicesFeature = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            pt={15}
+            pt={20}
             pb={5}
             m={2}
             sx={{ px: { xs: 0, sm: 3, md: 10, lg: 15 } }}
@@ -143,7 +143,7 @@ export const ServicesFeature = () => {
               textAlign={"center"}
               my={3}
               sx={{
-                fontSize: { xs: 34, sm: 38, md: 48, lg: 72 },
+                fontSize: { xs: 34, sm: 38, md: 48, lg: 65 },
                 lineHeight: { xs: "38px", sm: "40px", md: "48px", lg: "72px" },
                 maxWidth: {
                   xs: "100%",
@@ -191,7 +191,7 @@ export const ServicesFeature = () => {
             {idx % 2 === 0 ? (
               <Grid container spacing={5} key={item.id} height="100%">
                 {/* Text first, then image */}
-                <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 12, md: 5.5 }} sx={{ mb: 8 }}>
                   <Box sx={{ mb: 3 }}>
                     <Typography
                       variant="body1"
@@ -216,8 +216,9 @@ export const ServicesFeature = () => {
                     </Button>
                   </Link>
                 </Grid>
+                <br />
                 <Grid
-                  size={{ xs: 12, sm: 12, md: 6 }}
+                  size={{ xs: 12, sm: 12, md: 5.5 }}
                   sx={{ mb: 8, display: "flex", justifyContent: "flex-end" }}
                 >
                   <Image
@@ -232,7 +233,7 @@ export const ServicesFeature = () => {
                 {/* Image first, then text */}
                 <Grid container spacing={5} key={item.id} height="100%">
                   <Grid
-                    size={{ xs: 12, sm: 12, md: 6 }}
+                    size={{ xs: 12, sm: 12, md: 5.5 }}
                     sx={{
                       mb: 8,
                       display: "flex",
@@ -244,8 +245,9 @@ export const ServicesFeature = () => {
                       alt="HeroSection"
                       style={{ width: "100%", height: "auto" }}
                     />
-                  </Grid>
-                  <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
+                    </Grid>
+                    <br />
+                  <Grid size={{ xs: 12, sm: 12, md: 5.5 }} sx={{ mb: 8 }}>
                     <Box sx={{ mb: 3 }}>
                       <Typography
                         variant="body1"

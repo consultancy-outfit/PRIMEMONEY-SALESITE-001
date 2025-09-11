@@ -22,7 +22,7 @@ import {
 function AboutUsNewFeature() {
   return (
     <>
-      <Container maxWidth="xl" sx={{ mt: 10 }}>
+      <Container maxWidth="xl" sx={{ mt: 20 }}>
         <Stack gap={2} textAlign={"center"}>
           <Typography
             fontWeight={800}

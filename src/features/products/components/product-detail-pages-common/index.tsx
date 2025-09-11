@@ -41,7 +41,7 @@ export const ProductDetailPagesCommon = (props: any) => {
         </Box>
       </Stack>
 
-      <Grid container sx={{ py: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 } }}>
+      <Grid container sx={{ py: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 } }} gap={4}>
         {gridContent.map((item: any) => (
           <React.Fragment key={item?.id}>
             {/* Text first, then image */}

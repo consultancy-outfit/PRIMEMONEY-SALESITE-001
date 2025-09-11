@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid, Typography } from "@mui/material";
+import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import { CheckCircleIcon } from "../../assets";
 import { AVATAR_VARIANTS } from "@/constants/ui";
 
@@ -6,15 +6,31 @@ export const CommonDetail = (props: any) => {
   const { detailsKeyPoints, detailsNumberPoints, detailsCheckPoints } = props;
 
   return (
-    <Box display={'flex'} flexDirection={'column'} gap={6} mt={8}>
-      <Box  px={6}>
-        <Typography fontWeight={700} fontSize={"32px"} color="rgba(34, 34, 34, 1)">
+    <Container
+      maxWidth="xl"
+      sx={{ display: "flex", flexDirection: "column", gap: 6, mt: 8 }}
+    >
+      <Box>
+        <Typography
+          fontWeight={700}
+          fontSize={"32px"}
+          color="rgba(34, 34, 34, 1)"
+        >
           {detailsCheckPoints.heading}
         </Typography>
-        <Typography fontWeight={400} fontSize={"20px"} color="rgba(100, 100, 100, 1)">
+        <Typography
+          fontWeight={400}
+          fontSize={"20px"}
+          color="rgba(100, 100, 100, 1)"
+        >
           {detailsCheckPoints.description1}
         </Typography>
-        <Typography fontWeight={400} fontSize={"20px"} mb={4} color="rgba(100, 100, 100, 1)">
+        <Typography
+          fontWeight={400}
+          fontSize={"20px"}
+          mb={4}
+          color="rgba(100, 100, 100, 1)"
+        >
           {detailsCheckPoints.description2}
         </Typography>
         {detailsCheckPoints.points.map((item: any) => (
@@ -35,18 +51,31 @@ export const CommonDetail = (props: any) => {
                 variant={AVATAR_VARIANTS?.CIRCULAR}
                 alt={"CheckCircleIcon"}
               />
-              <Typography fontWeight={700} fontSize={"24px"} color="rgba(34, 34, 34, 1)">
+              <Typography
+                fontWeight={700}
+                fontSize={"24px"}
+                color="rgba(34, 34, 34, 1)"
+              >
                 {item.title}
               </Typography>
             </Box>
-            <Typography fontWeight={400} fontSize={"20px"} color="rgba(100, 100, 100, 1)">
+            <Typography
+              fontWeight={400}
+              fontSize={"20px"}
+              color="rgba(100, 100, 100, 1)"
+            >
               {item.description}
             </Typography>
           </Box>
         ))}
       </Box>
-      <Box px={6}>
-        <Typography fontWeight={700} fontSize={"32px"} mb={4} color="rgba(34, 34, 34, 1)">
+      <Box>
+        <Typography
+          fontWeight={700}
+          fontSize={"32px"}
+          mb={4}
+          color="rgba(34, 34, 34, 1)"
+        >
           {detailsNumberPoints.heading}
         </Typography>
         <Grid container spacing={2}>
@@ -68,7 +97,11 @@ export const CommonDetail = (props: any) => {
                 variant={AVATAR_VARIANTS?.SQUARE}
                 alt={item.title}
               />
-              <Typography fontWeight={400} fontSize={"18px"} color="rgba(100, 100, 100, 1)">
+              <Typography
+                fontWeight={400}
+                fontSize={"18px"}
+                color="rgba(100, 100, 100, 1)"
+              >
                 {item.title}
               </Typography>
             </Grid>
@@ -76,8 +109,13 @@ export const CommonDetail = (props: any) => {
         </Grid>
       </Box>
       {detailsKeyPoints && (
-        <Box px={6}>
-          <Typography fontWeight={700} fontSize={"32px"} mb={2} color="rgba(34, 34, 34, 1)">
+        <Box>
+          <Typography
+            fontWeight={700}
+            fontSize={"32px"}
+            mb={2}
+            color="rgba(34, 34, 34, 1)"
+          >
             {detailsKeyPoints.heading}
           </Typography>
           <Grid container spacing={2}>
@@ -100,10 +138,18 @@ export const CommonDetail = (props: any) => {
                   variant={AVATAR_VARIANTS?.SQUARE}
                   alt={item.title}
                 />
-                <Typography fontWeight={700} fontSize={"24px"} color="rgba(34, 34, 34, 1)">
+                <Typography
+                  fontWeight={700}
+                  fontSize={"24px"}
+                  color="rgba(34, 34, 34, 1)"
+                >
                   {item.title}
                 </Typography>
-                <Typography fontWeight={400} fontSize={"20px"} color="rgba(100, 100, 100, 1)">
+                <Typography
+                  fontWeight={400}
+                  fontSize={"20px"}
+                  color="rgba(100, 100, 100, 1)"
+                >
                   {item.description}
                 </Typography>
               </Grid>
@@ -111,6 +157,6 @@ export const CommonDetail = (props: any) => {
           </Grid>
         </Box>
       )}
-    </Box>
+    </Container>
   );
 };
