@@ -1,7 +1,7 @@
 "use client";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection3Image } from "@/features/use-cases/assets";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonDetail } from "../../common-detail";
 import { detailsCheckPoints, detailsNumberPoints } from "./OneAPI.data";
@@ -10,11 +10,19 @@ export const OneAPI = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
-          <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
+        <Container
+          maxWidth="xl"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            mt: 20,
+          }}
+        >
+          <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Bank-Verified Identity and Compliance in One API
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <br />
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             Regulatory compliance and user verification are no longer just
             checkboxes — they are critical to trust, operational integrity, and
             market expansion. With increasing pressure from regulators and
@@ -23,7 +31,7 @@ export const OneAPI = () => {
             accounts, and meet compliance standards — all without disrupting the
             user experience.
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             Prime Moneys Bank-Verified Identity & Compliance API offers a
             seamless way to connect, verify, and screen users in real time using
             their bank-verified information. It simplifies Know Your Customer
@@ -39,13 +47,13 @@ export const OneAPI = () => {
               height: "520px",
             }}
           />
-        </Box>
+        </Container>
       </SlideUpInView>
       <Box px={7}>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-      />
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+        />
       </Box>
     </>
   );

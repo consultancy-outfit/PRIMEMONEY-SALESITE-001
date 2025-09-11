@@ -225,9 +225,9 @@ export const Header = () => {
               pathname === APP_ROUTES.PARTNER_WITH_US ||
               pathname === APP_ROUTES.Get_STARTED) &&
             !isScrolled ? (
-              <LogoAvatar height="auto" isCenter isLight={true} />
+              <LogoAvatar width={156} height="auto" isCenter isLight={true} />
             ) : (
-              <LogoAvatar height="auto" isCenter isLight={false} />
+              <LogoAvatar width={156} height="auto" isCenter isLight={false} />
             )}
           </Link>
         </Box>
@@ -254,7 +254,7 @@ export const Header = () => {
                 ? "rgba(255, 255, 255, 1)"
                 : theme
                   ? isActiveParent
-                    ? theme.palette.common.link
+                    ? theme.palette.common.black
                     : theme.palette.common.black
                   : "inherit";
 

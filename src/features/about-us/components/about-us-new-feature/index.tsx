@@ -556,16 +556,16 @@ function AboutUsNewFeature() {
           mt: 4,
         }}
       >
-        <Container maxWidth="md">
         <Stack textAlign={"center"} gap={2} mt={4} mb={4} p={4}>
           <Typography
             fontWeight={800}
             color="#FFFFFF"
             sx={{
-              fontSize: { xs: "2rem", sm: "3rem", md: "3.5rem",  },
+              fontSize: { xs: "2.2rem", sm: "3.5rem", md: "4.5rem" },
             }}
           >
-            Let’s Build Something Better Together
+            Let’s Build Something
+            <br /> Better Together
           </Typography>
           <Typography fontSize={20} fontWeight={400} color="#A7A7A7">
             Talk to our team and explore how Prime Money can fuel your next
@@ -576,8 +576,7 @@ function AboutUsNewFeature() {
               Contact Us
             </Button>
           </a>
-          </Stack>
-          </Container>
+        </Stack>
       </Box>
     </>
   );

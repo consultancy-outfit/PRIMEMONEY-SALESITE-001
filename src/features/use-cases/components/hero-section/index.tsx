@@ -11,7 +11,6 @@ export const HeroSection = () => {
         alignItems={"center"}
         justifyContent={"center"}
         pt={15}
-        pb={5}
         m={2}
         sx={{ px: { xs: 0, sm: 3, md: 5, lg: 8, xl: 15 } }}
       >
@@ -35,7 +34,7 @@ export const HeroSection = () => {
           Powering Real-World Finance with Flexible Scalable Infrastructure
         </Typography>
         <Typography
-          color="grey"
+          color="#646464"
           sx={{
             my: 3,
             textAlign: "center",

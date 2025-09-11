@@ -31,7 +31,7 @@ const GetStartedForm = () => {
       </HeadingText>
       <SubHeadingText
         variant="subtitle2"
-        color="grey.500"
+        color="#646464"
         fontWeight="fontWeightThin"
         customStyles={{ py: 2, textAlign: "center" }}
       >

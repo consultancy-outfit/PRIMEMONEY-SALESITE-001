@@ -6,7 +6,7 @@ import {
   FinancialDataIntelligenceProductImage,
   IdentityAccessComplianceProductImage,
 } from "@/assets/images/features/products";
-import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -158,12 +158,13 @@ export const ServicesFeature = () => {
               Unlock the Power of Financial Precision
             </Typography>
             <Typography
-              color="grey"
+              color="#646464"
               sx={{
                 my: 3,
                 textAlign: "center",
                 fontSize: { xs: 16, sm: 18, md: 20, lg: 22 },
                 mt: 3,
+                maxWidth: { xs: "100%", sm: "90%", lg: "85%" },
               }}
             >
               At Prime Money, we don’t just offer financial services we deliver
@@ -177,7 +178,8 @@ export const ServicesFeature = () => {
         </Stack>
       </Box>
 
-      <Box
+      <Container
+        maxWidth="xl"
         sx={{
           backgroundColor: "#F2F5F7",
           px: { xs: 2, sm: 3, md: 4, lg: 15 },
@@ -218,7 +220,11 @@ export const ServicesFeature = () => {
                   size={{ xs: 12, sm: 12, md: 6 }}
                   sx={{ mb: 8, display: "flex", justifyContent: "flex-end" }}
                 >
-                  <Image src={item.sectionImage} alt="HeroSection" />
+                  <Image
+                    src={item.sectionImage}
+                    alt="HeroSection"
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </Grid>
               </Grid>
             ) : (
@@ -233,7 +239,11 @@ export const ServicesFeature = () => {
                       justifyContent: "flex-start",
                     }}
                   >
-                    <Image src={item.sectionImage} alt="HeroSection" />
+                    <Image
+                      src={item.sectionImage}
+                      alt="HeroSection"
+                      style={{ width: "100%", height: "auto" }}
+                    />
                   </Grid>
                   <Grid size={{ xs: 12, sm: 12, md: 6 }} sx={{ mb: 8 }}>
                     <Box sx={{ mb: 3 }}>
@@ -265,7 +275,7 @@ export const ServicesFeature = () => {
             )}
           </React.Fragment>
         ))}
-      </Box>
+      </Container>
     </>
   );
 };
