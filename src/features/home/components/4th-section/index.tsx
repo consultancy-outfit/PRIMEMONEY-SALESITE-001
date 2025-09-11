@@ -25,7 +25,7 @@ const UseCasesHome = () => {
         </>
       ),
       description:
-        "From smart data to secure payments, we help fintechs, neobanks, and digital wallets build faster.",
+        "Our credit scoring models improved by 40% with Prime Money's enriched bank data.",
     },
     {
       id: 3,
@@ -36,11 +36,11 @@ const UseCasesHome = () => {
         </>
       ),
       description:
-        "From smart data to secure payments, we help fintechs, neobanks, and digital wallets build faster.",
+        "We moved from legacy systems to Prime Money’s API-first stack — seamless and reliable",
     },
   ];
   return (
-    <Box sx={{ px: 15, pt: 8, pb: 5 }}>
+    <Box sx={{ px: { xs: 2, md: 10, lg: 15 }, pt: 8, pb: 5 }}>
       <Typography
         color="#222222"
         fontSize="2.8rem"
@@ -48,12 +48,13 @@ const UseCasesHome = () => {
         textAlign="center"
         fontWeight={700}
         py={4}
+        sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" } }}
       >
         Built for Visionaries. Backed by Innovation
       </Typography>
       <Grid container spacing={5}>
         {useCases.map((item, idx) => (
-          <Grid size={{ xs: 12, sm: 4 }} key={item.id}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }} key={item.id}>
             <Stack flexDirection={"row"} gap={3}>
               <Box>
                 <Image
@@ -68,7 +69,18 @@ const UseCasesHome = () => {
                 <Typography variant="h6" fontWeight={600}>
                   {item.title}
                 </Typography>
-                <Typography color="#646464">{item.description}</Typography>
+                <Typography
+                  color="#646464"
+                  sx={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {item.description}
+                </Typography>
               </Box>
             </Stack>
           </Grid>

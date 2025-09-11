@@ -22,7 +22,8 @@ export const navLinksData: NavLinkItem[] = [
   },
   {
     title: "Products",
-    path: APP_ROUTES.PRODUCT_1, // Changed to empty string to disable navigation
+    // path: APP_ROUTES.PRODUCT_1, // Changed to empty string to disable navigation
+    path: APP_ROUTES.SERVICES, // Changed to empty string to disable navigation
     // children: [
     //   {
     //     title: "Core Services",

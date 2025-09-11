@@ -47,25 +47,35 @@ export const GetStarted = () => {
           <Image src={shadowImage2} alt="Background Decoration" fill priority />
         </Box>
       </Box>
-      <CommonCard
-        borderRadius={8}
-        customStyles={{
-          position: "absolute",
-          top: 220,
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 2,
-          px: { xs: 2 },
-          boxShadow: "0px 10px 40px rgba(239, 75, 203, 0.3)",
-          mb: 10,
-          width: { md: "50%", xs: "90%" },
-          maxWidth: "100%",
+      <Box
+        sx={{
+          height: { xs: "320px", sm: "300px", md: "380px" },
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#fff",
         }}
       >
-        <ScaleInView>
-          <GetStartedForm />
-        </ScaleInView>
-      </CommonCard>
+        <CommonCard
+          borderRadius={8}
+          customStyles={{
+            position: "absolute",
+            top: 220,
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 2,
+            px: { xs: 2 },
+            boxShadow: "0px 10px 40px rgba(239, 75, 203, 0.3)",
+            mb: 10,
+            width: { md: "50%", xs: "90%" },
+            maxWidth: "100%",
+          }}
+        >
+          <ScaleInView>
+            <GetStartedForm />
+          </ScaleInView>
+        </CommonCard>
+      </Box>
     </>
   );
 };

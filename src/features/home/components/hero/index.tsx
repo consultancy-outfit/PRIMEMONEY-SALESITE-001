@@ -1,6 +1,7 @@
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { Button, Card, Stack, Typography } from "@mui/material";
 import { HeroSectionCover } from "../../assets";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -13,13 +14,13 @@ const Hero = () => {
           backgroundPosition: "center",
           borderRadius: 0,
           height: "46.75rem",
-          px: { lg: 15, xs: 7 },
-          py:10
+          px: { lg: 15, xs: 2 },
+          py: 10,
         }}
       >
         <Stack
           direction={{ lg: "row", xs: "column" }}
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems="center"
           spacing={5}
           height="100%"
@@ -28,7 +29,7 @@ const Hero = () => {
           <Typography
             color="#ffffff"
             fontFamily="Manrope"
-            fontSize={{ lg: "4.75rem", xs: "2.5rem" }}
+            fontSize={{ xl: "4.75rem", lg: "3.75rem", xs: "1.8rem" }}
             fontWeight={700}
             textAlign={{ lg: "left", xs: "center" }}
           >
@@ -44,19 +45,21 @@ const Hero = () => {
               Launch, scale, and future-proof your fintech with Prime Money’s
               full-stack open banking infrastructure.{" "}
             </Typography>
-            <Button
-              sx={{
-                color: "#000",
-                backgroundColor: "#ffffff",
-                width: "fit-content",
-                px: 2,
-                py: 1,
-                fontFamily:"Manrope",
-                fontSize:"1.125rem"
-              }}
-            >
-              Explore our products
-            </Button>
+            <Link href="/products" passHref>
+              <Button
+                sx={{
+                  color: "#000",
+                  backgroundColor: "#ffffff",
+                  width: "fit-content",
+                  px: 2,
+                  py: 1,
+                  fontFamily: "Manrope",
+                  fontSize: "1.125rem",
+                }}
+              >
+                Explore our products
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </Card>

@@ -11,9 +11,9 @@ export const about = [
   { id: 2, link: "/about-us", label: "About" },
   { id: 3, link: "/products", label: "Products" },
   { id: 4, link: "/use-cases", label: "Use Cases" },
-  { id: 5, link: "/developers", label: "Developers" },
-  { id: 6, link: "/careers", label: "Careers" },
-  { id: 7, link: "/contact-us", label: "Contact" },
+  // { id: 5, link: "/developers", label: "Developers" },
+  { id: 5, link: "/careers", label: "Careers" },
+  { id: 6, link: "/contact-us", label: "Contact" },
 ];
 
 export const resources = [

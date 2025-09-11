@@ -14,18 +14,18 @@ export const PredictiveInsights = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
-          <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
+          <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Transform Bank Transactions into Predictive Insights
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="subtitle1" color="rgba(100, 100, 100, 1)">
             In todays data-driven financial landscape, raw transactions alone
             are not enough. Businesses need real-time, enriched, and actionable
             financial intelligence to power smarter decision-making — whether
             for lending, budgeting, expense tracking, or embedded finance
             solutions.
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="subtitle1" color="rgba(100, 100, 100, 1)">
             Prime Moneys Financial Data Intelligence suite transforms fragmented
             bank data into structured, insightful, and deeply categorized
             financial narratives. From identifying recurring income patterns to
@@ -44,11 +44,13 @@ export const PredictiveInsights = () => {
           />
         </Box>
       </SlideUpInView>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+      <Box px={7}>
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
+      </Box>
     </>
   );
 };

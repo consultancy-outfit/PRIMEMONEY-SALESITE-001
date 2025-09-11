@@ -1,6 +1,6 @@
 "use client";
 import { banner1, hb1, hb2, hb3 } from "@/assets/images/about-us";
-import IconLeft from "@/assets/images/about-us/icon-left";
+// import IconLeft from "@/assets/images/about-us/icon-left";
 import IconRight from "@/assets/images/about-us/icon-right";
 import {
   CoreAdvantagesHome,
@@ -19,11 +19,38 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 // or only core styles
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/core";
+
+const testimonials = [
+  {
+    quote:
+      "“Prime Money’s tools made launching our neobank fast, seamless, and fully compliant—giving us powerful data insights without the usual complexity.”",
+    name: "James Wallace",
+    role: "CTO",
+    hasArrows: true,
+  },
+  {
+    quote:
+      "The payments API integration was seamless, with clear and thorough documentation that made the process quick and hassle-free.",
+    name: "Bessie Cooper",
+    role: "Product Manager",
+  },
+  {
+    quote:
+      "Their categorisation and enrichment tools gave our app a significant advantage, allowing us to deliver more personalised, insightful experiences that really resonated with our users.",
+    name: "Bessie Cooper",
+    role: "Product Manager",
+  },
+  {
+    quote:
+      "Bank identity verification streamlined our KYC process, reducing manual effort and accelerating user onboarding without compromising security.",
+    name: "Bessie Cooper",
+    role: "Product Manager",
+  },
+];
 
 export default function Home() {
   return (
@@ -36,10 +63,16 @@ export default function Home() {
         <GetStartedHome />
         <CoreAdvantagesHome />
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
-          <Grid container spacing={0}>
+          <Grid container spacing={0} alignItems="center">
             <Grid size={{ xs: 12, md: 5 }}>
-              <Stack gap={1}>
-                <Typography fontSize={40} fontWeight={800} color="#222222">
+              {/*               <Stack gap={1}>
+                <Typography
+                  fontWeight={800}
+                  color="#222222"
+                  sx={{
+                    fontSize: { xs: "1.8rem", sm: "2.4rem", md: "2.8rem" },
+                  }}
+                >
                   What Our Partners <br /> Say About Us
                 </Typography>
                 <Typography fontSize={20} fontWeight={400} color="#646464">
@@ -47,234 +80,122 @@ export default function Home() {
                   helped them innovate, grow, and deliver exceptional financial
                   experiences.
                 </Typography>
-              </Stack>
+              </Stack> */}
             </Grid>
+
             <Grid size={{ xs: 12, md: 7 }}>
-              <Box px={3}>
+              {/*               <Box sx={{ px: { xs: 0, sm: 2, md: 3 } }}>
                 <Splide
                   options={{ rewind: true, arrows: false }}
                   aria-label="My Favorite Images"
                 >
-                  <SplideSlide>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        minWidth: 200,
-                        height: 200,
-                        backgroundImage: `url(${banner1.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        borderRadius: 5,
-                        boxShadow: 8,
-                        display: "block",
-                        py: 2,
-                        mt: 4,
-                        px: 2,
-                      }}
-                    >
-                      <Stack gap={2}>
-                        <Typography
-                          fontSize={20}
-                          fontWeight={700}
-                          color="#ffff"
-                        >
-                          Hear from our trusted partners on how our solutions
-                          have helped them innovate, grow, and deliver
-                          exceptional financial experiences.
-                        </Typography>
-                        <Stack>
+                  {testimonials.map((testimonial, index) => (
+                    <SplideSlide key={index}>
+                      <Box
+                        sx={{
+                          width: "100%",
+                          minWidth: 200,
+                          height: { xs: 280, sm: 280, md: 380 },
+                          backgroundImage: `url(${banner1.src})`,
+                          backgroundSize: "cover",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center",
+                          borderRadius: 5,
+                          boxShadow: 8,
+                          display: "block",
+                          py: 2,
+                          mt: 4,
+                          px: 2,
+                          // mx: 2,
+                        }}
+                      >
+                        <Stack gap={2}>
                           <Typography
-                            fontSize={20}
-                            fontWeight={700}
+                            fontWeight={600}
                             color="#ffff"
+                            sx={{
+                              fontSize: {
+                                xs: "1rem",
+                                sm: "1.2rem",
+                                md: "1.3rem",
+                                lg: "1.5rem",
+                              },
+                              width: { xs: "100%", sm: "90%", md: "80%" },
+                              textAlign: "left",
+                            }}
                           >
-                            James Wallace
+                            {testimonial.quote}
                           </Typography>
-                          <Stack direction={"row"} alignItems={"center"}>
+                          <Stack>
                             <Typography
-                              fontSize={14}
-                              fontWeight={400}
-                              color="#646464"
+                              fontWeight={700}
+                              color="#ffff"
+                              sx={{
+                                fontSize: {
+                                  xs: "1.2rem",
+                                  sm: "1.2rem",
+                                  md: "1.3rem",
+                                  lg: "1.5rem",
+                                },
+                              }}
                             >
-                              CTO
+                              {testimonial.name}
                             </Typography>
-                            <Stack
-                              direction={"row"}
-                              gap={4}
-                              className="splide__arrows"
-                              ml={"auto"}
-                            >
-                              <IconButton className="splide__arrow splide__arrow--prev">
-                                <IconRight />
-                              </IconButton>
-                              <IconButton className="splide__arrow splide__arrow--next">
-                                <IconRight />
-                              </IconButton>
+                            <Stack direction={"row"} alignItems={"center"}>
+                              <Typography
+                                fontWeight={400}
+                                color="#646464"
+                                sx={{
+                                  fontSize: {
+                                    xs: "0.7rem",
+                                    sm: "0.8rem",
+                                    md: "0.9rem",
+                                    lg: "1rem",
+                                  },
+                                }}
+                              >
+                                {testimonial.role}
+                              </Typography>
+                              {testimonial.hasArrows && (
+                                <Stack
+                                  direction={"row"}
+                                  gap={4}
+                                  className="splide__arrows"
+                                  ml={"auto"}
+                                >
+                                  <IconButton className="splide__arrow splide__arrow--prev">
+                                    <IconRight />
+                                  </IconButton>
+                                  <IconButton className="splide__arrow splide__arrow--next">
+                                    <IconRight />
+                                  </IconButton>
+                                </Stack>
+                              )}
                             </Stack>
                           </Stack>
                         </Stack>
-                      </Stack>
-                    </Box>
-                  </SplideSlide>
-                  <SplideSlide>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        minWidth: 200,
-                        height: 200,
-                        backgroundImage: `url(${banner1.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        borderRadius: 5,
-                        boxShadow: 8,
-                        display: "block",
-                        py: 2,
-                        mt: 4,
-                        px: 2,
-                      }}
-                    >
-                      <Stack gap={2}>
-                        <Typography
-                          fontSize={20}
-                          fontWeight={700}
-                          color="#ffff"
-                        >
-                          The payments API integration was seamless, with clear
-                          and thorough documentation that made the process quick
-                          and hassle-free.
-                        </Typography>
-                        <Stack>
-                          <Typography
-                            fontSize={20}
-                            fontWeight={700}
-                            color="#ffff"
-                          >
-                            Bessie Cooper
-                          </Typography>
-                          <Stack direction={"row"} alignItems={"center"}>
-                            <Typography
-                              fontSize={14}
-                              fontWeight={400}
-                              color="#646464"
-                            >
-                              Product Manager
-                            </Typography>
-                          </Stack>
-                        </Stack>
-                      </Stack>
-                    </Box>
-                  </SplideSlide>
-                  <SplideSlide>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        minWidth: 200,
-                        height: 200,
-                        backgroundImage: `url(${banner1.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        borderRadius: 5,
-                        boxShadow: 8,
-                        display: "block",
-                        py: 2,
-                        mt: 4,
-                        px: 2,
-                      }}
-                    >
-                      <Stack gap={2}>
-                        <Typography
-                          fontSize={20}
-                          fontWeight={700}
-                          color="#ffff"
-                        >
-                          Their categorisation and enrichment tools gave our app
-                          a significant advantage, allowing us to deliver more
-                          personalised, insightful experiences that really
-                          resonated with our users.
-                        </Typography>
-                        <Stack>
-                          <Typography
-                            fontSize={20}
-                            fontWeight={700}
-                            color="#ffff"
-                          >
-                            Bessie Cooper
-                          </Typography>
-                          <Stack direction={"row"} alignItems={"center"}>
-                            <Typography
-                              fontSize={14}
-                              fontWeight={400}
-                              color="#646464"
-                            >
-                              Product Manager
-                            </Typography>
-                          </Stack>
-                        </Stack>
-                      </Stack>
-                    </Box>
-                  </SplideSlide>
-                  <SplideSlide>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        minWidth: 200,
-                        height: 200,
-                        backgroundImage: `url(${banner1.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        borderRadius: 5,
-                        boxShadow: 8,
-                        display: "block",
-                        py: 2,
-                        mt: 4,
-                        px: 2,
-                      }}
-                    >
-                      <Stack gap={2}>
-                        <Typography
-                          fontSize={20}
-                          fontWeight={700}
-                          color="#ffff"
-                        >
-                          Bank identity verification streamlined our KYC
-                          process, reducing manual effort and accelerating user
-                          onboarding without compromising security.
-                        </Typography>
-                        <Stack>
-                          <Typography
-                            fontSize={20}
-                            fontWeight={700}
-                            color="#ffff"
-                          >
-                            Bessie Cooper
-                          </Typography>
-                          <Stack direction={"row"} alignItems={"center"}>
-                            <Typography
-                              fontSize={14}
-                              fontWeight={400}
-                              color="#646464"
-                            >
-                              Product Manager
-                            </Typography>
-                          </Stack>
-                        </Stack>
-                      </Stack>
-                    </Box>
-                  </SplideSlide>
+                      </Box>
+                    </SplideSlide>
+                  ))}
                 </Splide>
-              </Box>
+              </Box> */}
             </Grid>
           </Grid>
         </Container>
         <Container maxWidth="xl" sx={{ my: 4, textAlign: "left" }}>
-          <Grid container spacing={0}>
-            <Grid size={{ xs: 12, md: 10 }}>
+          <Grid container spacing={0} alignItems="stretch">
+            {/* Left Content */}
+            <Grid size={{ xs: 12, sm: 8, lg: 10 }}>
               <Stack gap={1}>
-                <Typography fontSize={40} fontWeight={800} color="#222222">
+                <Typography
+                  fontSize={40}
+                  fontWeight={800}
+                  color="#222222"
+                  sx={{
+                    fontSize: { xs: "1.8rem", sm: "2.4rem", md: "2.8rem" },
+                    width: { xs: "100%", sm: "90%", md: "70%" },
+                  }}
+                >
                   Powering Real-World Financial Innovation
                 </Typography>
                 <Typography fontSize={20} fontWeight={400} color="#646464">
@@ -284,31 +205,37 @@ export default function Home() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, md: 2 }}>
-              <Stack gap={1} alignItems={"flex-end"}>
-                <a href="/use-cases">
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    disableFocusRipple
-                    disableRipple
-                    disableTouchRipple
-                    sx={{
-                      bgcolor: "#222222",
-                      color: "#FFFFFF",
-                      fontSize: 16,
-                      fontWeight: 600,
-                      borderRadius: 2,
-                      mt: 9,
-                      p: 1.8,
-                    }}
-                  >
-                    Browse All Use Cases
-                  </Button>
-                </a>
-              </Stack>
+
+            {/* Right Button */}
+            <Grid
+              size={{ xs: 12, sm: 4, lg: 2 }}
+              display="flex"
+              flexDirection="column"
+              justifyContent="flex-end"
+              alignItems="flex-end"
+            >
+              <a href="/use-cases">
+                <Button
+                  variant="contained"
+                  disableElevation
+                  disableFocusRipple
+                  disableRipple
+                  disableTouchRipple
+                  sx={{
+                    bgcolor: "#222222",
+                    color: "#FFFFFF",
+                    fontSize: 16,
+                    fontWeight: 600,
+                    borderRadius: 2,
+                    p: 1.8,
+                  }}
+                >
+                  Browse All Use Cases
+                </Button>
+              </a>
             </Grid>
           </Grid>
+
           <Grid container spacing={3} sx={{ mt: 4 }}>
             <Grid size={{ xs: 12, md: 4 }}>
               <Stack gap={1}>
@@ -415,8 +342,15 @@ export default function Home() {
           }}
         >
           <Stack textAlign={"center"} gap={2} mt={4} mb={4} p={4}>
-            <Typography fontSize={62} fontWeight={800} color="#FFFFFF">
-              Let’s Build Something Better Together
+            <Typography
+              fontWeight={800}
+              color="#FFFFFF"
+              sx={{
+                fontSize: { xs: "2.2rem", sm: "3.5rem", md: "4.5rem" },
+              }}
+            >
+              Let’s Build Something
+              <br /> Better Together
             </Typography>
             <Typography fontSize={20} fontWeight={400} color="#A7A7A7">
               Talk to our team and explore how Prime Money can fuel your next

@@ -6,10 +6,10 @@ import { UseCaseBanner } from "./components/use-case-banner";
 
 export const UseCases = () => {
   return (
-    <Box display={'flex'} flexDirection={'column'} gap={6} my={4} mt={10}>
+    <Box display={"flex"} flexDirection={"column"} gap={6} my={4} mt={10}>
       <HeroSection />
       <UseCaseCards />
-      <UseCaseBanner/>
+      <UseCaseBanner />
     </Box>
   );
 };

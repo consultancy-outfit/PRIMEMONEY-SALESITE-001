@@ -273,7 +273,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                   <MenuItem
                     component={Link}
                     href={item.path}
-                    onClick={handleClose}
+                    // onClick={handleClose}
                     sx={{
                       color:
                         pathname === item.path
@@ -299,7 +299,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                   </MenuItem>
                 ) : (
                   <ListItemButton
-                    onClick={handleClose}
+                    // onClick={handleClose}
                     sx={{
                       borderRadius: 1,
                       px: 2,
@@ -363,13 +363,13 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                 link={APP_ROUTES?.Get_STARTED}
                 customStyles={{
                   borderRadius: "999px",
-                  border: `1.5px solid ${theme?.palette?.primary?.main}`,
+                  border: "1px solid #F2F2F2",
                   paddingLeft: "24px",
                   paddingRight: "24px",
                   paddingTop: "8px",
                   paddingBottom: "8px",
-                  backgroundColor: theme?.palette?.primary?.main,
-                  color: theme?.palette?.common?.white,
+                  backgroundColor: theme?.palette?.common?.white,
+                  color: theme?.palette?.text?.primary,
                   height: "50px",
                   display: "flex",
                   alignItems: "center",
@@ -378,7 +378,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                 }}
                 onClick={handleClose}
               >
-                Register
+                Get Started
               </CustomLinkButton>
             </Stack>
           </Stack>

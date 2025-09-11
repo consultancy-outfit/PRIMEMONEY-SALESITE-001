@@ -14,18 +14,18 @@ export const StartupsAndSMEs = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
-          <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
+          <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
             Scalable Finance Automation for Startups & SMEs
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Startups and SMEs often face the dual challenge of limited resources
             and increasing operational complexity. Managing finances — from cash
             flow tracking to account reconciliation — can be time-consuming and
             error-prone. Manual processes stall growth, cause inefficiencies,
             and make it harder to stay compliant.
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Prime Money solves this by offering a plug-and-play Finance
             Automation suite that allows small and growing businesses to
             digitise and scale their finance operations — without the overhead
@@ -45,11 +45,13 @@ export const StartupsAndSMEs = () => {
           />
         </Box>
       </SlideUpInView>
+      <Box px={7}>
       <CommonDetail
         detailsCheckPoints={detailsCheckPoints}
         detailsNumberPoints={detailsNumberPoints}
         detailsKeyPoints={detailsKeyPoints}
       />
+      </Box>
     </>
   );
 };

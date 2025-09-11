@@ -35,10 +35,10 @@ export const UiThemeProvider = (props: any) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles
-        styles={(theme) => ({
+        styles={() => ({
           "& ::selection": {
-            backgroundColor: theme?.palette?.primary?.main,
-            color: theme?.palette?.common?.white,
+            // backgroundColor: theme?.palette?.primary?.main,
+            // color: theme?.palette?.common?.black,
           },
         })}
       />

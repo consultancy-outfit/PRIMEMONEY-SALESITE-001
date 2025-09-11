@@ -14,11 +14,11 @@ export const DirectBankIntegration = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={6} mt={10}>
-          <Typography variant="h2" fontWeight={600} color="rgba(34, 34, 34, 1)">
+        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
+          <Typography variant="h3" fontWeight={500} color="#3D3D3D">
             Build Seamless Payment Journeys with Direct Bank Integration
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Todays users expect instant, intuitive, and secure payments —
             without detours through third-party apps or outdated interfaces.
             Thats where embedded finance makes the difference. With Prime Moneys
@@ -27,7 +27,7 @@ export const DirectBankIntegration = () => {
             allow customers to pay or get paid directly through your application
             — all under your brand.
           </Typography>
-          <Typography variant="body1" color="rgba(100, 100, 100, 1)">
+          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
             Whether you're launching a digital wallet, enabling supplier
             payouts, or embedding checkout into your SaaS platform, our tools
             give you the infrastructure to move money, authenticate users, and
@@ -44,11 +44,13 @@ export const DirectBankIntegration = () => {
           />
         </Box>
       </SlideUpInView>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+      <Box px={7}>
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
+      </Box>
     </>
   );
 };

@@ -24,6 +24,12 @@ export const UseCaseBanner = () => {
         fontSize={"60px"}
         color="white"
         textAlign={"center"}
+        sx={{
+          fontSize: { xs: 36, sm: 48, md: 60, lg: 72 },
+          lineHeight: { xs: "44px", sm: "54px", md: "72px", lg: "82px" },
+          maxWidth: { xs: "100%", sm: "95%", md: "90%", lg: "80%" },
+          margin: "0 auto",
+        }}
       >
         Build Launch Scale Your All-in-One Open Banking Ecosystem
       </Typography>
