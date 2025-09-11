@@ -1,24 +1,23 @@
 "use client";
+
+import { APP_ROUTES } from "@/constants/routes";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 import {
   Box,
   ClickAwayListener,
-  Typography,
-  useTheme,
-  Stack,
-  MenuItem,
+  Collapse,
   List,
   ListItemButton,
   ListItemText,
-  Collapse,
+  MenuItem,
+  Stack,
+  Typography,
+  useTheme,
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-
-import { APP_ROUTES } from "@/constants/routes";
-
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
 import { NavLinkItem, navLinksData } from "../header.data";
 
 // Define LinkButtonPropsI and CustomLinkButton
