@@ -1,7 +1,7 @@
 "use client";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection6Image } from "@/features/use-cases/assets";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonDetail } from "../../common-detail";
 import {
@@ -14,12 +14,20 @@ export const ConsentControl = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
-          <Typography  variant="h3" fontWeight={500} color="#3D3D3D">
+        <Container
+          maxWidth="xl"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            mt: 20,
+          }}
+        >
+          <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Redefining Digital Trust: Seamless Identity Verification & Consent
             Control
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <br />
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             In an increasingly digital economy, identity is everything. But
             traditional verification methods are outdated — slow, prone to
             fraud, and often frustrating for users. Whether you're onboarding
@@ -27,7 +35,7 @@ export const ConsentControl = () => {
             consent in regulated sectors, Prime Money offers a powerful,
             bank-verified solution through a single API.
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             We enable businesses to verify users using bank data, ensuring the
             identity is real, verified, and trusted — without friction. At the
             same time, our consent management framework helps platforms stay
@@ -48,14 +56,14 @@ export const ConsentControl = () => {
               height: "520px",
             }}
           />
-        </Box>
+        </Container>
       </SlideUpInView>
       <Box px={7}>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
       </Box>
     </>
   );

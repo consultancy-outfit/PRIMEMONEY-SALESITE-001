@@ -8,12 +8,12 @@ export const products = [
 
 export const about = [
   { id: 1, link: "/", label: "Home" },
-  { id: 2, link: "/about-us", label: "About" },
+  { id: 2, link: "/about-us", label: "About Us" },
   { id: 3, link: "/products", label: "Products" },
   { id: 4, link: "/use-cases", label: "Use Cases" },
   // { id: 5, link: "/developers", label: "Developers" },
   { id: 5, link: "/careers", label: "Careers" },
-  { id: 6, link: "/contact-us", label: "Contact" },
+  { id: 6, link: "/contact-us", label: "Contact Us" },
 ];
 
 export const resources = [

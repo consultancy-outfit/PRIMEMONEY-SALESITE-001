@@ -13,10 +13,7 @@ export const contactUsFormValidationSchema = Yup?.object()?.shape({
   phoneNumber: Yup.string()
     .trim()
     .required("Phone number is required")
-    .matches(
-      /^\+[1-9][0-9]{9,14}$/,
-      "Enter a valid  phone number",
-    ),
+    .matches(/^\+[0-9]{10,15}$/, "Enter a valid phone number"),
 });
 
 export const contactUsFormDefaultValues = {
@@ -54,8 +51,11 @@ export const contactUsFormFields = [
     componentProps: {
       name: "phoneNumber",
       label: "Phone Number",
-      // placeholder: "Enter phone number",
       required: true,
+      type: "tel",
+      onInput: (e: React.ChangeEvent<HTMLInputElement>) => {
+        e.target.value = e.target.value.replace(/[^0-9+]/g, "");
+      },
     },
     component: TextFormFields,
     md: 12,

@@ -1,7 +1,7 @@
 "use client";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection1Image } from "@/features/use-cases/assets";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonDetail } from "../../common-detail";
 import {
@@ -14,10 +14,18 @@ export const PredictiveInsights = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
+        <Container
+          maxWidth="xl"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            mt: 20,
+          }}
+        >
           <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Transform Bank Transactions into Predictive Insights
           </Typography>
+          <br />
           <Typography variant="subtitle1" color="rgba(100, 100, 100, 1)">
             In todays data-driven financial landscape, raw transactions alone
             are not enough. Businesses need real-time, enriched, and actionable
@@ -42,7 +50,7 @@ export const PredictiveInsights = () => {
               height: "520px",
             }}
           />
-        </Box>
+        </Container>
       </SlideUpInView>
       <Box px={7}>
         <CommonDetail
