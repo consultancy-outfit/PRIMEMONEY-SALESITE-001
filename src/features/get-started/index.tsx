@@ -50,7 +50,7 @@ export const GetStarted = () => {
       </Box>
       <Box
         sx={{
-          height: { xs: "320px", sm: "300px", md: "380px" },
+          height: { xs: "420px", sm: "350px", md: "380px" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

@@ -52,15 +52,17 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 210, md: 50, xs: "unset" },
-            top: { lg: "unset", xs: 50 },
+            bottom: { lg: 210, md: 400, xs: "unset" },
+            top: { lg: "unset", xs: 250 },
             left: 0,
             right: 0,
             zIndex: 2,
             p: { lg: 15, md: 10, xs: 1 },
             display: "flex",
-            alignItems: "flex-end", // 👈 align both at bottom
-            justifyContent: "space-between", // 👈 push left & right
+            alignItems:"flex-end",
+            justifyContent: { lg: "space-between", xs: "center" },
+            flexDirection: { lg: "row", xs: "column" },
+            textAlign: { lg: "left", xs: "center" },
           }}
         >
           <ScaleInView>
@@ -88,7 +90,6 @@ export const ContactUsFeature = () => {
               color={"grey.400"}
               customStyles={{
                 width: { lg: "80%", xs: "100%" },
-                textAlign: "right",
               }}
             >
               Have questions? We’re here to help. Reach out and let’s connect.
