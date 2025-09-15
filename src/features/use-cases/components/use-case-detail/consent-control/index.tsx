@@ -13,7 +13,6 @@ import {
 export const ConsentControl = () => {
   return (
     <>
-      <SlideUpInView>
         <Container
           maxWidth="xl"
           sx={{
@@ -57,7 +56,6 @@ export const ConsentControl = () => {
             }}
           />
         </Container>
-      </SlideUpInView>
       <Box px={7}>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
