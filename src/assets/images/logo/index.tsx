@@ -1,4 +1,5 @@
 export { default as CommonDarkLogoImage } from "./dark-logo.svg";
 export { default as CommonLightLogoImage } from "./light-logo.svg";
 export { default as FAGlobalLogoImage } from "./FAGlobalLogo.svg";
-export { default as CommonColoredLogoImage } from "./CommonColoredLogoImage.svg";
+export { default as ColorLogoImage } from "./color-logo.svg";
+

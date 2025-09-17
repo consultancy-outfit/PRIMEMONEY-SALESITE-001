@@ -52,24 +52,20 @@ export const ContactUsFeature = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 210, md: 400, xs: "unset" },
-            top: { lg: "unset", xs: 250 },
+            bottom: { lg: 210, md: 150, sm: 80, xs: "unset" },
+            // top: { lg: "unset", xs: 10 },
+            top: { lg: 5, xs: 70 },
             left: 0,
             right: 0,
             zIndex: 2,
-            p: { lg: 15, md: 10, xs: 1 },
-            display: "flex",
-            alignItems:"flex-end",
-            justifyContent: { lg: "space-between", xs: "center" },
-            flexDirection: { lg: "row", xs: "column" },
-            textAlign: { lg: "left", xs: "center" },
+            p: { lg: 15, md: 10, sm: 6, xs: 2 },
           }}
         >
           <ScaleInView>
             <HeadingText
               color={"common.white"}
               customStyles={{
-                width: { lg: "60%", xs: "100%" },
+                width: { lg: "45%", md: "70%", sm: "80%", xs: "100%" },
                 textAlign: "start",
                 fontSize: {
                   xl: "4.5rem",
@@ -83,13 +79,24 @@ export const ContactUsFeature = () => {
               Let’s Build the Future of Finance—Together
             </HeadingText>
           </ScaleInView>
-
+        </Box>
+        <Box
+          sx={{
+            position: "absolute",
+            top: { lg: 380, md: 280, sm: 240, xs: 220 },
+            right: 0,
+            zIndex: 2,
+            py: { lg: 5, xs: 2 },
+            px: 4,
+          }}
+        >
           <ScaleInView>
             <CustomText
               variant="subtitle1"
               color={"grey.400"}
               customStyles={{
-                width: { lg: "80%", xs: "100%" },
+                width: { lg: "75%", md: "70%", sm: "90%", xs: "100%" },
+                textAlign: "right",
               }}
             >
               Have questions? We’re here to help. Reach out and let’s connect.
@@ -102,7 +109,7 @@ export const ContactUsFeature = () => {
         customStyles={{
           position: "relative",
           zIndex: 2,
-          mt: { xs: -20, md: -25, lg: -20 },
+          mt: { xs:-20,md:-10,lg:-20 },
           px: { xs: 2, md: 6 },
           width: "90%",
           mx: "auto",

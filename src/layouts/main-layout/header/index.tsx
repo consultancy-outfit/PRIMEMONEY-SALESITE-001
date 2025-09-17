@@ -684,7 +684,7 @@ export const Header = () => {
               display: { xs: "block", lg: "none" },
             }}
           >
-            <MobileHeader getIconComponent={getIconComponent} />
+            <MobileHeader  />
           </Box>
         </Stack>
       </motion.div>
