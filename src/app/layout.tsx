@@ -11,20 +11,20 @@ export const metadata: Metadata = {
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
       {
         rel: "icon",
-        url: "/favicon.ico",
+        url: "/og-logo.png",
         type: "image/png",
         sizes: "16x16",
       },
       {
         rel: "icon",
-        url: "/favicon.ico",
+        url: "/og-logo.png",
         type: "image/png",
         sizes: "32x32",
       },
     ],
     apple: {
       rel: "favicon.png",
-      url: "/favicon.ico",
+      url: "/og-logo.png",
       type: "image/png",
       sizes: "180x180",
     },

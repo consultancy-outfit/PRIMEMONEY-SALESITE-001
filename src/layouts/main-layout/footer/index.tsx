@@ -1,9 +1,9 @@
 "use client";
-import { LogoAvatar } from "@/components/avatars/logo-avatar";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { about, products } from "./footer.data";
 import Link from "next/link";
+import { LogoAvatar } from "@/components/avatars/logo-avatar";
 
 const Footer = () => {
   const router = useRouter();
@@ -20,7 +20,7 @@ const Footer = () => {
         borderRadius: "12px",
       }}
     >
-      <Grid container spacing={5}>
+      <Grid container spacing={2}>
         <Grid size={{ xs: 12, lg: 5 }}>
           <Stack alignItems={"flex-start"} maxWidth={450} gap={2}>
             <LogoAvatar height="auto" isCenter={false} isLight={false} variantType={"color"} />
@@ -55,7 +55,7 @@ const Footer = () => {
               color="#222222"
               fontFamily="Manrope"
               fontWeight={800}
-              sx={{ fontSize: { xs: 16, sm: 18, lg: 20 } }}
+              sx={{ fontSize: { xs: 18, sm: 20, lg: 24 } }}
             >
               Company
             </Typography>
@@ -82,7 +82,7 @@ const Footer = () => {
               color="#222222"
               fontFamily="Manrope"
               fontWeight={800}
-              sx={{ fontSize: { xs: 16, sm: 18, lg: 20 } }}
+              sx={{ fontSize: { xs: 18, sm: 20, lg: 24 } }}
             >
               Products
             </Typography>
@@ -109,7 +109,7 @@ const Footer = () => {
               color="#222222"
               fontFamily="Manrope"
               fontWeight={800}
-              sx={{ fontSize: { xs: 16, sm: 18, lg: 20 } }}
+              sx={{ fontSize: { xs: 18, sm: 20, lg: 24 } }}
             >
               Legal
             </Typography>

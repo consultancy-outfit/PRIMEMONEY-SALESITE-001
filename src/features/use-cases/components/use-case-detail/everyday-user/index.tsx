@@ -1,7 +1,7 @@
 "use client";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection5Image } from "@/features/use-cases/assets";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonDetail } from "../../common-detail";
 import {
@@ -14,11 +14,19 @@ export const EverydayUser = () => {
   return (
     <>
       <SlideUpInView>
-        <Box display={"flex"} flexDirection={"column"} gap={2} px={12} mt={10}>
-          <Typography variant="h3" fontWeight={500} color="#3D3D3D">
+        <Container
+          maxWidth="xl"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            mt: 20,
+          }}
+        >
+          <Typography variant="h3" fontWeight={500} color="rgba(61, 61, 61, 1)">
             Powering Next-Gen Wallets for the Everyday User
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <br />
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             In a world where digital interactions define convenience, modern
             users demand more than just a place to store money — they expect
             intelligent, personalised, and frictionless wallet experiences. The
@@ -26,7 +34,7 @@ export const EverydayUser = () => {
             means your digital wallet must go beyond balance checks and basic
             transfers.
           </Typography>
-          <Typography variant="body1" color="rgba(101, 101, 101, 1)">
+          <Typography variant="subtitle1" color="rgba(101, 101, 101, 1)">
             Prime Money helps wallet providers power next-generation digital
             wallet solutions tailored for todays mobile-first users. Our suite
             of APIs and data intelligence tools supports everything from KYC
@@ -49,14 +57,14 @@ export const EverydayUser = () => {
               height: "520px",
             }}
           />
-        </Box>
+        </Container>
       </SlideUpInView>
       <Box px={7}>
-      <CommonDetail
-        detailsCheckPoints={detailsCheckPoints}
-        detailsNumberPoints={detailsNumberPoints}
-        detailsKeyPoints={detailsKeyPoints}
-      />
+        <CommonDetail
+          detailsCheckPoints={detailsCheckPoints}
+          detailsNumberPoints={detailsNumberPoints}
+          detailsKeyPoints={detailsKeyPoints}
+        />
       </Box>
     </>
   );

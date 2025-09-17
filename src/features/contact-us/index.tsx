@@ -54,8 +54,9 @@ export const ContactUsFeature = () => {
             position: "absolute",
             bottom: { lg: 210, md: 150, sm: 80, xs: "unset" },
             // top: { lg: "unset", xs: 10 },
-            top: { lg: 5, xs: 50 },
+            top: { lg: 5, xs: 70 },
             left: 0,
+            right: 0,
             zIndex: 2,
             p: { lg: 15, md: 10, sm: 6, xs: 2 },
           }}

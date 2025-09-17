@@ -15,7 +15,7 @@ export const ProductDetailPagesCommon = (props: any) => {
           alignItems={"center"}
           justifyContent={"center"}
           pt={15}
-          pb={5}
+          pb={0}
           m={2}
           sx={{ px: { xs: 0, sm: 2, md: 10, lg: 15 } }}
         >
@@ -41,7 +41,7 @@ export const ProductDetailPagesCommon = (props: any) => {
         </Box>
       </Stack>
 
-      <Grid container sx={{ py: 5, px: { xs: 2, sm: 5, md: 10, lg: 15 } }}>
+      <Grid container sx={{ py: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 } }} gap={4}>
         {gridContent.map((item: any) => (
           <React.Fragment key={item?.id}>
             {/* Text first, then image */}
@@ -69,7 +69,7 @@ export const ProductDetailPagesCommon = (props: any) => {
                 alt="HeroSection"
                 style={{
                   width: "100%",
-                  height: "500px",
+                  height: "auto",
                 }}
               />
             </Grid>

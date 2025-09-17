@@ -1,4 +1,7 @@
 "use client";
+
+import { APP_ROUTES } from "@/constants/routes";
+
 import {
   Box,
   ClickAwayListener,
@@ -8,10 +11,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { APP_ROUTES } from "@/constants/routes";
 import { LinkButton } from "@/components/buttons/link-button";
-import { navLinksData } from "../header.data";
-
+import {  navLinksData } from "../header.data";
 
 export const MobileHeader= ()=> {
   const [active, setActive] = useState(false);

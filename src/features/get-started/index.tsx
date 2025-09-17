@@ -18,6 +18,7 @@ export const GetStarted = () => {
           minHeight: { xxl: "60dvh", xs: "75dvh" },
           borderBottomLeftRadius: 8,
           borderBottomRightRadius: 8,
+          mb: { xs: 6, md: 10},
         }}
       >
         <Box
@@ -49,7 +50,7 @@ export const GetStarted = () => {
       </Box>
       <Box
         sx={{
-          height: { xs: "320px", sm: "300px", md: "380px" },
+          height: { xs: "420px", sm: "350px", md: "380px" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -66,7 +67,6 @@ export const GetStarted = () => {
             zIndex: 2,
             px: { xs: 2 },
             boxShadow: "0px 10px 40px rgba(239, 75, 203, 0.3)",
-            mb: 10,
             width: { md: "50%", xs: "90%" },
             maxWidth: "100%",
           }}
