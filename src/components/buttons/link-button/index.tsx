@@ -19,10 +19,11 @@ export const LinkButton = (props: LinkButtonPropsI) => {
     endIcon = undefined,
     linkProps = {},
     fullWidth = false,
+    onClose
   } = props;
 
   return (
-    <Link href={link} {...linkProps}>
+    <Link href={link} {...linkProps} onClick={onClose}>
       <MotionButton
         disableElevation
         className="small"

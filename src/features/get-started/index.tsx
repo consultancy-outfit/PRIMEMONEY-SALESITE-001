@@ -61,7 +61,7 @@ export const GetStarted = () => {
           borderRadius={8}
           customStyles={{
             position: "absolute",
-            top: { xs: 70, sm: 80, md: 140, lg: 240 },
+            top: { xs: 74, sm: 80, md: 140, lg: 240 },
             left: "50%",
             transform: "translateX(-50%)",
             zIndex: 2,

@@ -120,6 +120,7 @@ export interface LinkButtonPropsI {
   endIcon?: ReactNode | undefined;
   linkProps?: LinkProps;
   fullWidth?: boolean;
+  onClose?: () => void;
 }
 
 export interface ExportButtonPropsI {

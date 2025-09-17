@@ -2,19 +2,14 @@
 
 import { APP_ROUTES } from "@/constants/routes";
 
-import {
-  Box,
-  ClickAwayListener,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, ClickAwayListener, Typography, useTheme } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { LinkButton } from "@/components/buttons/link-button";
-import {  navLinksData } from "../header.data";
+import { navLinksData } from "../header.data";
 
-export const MobileHeader= ()=> {
+export const MobileHeader = () => {
   const [active, setActive] = useState(false);
   const handleClose = () => {
     setActive(false);
@@ -133,7 +128,7 @@ export const MobileHeader= ()=> {
               </React.Fragment>
             ))}
           </Typography>
-           <Box
+          <Box
             sx={{
               display: { xs: "flex", sm: "none" },
               justifyContent: "center",
@@ -151,20 +146,19 @@ export const MobileHeader= ()=> {
                 py: 1,
                 color: theme?.palette?.text?.primary,
               }}
+              onClose={handleClose}
             >
               Login
             </LinkButton>
             <LinkButton
               link={APP_ROUTES?.Get_STARTED}
-               linkProps={{
-                target: "_blank",
-              }}
               customStyles={{
                 borderRadius: 2,
                 px: 2,
                 py: 1,
                 bgcolor: theme?.palette?.text?.secondary,
               }}
+              onClose={handleClose}
             >
               Get Started
             </LinkButton>
