@@ -60,7 +60,7 @@ export const Login = () => {
           borderRadius={8}
           customStyles={{
             position: "absolute",
-            top: 220,
+            top: {xs:40,sm:80,md:140,lg:240},
             left: "50%",
             transform: "translateX(-50%)",
             zIndex: 2,

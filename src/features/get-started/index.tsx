@@ -18,7 +18,7 @@ export const GetStarted = () => {
           minHeight: { xxl: "60dvh", xs: "75dvh" },
           borderBottomLeftRadius: 8,
           borderBottomRightRadius: 8,
-          mb: { xs: 6, md: 10},
+          mb: { xs: 6, md: 10 },
         }}
       >
         <Box
@@ -61,7 +61,7 @@ export const GetStarted = () => {
           borderRadius={8}
           customStyles={{
             position: "absolute",
-            top: 220,
+            top: { xs: 70, sm: 80, md: 140, lg: 240 },
             left: "50%",
             transform: "translateX(-50%)",
             zIndex: 2,
