@@ -23,8 +23,8 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { navLinksData } from "./header.data";
 import { LinkButton } from "@/components/buttons/link-button";
 import { APP_ROUTES } from "@/constants/routes";
-import { MobileHeader } from "./mobile-header";
 import { LogoAvatar } from "@/components/avatars/logo-avatar";
+import { MobileHeader } from "@/layouts/main-layout/header/mobile-header";
 
 // Define a type for your nav link items, especially for children
 interface NavLinkItem {

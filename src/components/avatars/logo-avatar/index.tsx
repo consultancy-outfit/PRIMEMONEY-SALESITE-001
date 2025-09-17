@@ -4,6 +4,7 @@ import { LogoAvatarPropsI } from "../avatars.interface";
 import { PROJECT_NAME } from "@/configs/env";
 import { AVATAR_VARIANTS } from "@/constants/ui";
 import {
+  ColorLogoImage,
   CommonDarkLogoImage,
   CommonLightLogoImage,
 } from "@/assets/images/logo";
@@ -18,12 +19,27 @@ export const LogoAvatar = (props: LogoAvatarPropsI) => {
     variant = AVATAR_VARIANTS?.SQUARE,
     link = "/",
     isCenter = false,
+    variantType,
   } = props;
 
+  // // Ensure Logo is a valid string URL
+  // const Logo = isLight ? CommonLightLogoImage?.src : CommonDarkLogoImage?.src;
+  // if (!Logo) {
+  //   // console.warn("Logo image source is undefined. Using fallback.");
+  //   return null; // Prevent rendering if Logo is invalid
+  // }
+
   // Ensure Logo is a valid string URL
-  const Logo = isLight ? CommonLightLogoImage?.src : CommonDarkLogoImage?.src;
+  let Logo: string | undefined;
+  if (variantType === "color") {
+    Logo = ColorLogoImage?.src;
+  } else if (isLight) {
+    Logo = CommonLightLogoImage?.src;
+  } else {
+    Logo = CommonDarkLogoImage?.src;
+  }
+
   if (!Logo) {
-    // console.warn("Logo image source is undefined. Using fallback.");
     return null; // Prevent rendering if Logo is invalid
   }
 

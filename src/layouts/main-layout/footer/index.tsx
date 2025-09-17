@@ -23,7 +23,7 @@ const Footer = () => {
       <Grid container spacing={5}>
         <Grid size={{ xs: 12, lg: 5 }}>
           <Stack alignItems={"flex-start"} maxWidth={450} gap={2}>
-            <LogoAvatar height="auto" isCenter={false} isLight />
+            <LogoAvatar height="auto" isCenter={false} isLight={false} variantType={"color"} />
 
             <Typography
               variant="body1"

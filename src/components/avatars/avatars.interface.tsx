@@ -88,6 +88,7 @@ export interface LogoAvatarPropsI {
   variant?: AvatarVariantsType;
   link?: any;
   isCenter?: boolean;
+  variantType?:string;
 }
 
 export interface SmallLogoAvatarPropsI {
