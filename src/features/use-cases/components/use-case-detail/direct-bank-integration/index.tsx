@@ -1,5 +1,4 @@
 "use client";
-import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection2Image } from "@/features/use-cases/assets";
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
@@ -9,11 +8,14 @@ import {
   detailsKeyPoints,
   detailsNumberPoints,
 } from "./DirectBankIntegration.data";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 export const DirectBankIntegration = () => {
   return (
     <>
-        <Container maxWidth="xl"
+      <SlideUpInView>
+        <Container
+          maxWidth="xl"
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -49,7 +51,8 @@ export const DirectBankIntegration = () => {
             }}
           />
         </Container>
-      <Box px={7}>
+      </SlideUpInView>
+      <Box>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
           detailsNumberPoints={detailsNumberPoints}

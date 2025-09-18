@@ -1,5 +1,4 @@
 "use client";
-import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HeroSection6Image } from "@/features/use-cases/assets";
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
@@ -9,10 +8,12 @@ import {
   detailsKeyPoints,
   detailsNumberPoints,
 } from "./ConsentControl.data";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 export const ConsentControl = () => {
   return (
     <>
+      <SlideUpInView>
         <Container
           maxWidth="xl"
           sx={{
@@ -56,7 +57,8 @@ export const ConsentControl = () => {
             }}
           />
         </Container>
-      <Box px={7}>
+      </SlideUpInView>
+      <Box>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
           detailsNumberPoints={detailsNumberPoints}

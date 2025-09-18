@@ -49,7 +49,7 @@ export const OneAPI = () => {
           />
         </Container>
       </SlideUpInView>
-      <Box px={7}>
+      <Box>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
           detailsNumberPoints={detailsNumberPoints}

@@ -59,7 +59,7 @@ export const EverydayUser = () => {
           />
         </Container>
       </SlideUpInView>
-      <Box px={7}>
+      <Box>
         <CommonDetail
           detailsCheckPoints={detailsCheckPoints}
           detailsNumberPoints={detailsNumberPoints}

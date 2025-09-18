@@ -152,11 +152,13 @@ export const MobileHeader = () => {
             </LinkButton>
             <LinkButton
               link={APP_ROUTES?.Get_STARTED}
+              variant="outlined"
+              color="secondary"
               customStyles={{
                 borderRadius: 2,
                 px: 2,
                 py: 1,
-                bgcolor: theme?.palette?.text?.secondary,
+                color: theme?.palette?.text?.primary,
               }}
               onClose={handleClose}
             >
